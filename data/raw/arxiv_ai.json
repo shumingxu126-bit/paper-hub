@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-03-31T22:39:02.884332",
+  "count": 5,
+  "papers": [
+    {
+      "arxiv_id": "2603.28618v1",
+      "title": "Seeing with You: Perception-Reasoning Coevolution for Multimodal Reasoning",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) has substantially enhanced the reasoning capabilities of multimodal large language models (MLLMs). However, existing RLVR approaches typically rely on outcome-driven optimization that updates both perception and reasoning using a shared reward based solely on the final answer. This shared reward blurs credit assignment, frequently improving reasoning patterns while failing to reliably enhance the accuracy of upstream visual evidence extraction. To address this perception bottleneck, we introduce PRCO (Perception-Reasoning Coevolution), a dual-role RLVR framework with a shared policy. PRCO consists of two cooperative roles: an Observer that generates an evidence caption tailored to the question and a Solver that predicts the final answer based on this caption. Crucially, PRCO employs role-specific reward signals: the Solver is optimized using verifiable outcome rewards on the final answer, while the Observer receives a utility reward derived from the Solver's downstream success. Extensive experiments across eight challenging multimodal reasoning benchmarks demonstrate that PRCO yields consistent improvements across model scales by over 7 points on average accuracy compared to the base model, outperforming prior open-source RL-tuned baselines.",
+      "authors": [
+        "Ziqi Miao",
+        "Haonan Jia",
+        "Lijun Li",
+        "Chen Qian",
+        "Yuan Xiong",
+        "Wenting Yan",
+        "Jing Shao"
+      ],
+      "published": "2026-03-30T16:03:56+00:00",
+      "updated": "2026-03-30T16:03:56+00:00",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "pdf_url": "https://arxiv.org/pdf/2603.28618v1",
+      "entry_id": "http://arxiv.org/abs/2603.28618v1"
+    },
+    {
+      "arxiv_id": "2603.28610v1",
+      "title": "ResAdapt: Adaptive Resolution for Efficient Multimodal Reasoning",
+      "summary": "Multimodal Large Language Models (MLLMs) achieve stronger visual understanding by scaling input fidelity, yet the resulting visual token growth makes jointly sustaining high spatial resolution and long temporal context prohibitive. We argue that the bottleneck lies not in how post-encoding representations are compressed but in the volume of pixels the encoder receives, and address it with ResAdapt, an Input-side adaptation framework that learns how much visual budget each frame should receive before encoding. ResAdapt couples a lightweight Allocator with an unchanged MLLM backbone, so the backbone retains its native visual-token interface while receiving an operator-transformed input. We formulate allocation as a contextual bandit and train the Allocator with Cost-Aware Policy Optimization (CAPO), which converts sparse rollout feedback into a stable accuracy-cost learning signal. Across budget-controlled video QA, temporal grounding, and image reasoning tasks, ResAdapt improves low-budget operating points and often lies on or near the efficiency-accuracy frontier, with the clearest gains on reasoning-intensive benchmarks under aggressive compression. Notably, ResAdapt supports up to 16x more frames at the same visual budget while delivering over 15% performance gain. Code is available at https://github.com/Xnhyacinth/ResAdapt.",
+      "authors": [
+        "Huanxuan Liao",
+        "Zhongtao Jiang",
+        "Yupu Hao",
+        "Yuqiao Tan",
+        "Shizhu He",
+        "Jun Zhao",
+        "Kun Xu",
+        "Kang Liu"
+      ],
+      "published": "2026-03-30T15:57:32+00:00",
+      "updated": "2026-03-30T15:57:32+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "primary_category": "cs.CV",
+      "pdf_url": "https://arxiv.org/pdf/2603.28610v1",
+      "entry_id": "http://arxiv.org/abs/2603.28610v1"
+    },
+    {
+      "arxiv_id": "2603.28553v1",
+      "title": "Multimodal Analytics of Cybersecurity Crisis Preparation Exercises: What Predicts Success?",
+      "summary": "Instructional alignment, the match between intended cognition and enacted activity, is central to effective instruction but hard to operationalize at scale. We examine alignment in cybersecurity simulations using multimodal traces from 23 teams (76 students) across five exercise sessions. Study 1 codes objectives and team emails with Bloom's taxonomy and models the completion of key exercise tasks with generalized linear mixed models. Alignment, defined as the discrepancy between required and enacted Bloom levels, predicts success, whereas the Bloom category alone does not predict success once discrepancy is considered. Study 2 compares predictive feature families using grouped cross-validation and l1-regularized logistic regression. Text embeddings and log features outperform Bloom-only models (AUC~0.74 and 0.71 vs. 0.55), and their combination performs best (Test AUC~0.80), with Bloom frequencies adding little. Overall, the work offers a measure of alignment for simulations and shows that multimodal traces best forecast performance, while alignment provides interpretable diagnostic insight.",
+      "authors": [
+        "Conrad Borchers",
+        "Valdemar Švábenský",
+        "Sandesh K. Kafle",
+        "Kevin K. Tang",
+        "Jan Vykopal"
+      ],
+      "published": "2026-03-30T15:14:56+00:00",
+      "updated": "2026-03-30T15:14:56+00:00",
+      "categories": [
+        "cs.HC",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "primary_category": "cs.HC",
+      "pdf_url": "https://arxiv.org/pdf/2603.28553v1",
+      "entry_id": "http://arxiv.org/abs/2603.28553v1"
+    },
+    {
+      "arxiv_id": "2603.28550v1",
+      "title": "MarkushGrapher-2: End-to-end Multimodal Recognition of Chemical Structures",
+      "summary": "Automatically extracting chemical structures from documents is essential for the large-scale analysis of the literature in chemistry. Automatic pipelines have been developed to recognize molecules represented either in figures or in text independently. However, methods for recognizing chemical structures from multimodal descriptions (Markush structures) lag behind in precision and cannot be used for automatic large-scale processing. In this work, we present MarkushGrapher-2, an end-to-end approach for the multimodal recognition of chemical structures in documents. First, our method employs a dedicated OCR model to extract text from chemical images. Second, the text, image, and layout information are jointly encoded through a Vision-Text-Layout encoder and an Optical Chemical Structure Recognition vision encoder. Finally, the resulting encodings are effectively fused through a two-stage training strategy and used to auto-regressively generate a representation of the Markush structure. To address the lack of training data, we introduce an automatic pipeline for constructing a large-scale dataset of real-world Markush structures. In addition, we present IP5-M, a large manually-annotated benchmark of real-world Markush structures, designed to advance research on this challenging task. Extensive experiments show that our approach substantially outperforms state-of-the-art models in multimodal Markush structure recognition, while maintaining strong performance in molecule structure recognition. Code, models, and datasets are released publicly.",
+      "authors": [
+        "Tim Strohmeyer",
+        "Lucas Morin",
+        "Gerhard Ingmar Meijer",
+        "Valéry Weber",
+        "Ahmed Nassar",
+        "Peter Staar"
+      ],
+      "published": "2026-03-30T15:11:17+00:00",
+      "updated": "2026-03-30T15:11:17+00:00",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "pdf_url": "https://arxiv.org/pdf/2603.28550v1",
+      "entry_id": "http://arxiv.org/abs/2603.28550v1"
+    },
+    {
+      "arxiv_id": "2603.28474v1",
+      "title": "CiQi-Agent: Aligning Vision, Tools and Aesthetics in Multimodal Agent for Cultural Reasoning on Chinese Porcelains",
+      "summary": "The connoisseurship of antique Chinese porcelain demands extensive historical expertise, material understanding, and aesthetic sensitivity, making it difficult for non-specialists to engage. To democratize cultural-heritage understanding and assist expert connoisseurship, we introduce CiQi-Agent -- a domain-specific Porcelain Connoisseurship Agent for intelligent analysis of antique Chinese porcelain. CiQi-Agent supports multi-image porcelain inputs and enables vision tool invocation and multimodal retrieval-augmented generation, performing fine-grained connoisseurship analysis across six attributes: dynasty, reign period, kiln site, glaze color, decorative motif, and vessel shape. Beyond attribute classification, it captures subtle visual details, retrieves relevant domain knowledge, and integrates visual and textual evidence to produce coherent, explainable connoisseurship descriptions. To achieve this capability, we construct a large-scale, expert-annotated dataset CiQi-VQA, comprising 29,596 porcelain specimens, 51,553 images, and 557,940 visual question--answering pairs, and further establish a comprehensive benchmark CiQi-Bench aligned with the previously mentioned six attributes. CiQi-Agent is trained through supervised fine-tuning, reinforcement learning, and a tool-augmented reasoning framework that integrates two categories of tools: a vision tool and multimodal retrieval tools. Experimental results show that CiQi-Agent (7B) outperforms all competitive open- and closed-source models across all six attributes on CiQi-Bench, achieving on average 12.2\\% higher accuracy than GPT-5. The model and dataset have been released and are publicly available at https://huggingface.co/datasets/SII-Monument-Valley/CiQi-VQA.",
+      "authors": [
+        "Wenhan Wang",
+        "Zhixiang Zhou",
+        "Zhongtian Ma",
+        "Yanzhu Chen",
+        "Ziyu Lin",
+        "Hao Sheng",
+        "Pengfei Liu",
+        "Honglin Ma",
+        "Wenqi Shao",
+        "Qiaosheng Zhang",
+        "Yu Qiao"
+      ],
+      "published": "2026-03-30T14:13:47+00:00",
+      "updated": "2026-03-30T14:13:47+00:00",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "primary_category": "cs.CV",
+      "pdf_url": "https://arxiv.org/pdf/2603.28474v1",
+      "entry_id": "http://arxiv.org/abs/2603.28474v1"
+    }
+  ]
+}

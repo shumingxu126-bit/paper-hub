@@ -1,0 +1,306 @@
+{
+  "ai": [
+    {
+      "id": "ai-1",
+      "title": "Seeing with You: Perception-Reasoning Coevolution for Multimodal Reasoning",
+      "score": 93,
+      "tags": [
+        "多模态推理",
+        "强化学习",
+        "视觉语言模型"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28618v1",
+      "brief": "提出感知-推理协同进化框架，通过强化学习与可验证奖励机制提升多模态大型语言模型的推理能力",
+      "highlights": [
+        "感知-推理协同进化机制",
+        "强化学习可验证奖励方法",
+        "多模态推理能力提升"
+      ],
+      "bossQuestions": [
+        "如何有效融合视觉感知与推理能力",
+        "如何设计可验证的强化学习奖励机制",
+        "如何实现感知与推理的协同进化"
+      ],
+      "actions": [
+        "探索更高效的协同进化架构",
+        "设计更精细的奖励机制",
+        "扩展模型在更多多模态任务上的应用"
+      ]
+    },
+    {
+      "id": "ai-2",
+      "title": "ResAdapt: Adaptive Resolution for Efficient Multimodal Reasoning",
+      "score": 93,
+      "tags": [
+        "自适应分辨率",
+        "多模态大语言模型",
+        "视觉token优化"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28610v1",
+      "brief": "提出自适应分辨率方法解决多模态大语言模型中高分辨率图像与长上下文之间的token开销矛盾",
+      "highlights": [
+        "创新性地提出自适应分辨率策略，动态调整输入图像分辨率以优化token使用",
+        "显著降低视觉token数量，同时保持多模态推理性能",
+        "在空间分辨率与时序上下文之间取得有效平衡"
+      ],
+      "bossQuestions": [
+        "如何在不同场景下自动选择最优分辨率配置",
+        "分辨率调整对下游任务性能影响的具体机制是什么",
+        "如何保证自适应策略在不同模型架构中的泛化能力"
+      ],
+      "actions": [
+        "在具体应用场景中验证自适应分辨率的有效性",
+        "探索该方法与其他视觉压缩技术的结合方案",
+        "研究不同视觉编码器架构与自适应策略的兼容性"
+      ]
+    },
+    {
+      "id": "ai-3",
+      "title": "Multimodal Analytics of Cybersecurity Crisis Preparation Exercises: What Predicts Success?",
+      "score": 85,
+      "tags": [
+        "多模态分析",
+        "网络安全",
+        "教学一致性"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28553v1",
+      "brief": "这篇论文通过多模态分析方法研究网络安全危机准备练习，探索教学一致性与成功预测因素之间的关系。",
+      "highlights": [
+        "提出多模态分析方法用于分析网络安全危机准备练习的效果",
+        "研究教学一致性（intended cognition与enacted activity的匹配）对练习效果的影响",
+        "探索在规模上操作化教学一致性的方法"
+      ],
+      "bossQuestions": [
+        "如何有效衡量教学一致性与网络安全练习成功之间的关系？",
+        "多模态分析能否揭示影响危机准备练习成功的关键预测因素？",
+        "怎样在大规模场景中操作化教学一致性这一概念？"
+      ],
+      "actions": [
+        "分析论文中的多模态数据收集方法",
+        "梳理教学一致性在危机准备练习中的具体表现",
+        "总结影响网络安全练习成功的关键预测因素"
+      ]
+    },
+    {
+      "id": "ai-4",
+      "title": "MarkushGrapher-2: End-to-end Multimodal Recognition of Chemical Structures",
+      "score": 88,
+      "tags": [
+        "化学结构识别",
+        "多模态学习",
+        "端到端模型"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28550v1",
+      "brief": "提出了一个端到端的化学结构多模态识别方法MarkushGrapher-2，用于从文档中自动提取化学结构",
+      "highlights": [
+        "端到端的多模态化学结构识别系统",
+        "支持从化学文献文档中自动提取结构",
+        "适用于大规模化学文献分析"
+      ],
+      "bossQuestions": [
+        "如何处理不同类型的化学文档格式",
+        "如何提高多模态特征融合效果",
+        "如何处理复杂的Markush结构"
+      ],
+      "actions": [
+        "阅读论文了解具体技术方案",
+        "分析模型架构和训练方法",
+        "探索在化学信息抽取中的应用"
+      ]
+    },
+    {
+      "id": "ai-5",
+      "title": "CiQi-Agent: Aligning Vision, Tools and Aesthetics in Multimodal Agent for Cultural Reasoning on Chinese Porcelains",
+      "score": 99,
+      "tags": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28474v1",
+      "brief": "提出CiQi-Agent多模态智能体，通过对齐视觉理解、工具调用和美学评估来实现中国古瓷的文化推理。",
+      "highlights": [
+        "提出首个针对中国古瓷文化推理的多模态智能体框架",
+        "实现视觉理解、工具调用和美学评估三方面的对齐",
+        "整合历史专业知识、材料理解与审美判断能力"
+      ],
+      "bossQuestions": [
+        "如何让非专家也能进行专业的古瓷鉴赏",
+        "多模态智能体如何处理文化推理中的主观性问题",
+        "如何在保持专业性的同时实现用户友好的交互"
+      ],
+      "actions": [
+        "设计针对古瓷的多模态感知和推理框架",
+        "构建古瓷知识图谱和美学评估模型",
+        "开发面向非专业用户的交互式鉴赏系统"
+      ]
+    }
+  ],
+  "recsys": [
+    {
+      "id": "recsys-1",
+      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
+      "score": 88,
+      "tags": [
+        "推荐系统",
+        "集体操纵",
+        "风险控制"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28476v1",
+      "brief": "研究推荐系统中集体操纵行为及其对风险控制机制的影响",
+      "highlights": [
+        "探讨推荐系统中的集体操纵问题",
+        "分析风险控制推荐系统的脆弱性",
+        "研究群体行为对推荐系统的影响"
+      ],
+      "bossQuestions": [
+        "如何检测推荐系统中的集体操纵行为",
+        "风险控制机制如何应对协同攻击",
+        "群体操纵如何影响系统安全性"
+      ],
+      "actions": [
+        "改进风险控制推荐系统设计",
+        "增强对集体操纵的检测能力",
+        "提升推荐系统抵御协同攻击的鲁棒性"
+      ]
+    },
+    {
+      "id": "recsys-2",
+      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
+      "score": 88,
+      "tags": [
+        "推荐系统",
+        "生成式模型",
+        "课程学习"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28124v1",
+      "brief": "提出RCLRec方法通过逆向课程学习解决大规模生成式推荐系统中稀疏转化目标优化的难题",
+      "highlights": [
+        "提出RCLRec框架解决生成式推荐中稀疏转化目标的优化问题",
+        "采用逆向课程学习策略从易到难逐步训练模型",
+        "在稀疏转化场景下显著提升推荐效果和转化率"
+      ],
+      "bossQuestions": [
+        "如何有效学习稀疏的转化目标信号",
+        "如何在生成式推荐中平衡探索与 exploitation",
+        "如何设计课程学习策略以提高训练效率"
+      ],
+      "actions": [
+        "在推荐系统中引入逆向课程学习方法",
+        "采用渐进式训练策略处理稀疏数据",
+        "结合生成模型提升转化率优化效果"
+      ]
+    },
+    {
+      "id": "recsys-3",
+      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
+      "score": 88,
+      "tags": [
+        "顺序推荐系统",
+        "熵基分析",
+        "推荐系统评估"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.27952v1",
+      "brief": "研究顺序推荐系统的准确性上限，揭示当前模型与数据固有限制之间的差距",
+      "highlights": [
+        "提出基于熵的方法量化顺序推荐系统的准确性上限",
+        "揭示当前模型性能与数据内在信息量之间的关系",
+        "为推荐系统性能评估提供新的理论基准"
+      ],
+      "bossQuestions": [
+        "顺序推荐系统的准确性上限由什么决定",
+        "当前模型距离数据固有准确性极限还有多远",
+        "如何利用熵基方法指导推荐系统设计"
+      ],
+      "actions": [
+        "使用熵基方法评估推荐系统的实际改进空间",
+        "重新审视离线评估指标与真实性能的关系",
+        "设计更接近准确性上限的推荐模型"
+      ]
+    },
+    {
+      "id": "recsys-4",
+      "title": "TrendGen: An Outfit Recommendation and Display System",
+      "score": 85,
+      "tags": [
+        "计算机视觉",
+        "时尚推荐",
+        "图像生成"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.27264v1",
+      "brief": "TrendGen是一个基于计算机视觉的穿搭推荐与展示系统，利用图像理解与生成技术为用户提供个性化穿搭建议。",
+      "highlights": [
+        "提出端到端的穿搭推荐与可视化展示框架",
+        "结合图像理解与生成技术提升推荐准确性",
+        "为时尚行业提供智能化解决方案"
+      ],
+      "bossQuestions": [
+        "如何利用计算机视觉技术提升穿搭推荐的准确性？",
+        "如何在推荐系统中实现个性化与多样性的平衡？",
+        "图像生成技术如何应用于时尚搭配的可视化展示？"
+      ],
+      "actions": [
+        "探索计算机视觉在时尚推荐系统中的应用潜力",
+        "研究图像生成与理解技术的结合方法",
+        "开发面向时尚行业的智能穿搭系统"
+      ]
+    },
+    {
+      "id": "recsys-5",
+      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
+      "score": 93,
+      "tags": [
+        "推荐系统",
+        "智能体",
+        "范式转变"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.26100v1",
+      "brief": "这篇论文探讨了大规模工业推荐系统从传统的多阶段流水线架构向智能体化推荐系统的范式转变。",
+      "highlights": [
+        "指出工业推荐系统通常采用固定的多阶段流水线架构（召回-排序-重排）",
+        "描述了推荐系统从协同过滤到深度学习和大型预训练模型的发展历程",
+        "提出从流水线架构向智能体化推荐系统转变的新范式"
+      ],
+      "bossQuestions": [
+        "当前流水线式推荐架构存在哪些局限性",
+        "智能体化推荐系统如何改变传统推荐范式",
+        "这种范式转变对推荐系统设计和实现有什么影响"
+      ],
+      "actions": [
+        "了解传统推荐系统流水线架构的组成",
+        "研究智能体化推荐系统的设计和实现方法",
+        "探索推荐系统范式转变的技术路径"
+      ]
+    }
+  ]
+}

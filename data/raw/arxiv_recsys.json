@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-03-31T22:39:03.238148",
+  "count": 5,
+  "papers": [
+    {
+      "arxiv_id": "2603.28476v1",
+      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
+      "summary": "Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities. In response, users increasingly organize and coordinate to steer algorithmic outcomes toward diverse goals, such as promoting relevant content or limiting harmful material, relying on platform affordances -- such as likes, reviews, or ratings. While these mechanisms can serve beneficial purposes, they can also be leveraged for adversarial manipulation, particularly in systems where such feedback directly informs safety guarantees. In this paper, we study this vulnerability in recently proposed risk-controlling recommender systems, which use binary user feedback (e.g., \"Not Interested\") to provably limit exposure to unwanted content via conformal risk control. We empirically demonstrate that their reliance on aggregate feedback signals makes them inherently susceptible to coordinated adversarial user behaviour. Using data from a large-scale online video-sharing platform, we show that a small coordinated group (comprising only 1% of the user population) can induce up to a 20% degradation in nDCG for non-adversarial users by exploiting the affordances provided by risk-controlling recommender systems. We evaluate simple, realistic attack strategies that require little to no knowledge of the underlying recommendation algorithm and find that, while coordinated users can significantly harm overall recommendation quality, they cannot selectively suppress specific content groups through reporting alone. Finally, we propose a mitigation strategy that shifts guarantees from the group level to the user level, showing empirically how it can reduce the impact of adversarial coordinated behaviour while ensuring personalized safety for individuals.",
+      "authors": [
+        "Giovanni De Toni",
+        "Cristian Consonni",
+        "Erasmo Purificato",
+        "Emilia Gomez",
+        "Bruno Lepri"
+      ],
+      "published": "2026-03-30T14:14:48+00:00",
+      "updated": "2026-03-30T14:14:48+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.LG",
+        "cs.SI"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.28476v1",
+      "entry_id": "http://arxiv.org/abs/2603.28476v1"
+    },
+    {
+      "arxiv_id": "2603.28124v1",
+      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
+      "summary": "Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize. Generative recommendation (GR) partially alleviates data sparsity by organizing multi-type behaviors into a unified token sequence with shared representations, but conversion signals remain insufficiently modeled. While recent behavior-aware GR models encode behavior types and employ behavior-aware attention to highlight decision-related intermediate behaviors, they still rely on standard attention over the full history and provide no additional supervision for conversions, leaving conversion sparsity largely unresolved. To address these challenges, we propose RCLRec, a reverse curriculum learning-based GR framework for sparse conversion supervision. For each conversion target, RCLRec constructs a short curriculum by selecting a subsequence of conversion-related items from the history in reverse. Their semantic tokens are fed to the decoder as a prefix, together with the target conversion tokens, under a joint generation objective. This design provides additional instance-specific intermediate supervision, alleviating conversion sparsity and focusing the model on the user's critical decision process. We further introduce a curriculum quality-aware loss to ensure that the selected curricula are informative for conversion prediction. Experiments on offline datasets and an online A/B test show that RCLRec achieves superior performance, with +2.09% advertising revenue and +1.86% orders in online deployment.",
+      "authors": [
+        "Yulei Huang",
+        "Hao Deng",
+        "Haibo Xing",
+        "Jinxin Hu",
+        "Chuanfei Xu",
+        "Zulong Chen",
+        "Yu Zhang",
+        "Xiaoyi Zeng"
+      ],
+      "published": "2026-03-30T07:41:33+00:00",
+      "updated": "2026-03-30T07:41:33+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.28124v1",
+      "entry_id": "http://arxiv.org/abs/2603.28124v1"
+    },
+    {
+      "arxiv_id": "2603.27952v1",
+      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
+      "summary": "Sequential recommender systems have achieved steady gains in offline accuracy, yet it remains unclear how close current models are to the intrinsic accuracy limit imposed by the data. A reliable, model-agnostic estimate of this ceiling would enable principled difficulty assessment and headroom estimation before costly model development. Existing predictability analyses typically combine entropy estimation with Fano's inequality inversion; however, in recommendation they are hindered by sensitivity to candidate-space specification and distortion from Fano-based scaling in low-predictability regimes. We develop an entropy-induced, training-free approach for quantifying accuracy limits in sequential recommendation, yielding a candidate-size-agnostic estimate. Experiments on controlled synthetic generators and diverse real-world benchmarks show that the estimator tracks oracle-controlled difficulty more faithfully than baselines, remains insensitive to candidate-set size, and achieves high rank consistency with best-achieved offline accuracy across state-of-the-art sequential recommenders (Spearman rho up to 0.914). It also supports user-group diagnostics by stratifying users by novelty preference, long-tail exposure, and activity, revealing systematic predictability differences. Furthermore, predictability can guide training data selection: training sets constructed from high-predictability users yield strong downstream performance under reduced data budgets. Overall, the proposed estimator provides a practical reference for assessing attainable accuracy limits, supporting user-group diagnostics, and informing data-centric decisions in sequential recommendation.",
+      "authors": [
+        "En Xu",
+        "Jingtao Ding",
+        "Yong Li"
+      ],
+      "published": "2026-03-30T01:57:30+00:00",
+      "updated": "2026-03-30T01:57:30+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.27952v1",
+      "entry_id": "http://arxiv.org/abs/2603.27952v1"
+    },
+    {
+      "arxiv_id": "2603.27264v1",
+      "title": "TrendGen: An Outfit Recommendation and Display System",
+      "summary": "Recent advances in Computer Vision have significantly improved image understanding and generation, revolutionizing the fashion industry. However, challenges such as inconsistent lighting, non-ideal garment angles, complex backgrounds, and occlusions in raw images hinder their full potential. Overcoming these obstacles is crucial for developing robust fashion AI systems capable of real-world applications.   In this paper, we introduce TrendGen, a Fashion AI system designed to enhance online shopping with intelligent outfit recommendations. Deployed on a major e-commerce platform, TrendGen leverages cloth images and product attributes to generate trend-aligned, cohesive outfit suggestions. Additionally, it employs Generative AI to transform raw images into high-quality lay-down views, offering a clear and structured presentation of garments.   Our evaluation on production data demonstrates TrendGen's consistent high-quality outfits and lay-down images, marking a significant advancement in AI-driven solutions for fashion retail.",
+      "authors": [
+        "Theodoros Koukopoulos",
+        "Dimos Klimenof",
+        "Ioannis Xarchakos"
+      ],
+      "published": "2026-03-28T13:11:29+00:00",
+      "updated": "2026-03-28T13:11:29+00:00",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "pdf_url": "https://arxiv.org/pdf/2603.27264v1",
+      "entry_id": "http://arxiv.org/abs/2603.27264v1"
+    },
+    {
+      "arxiv_id": "2603.26100v1",
+      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
+      "summary": "Large-scale industrial recommenders typically use a fixed multi-stage pipeline (recall, ranking, re-ranking) and have progressed from collaborative filtering to deep and large pre-trained models. However, both multi-stage and so-called One Model designs remain essentially static: models are black boxes, and system improvement relies on manual hypotheses and engineering, which is hard to scale under heterogeneous data and multi-objective business constraints. We propose an Agentic Recommender System (AgenticRS) that reorganizes key modules as agents. Modules are promoted to agents only when they form a functionally closed loop, can be independently evaluated, and possess an evolvable decision space. For model agents, we outline two self-evolution mechanisms: reinforcement learning style optimization in well-defined action spaces, and large language model based generation and selection of new architectures and training schemes in open-ended design spaces. We further distinguish individual evolution of single agents from compositional evolution over how multiple agents are selected and connected, and use a layered inner and outer reward design to couple local optimization with global objectives. This provides a concise blueprint for turning static pipelines into self-evolving agentic recommender systems.",
+      "authors": [
+        "Jinxin Hu",
+        "Hao Deng",
+        "Lingyu Mu",
+        "Hao Zhang",
+        "Shizhun Wang",
+        "Yu Zhang",
+        "Xiaoyi Zeng"
+      ],
+      "published": "2026-03-27T06:14:18+00:00",
+      "updated": "2026-03-27T06:14:18+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.26100v1",
+      "entry_id": "http://arxiv.org/abs/2603.26100v1"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "ai": [
+    {
+      "id": "ai-1",
+      "title": "Seeing with You: Perception-Reasoning Coevolution for Multimodal Reasoning",
+      "score": 93,
+      "tags": [
+        "cs.AI"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28618v1",
+      "brief": "Reinforcement learning with verifiable rewards (RLVR) has substantially enhanced the reasoning capabilities of multimodal large language models (MLLMs)。",
+      "highlights": [
+        "论文核心关注点是：Reinforcement learning with verifiable rewards (RLVR) has substantially enhanced the reasoning capabilities of multimodal large language models (MLLMs)。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-2",
+      "title": "ResAdapt: Adaptive Resolution for Efficient Multimodal Reasoning",
+      "score": 93,
+      "tags": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28610v1",
+      "brief": "Multimodal Large Language Models (MLLMs) achieve stronger visual understanding by scaling input fidelity, yet the resulting visual token growth makes jointly sustaining high spatial resolution and long temporal context prohibitive。",
+      "highlights": [
+        "论文核心关注点是：Multimodal Large Language Models (MLLMs) achieve stronger visual understanding by scaling input fidelity, yet the resulting visual token growth makes jointly sustaining high spatial resolution and long temporal context prohibitive。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-3",
+      "title": "Multimodal Analytics of Cybersecurity Crisis Preparation Exercises: What Predicts Success?",
+      "score": 85,
+      "tags": [
+        "cs.HC",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28553v1",
+      "brief": "Instructional alignment, the match between intended cognition and enacted activity, is central to effective instruction but hard to operationalize at scale。",
+      "highlights": [
+        "论文核心关注点是：Instructional alignment, the match between intended cognition and enacted activity, is central to effective instruction but hard to operationalize at scale。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-4",
+      "title": "MarkushGrapher-2: End-to-end Multimodal Recognition of Chemical Structures",
+      "score": 88,
+      "tags": [
+        "cs.CV"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28550v1",
+      "brief": "Automatically extracting chemical structures from documents is essential for the large-scale analysis of the literature in chemistry。",
+      "highlights": [
+        "论文核心关注点是：Automatically extracting chemical structures from documents is essential for the large-scale analysis of the literature in chemistry。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-5",
+      "title": "CiQi-Agent: Aligning Vision, Tools and Aesthetics in Multimodal Agent for Cultural Reasoning on Chinese Porcelains",
+      "score": 99,
+      "tags": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28474v1",
+      "brief": "The connoisseurship of antique Chinese porcelain demands extensive historical expertise, material understanding, and aesthetic sensitivity, making it difficult for non-specialists to engage。",
+      "highlights": [
+        "论文核心关注点是：The connoisseurship of antique Chinese porcelain demands extensive historical expertise, material understanding, and aesthetic sensitivity, making it difficult for non-specialists to engage。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    }
+  ],
+  "recsys": [
+    {
+      "id": "recsys-1",
+      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
+      "score": 88,
+      "tags": [
+        "cs.IR",
+        "cs.LG",
+        "cs.SI"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28476v1",
+      "brief": "Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities。",
+      "highlights": [
+        "论文核心关注点是：Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-2",
+      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
+      "score": 88,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28124v1",
+      "brief": "Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize。",
+      "highlights": [
+        "论文核心关注点是：Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-3",
+      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
+      "score": 88,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.27952v1",
+      "brief": "Sequential recommender systems have achieved steady gains in offline accuracy, yet it remains unclear how close current models are to the intrinsic accuracy limit imposed by the data。",
+      "highlights": [
+        "论文核心关注点是：Sequential recommender systems have achieved steady gains in offline accuracy, yet it remains unclear how close current models are to the intrinsic accuracy limit imposed by the data。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-4",
+      "title": "TrendGen: An Outfit Recommendation and Display System",
+      "score": 85,
+      "tags": [
+        "cs.CV"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.27264v1",
+      "brief": "Recent advances in Computer Vision have significantly improved image understanding and generation, revolutionizing the fashion industry。",
+      "highlights": [
+        "论文核心关注点是：Recent advances in Computer Vision have significantly improved image understanding and generation, revolutionizing the fashion industry。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-5",
+      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
+      "score": 93,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.26100v1",
+      "brief": "Large-scale industrial recommenders typically use a fixed multi-stage pipeline (recall, ranking, re-ranking) and have progressed from collaborative filtering to deep and large pre-trained models。",
+      "highlights": [
+        "论文核心关注点是：Large-scale industrial recommenders typically use a fixed multi-stage pipeline (recall, ranking, re-ranking) and have progressed from collaborative filtering to deep and large pre-trained models。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    }
+  ]
+}
