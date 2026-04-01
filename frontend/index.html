@@ -121,7 +121,7 @@
         <div class="mt-3 min-h-[18px]">
           <p v-if="loading" class="text-[11px] text-gray-400 font-medium">正在从本地接口拉取最新论文...</p>
           <p v-else-if="loadError" class="text-[11px] text-red-500 font-medium">{{ loadError }}</p>
-          <p v-else class="text-[11px] text-gray-400 font-medium">数据源：{{ 'http://127.0.0.1:8000/api/papers' }}</p>
+          <p v-else class="text-[11px] text-gray-400 font-medium">数据源：{{ '/api/papers' }}</p>
         </div>
       </div>
 
