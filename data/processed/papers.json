@@ -2,304 +2,304 @@
   "ai": [
     {
       "id": "ai-1",
-      "title": "Seeing with You: Perception-Reasoning Coevolution for Multimodal Reasoning",
-      "score": 93,
+      "title": "Quantifying Cross-Modal Interactions in Multimodal Glioma Survival Prediction via InterSHAP: Evidence for Additive Signal Integration",
+      "score": 85,
       "tags": [
-        "多模态推理",
-        "强化学习",
-        "视觉语言模型"
+        "多模态学习",
+        "生存预测",
+        "可解释AI"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28618v1",
-      "brief": "提出感知-推理协同进化框架，通过强化学习与可验证奖励机制提升多模态大型语言模型的推理能力",
+      "link": "http://arxiv.org/abs/2603.29977v1",
+      "brief": "该论文提出InterSHAP方法量化多模态深度学习中的跨模态交互，首次直接验证了在胶质瘤生存预测中多模态信号采用加性集成而非协同整合。",
       "highlights": [
-        "感知-推理协同进化机制",
-        "强化学习可验证奖励方法",
-        "多模态推理能力提升"
+        "提出InterSHAP方法量化跨模态交互，为多模态深度学习提供可解释性框架",
+        "首次直接验证多模态信号是加性集成而非协同整合",
+        "为癌症预后多模态深度学习提供新的评估视角和优化方向"
       ],
       "bossQuestions": [
-        "如何有效融合视觉感知与推理能力",
-        "如何设计可验证的强化学习奖励机制",
-        "如何实现感知与推理的协同进化"
+        "多模态深度学习中的跨模态交互是否真正存在协同效应",
+        "如何更准确地量化和评估不同模态间的信息增益",
+        "加性集成模式是否普遍存在于其他癌症预后任务中"
       ],
       "actions": [
-        "探索更高效的协同进化架构",
-        "设计更精细的奖励机制",
-        "扩展模型在更多多模态任务上的应用"
+        "探索更有效的跨模态特征融合策略以实现真正的协同整合",
+        "将InterSHAP方法扩展到其他癌症类型和预后任务进行验证",
+        "设计专门促进跨模态协同的深度学习架构"
       ]
     },
     {
       "id": "ai-2",
-      "title": "ResAdapt: Adaptive Resolution for Efficient Multimodal Reasoning",
-      "score": 93,
+      "title": "Multimodal Higher-Order Brain Networks: A Topological Signal Processing Perspective",
+      "score": 85,
       "tags": [
-        "自适应分辨率",
-        "多模态大语言模型",
-        "视觉token优化"
+        "q-bio.NC",
+        "eess.SP",
+        "math.AT"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28610v1",
-      "brief": "提出自适应分辨率方法解决多模态大语言模型中高分辨率图像与长上下文之间的token开销矛盾",
+      "link": "http://arxiv.org/abs/2603.29903v1",
+      "brief": "提出从拓扑信号处理视角构建多模态高阶脑网络以超越传统成对图模型无法表示循环交互的局限",
       "highlights": [
-        "创新性地提出自适应分辨率策略，动态调整输入图像分辨率以优化token使用",
-        "显著降低视觉token数量，同时保持多模态推理性能",
-        "在空间分辨率与时序上下文之间取得有效平衡"
+        "从拓扑信号处理角度重新定义脑连接组学的高阶交互",
+        "提出多模态高阶脑网络框架整合循环功能交互",
+        "超越传统成对模型实现脑网络拓扑结构完整表征"
       ],
       "bossQuestions": [
-        "如何在不同场景下自动选择最优分辨率配置",
-        "分辨率调整对下游任务性能影响的具体机制是什么",
-        "如何保证自适应策略在不同模型架构中的泛化能力"
+        "如何用拓扑方法表征脑网络的高阶功能交互",
+        "多模态数据如何通过拓扑信号处理整合",
+        "高阶脑网络拓扑特征如何反映神经认知功能"
       ],
       "actions": [
-        "在具体应用场景中验证自适应分辨率的有效性",
-        "探索该方法与其他视觉压缩技术的结合方案",
-        "研究不同视觉编码器架构与自适应策略的兼容性"
+        "探索拓扑信号处理在神经影像中的应用",
+        "构建高阶脑网络模型进行功能连接分析",
+        "验证高阶交互与认知行为的关联"
       ]
     },
     {
       "id": "ai-3",
-      "title": "Multimodal Analytics of Cybersecurity Crisis Preparation Exercises: What Predicts Success?",
+      "title": "Less Is More? Selective Visual Attention to High-Importance Regions for Multimodal Radiology Summarization",
       "score": 85,
       "tags": [
-        "多模态分析",
-        "网络安全",
-        "教学一致性"
+        "多模态学习",
+        "医学影像",
+        "放射学报告摘要"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28553v1",
-      "brief": "这篇论文通过多模态分析方法研究网络安全危机准备练习，探索教学一致性与成功预测因素之间的关系。",
+      "link": "http://arxiv.org/abs/2603.29901v1",
+      "brief": "提出选择性视觉注意力机制，让多模态模型聚焦于放射学图像中的高重要性区域，提升FINDINGS到IMPRESSION的摘要生成效果。",
       "highlights": [
-        "提出多模态分析方法用于分析网络安全危机准备练习的效果",
-        "研究教学一致性（intended cognition与enacted activity的匹配）对练习效果的影响",
-        "探索在规模上操作化教学一致性的方法"
+        "提出选择性视觉注意力机制，聚焦高重要性区域而非全局图像",
+        "设计重要性区域识别模块，有效过滤视觉噪声干扰",
+        "在FINDINGS→IMPRESSION任务上首次超越纯文本基线模型"
       ],
       "bossQuestions": [
-        "如何有效衡量教学一致性与网络安全练习成功之间的关系？",
-        "多模态分析能否揭示影响危机准备练习成功的关键预测因素？",
-        "怎样在大规模场景中操作化教学一致性这一概念？"
+        "如何准确识别放射学图像中的高重要性诊断区域",
+        "选择性视觉注意力相比全局注意力为何能提升性能",
+        "多模态模型在何种情况下应减少视觉信息的依赖"
       ],
       "actions": [
-        "分析论文中的多模态数据收集方法",
-        "梳理教学一致性在危机准备练习中的具体表现",
-        "总结影响网络安全练习成功的关键预测因素"
+        "探索重要性区域的自动化标注方法",
+        "在其他医学影像任务中验证选择性注意力的泛化性",
+        "研究文本与视觉信息的最优融合策略"
       ]
     },
     {
       "id": "ai-4",
-      "title": "MarkushGrapher-2: End-to-end Multimodal Recognition of Chemical Structures",
-      "score": 88,
+      "title": "JEPA-MSAC: A Joint-Embedding Predictive Architecture for Multimodal Sensing-Assisted Communications",
+      "score": 85,
       "tags": [
-        "化学结构识别",
-        "多模态学习",
-        "端到端模型"
+        "Joint-Embedding",
+        "Predictive-Architecture",
+        "Multimodal-Sensing"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28550v1",
-      "brief": "提出了一个端到端的化学结构多模态识别方法MarkushGrapher-2，用于从文档中自动提取化学结构",
+      "link": "http://arxiv.org/abs/2603.29796v1",
+      "brief": "提出JEPA-MSAC联合嵌入预测架构，用于多模态感知辅助通信，支持动态环境下的多物理层任务迁移学习",
       "highlights": [
-        "端到端的多模态化学结构识别系统",
-        "支持从化学文献文档中自动提取结构",
-        "适用于大规模化学文献分析"
+        "提出JEPA-MSAC联合嵌入预测架构，实现多模态感知信息与通信的深度融合",
+        "支持动态环境下多个物理层任务的预测性表示学习和迁移",
+        "构建可转移的表征学习框架，提升无线系统对环境变化的适应性"
       ],
       "bossQuestions": [
-        "如何处理不同类型的化学文档格式",
-        "如何提高多模态特征融合效果",
-        "如何处理复杂的Markush结构"
+        "如何在多模态感知辅助通信中设计有效的联合嵌入预测架构?",
+        "如何实现动态环境下物理层任务的跨场景迁移学习?",
+        "如何提升无线系统对时变信道环境的自适应预测能力?"
       ],
       "actions": [
-        "阅读论文了解具体技术方案",
-        "分析模型架构和训练方法",
-        "探索在化学信息抽取中的应用"
+        "设计JEPA框架下的多模态特征提取与融合机制",
+        "构建物理层任务的迁移学习评估基准",
+        "验证动态环境下的系统性能与泛化能力"
       ]
     },
     {
       "id": "ai-5",
-      "title": "CiQi-Agent: Aligning Vision, Tools and Aesthetics in Multimodal Agent for Cultural Reasoning on Chinese Porcelains",
-      "score": 99,
+      "title": "Multimodal Machine Learning for Early Prediction of Metastasis in a Swedish Multi-Cancer Cohort",
+      "score": 88,
       "tags": [
-        "cs.CV",
-        "cs.AI",
-        "cs.CL"
+        "多模态学习",
+        "癌症转移预测",
+        "电子健康记录"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28474v1",
-      "brief": "提出CiQi-Agent多模态智能体，通过对齐视觉理解、工具调用和美学评估来实现中国古瓷的文化推理。",
+      "link": "http://arxiv.org/abs/2603.29793v1",
+      "brief": "研究利用多模态机器学习整合电子健康记录中的结构化和非结构化数据，对瑞典多癌队列进行转移早期预测",
       "highlights": [
-        "提出首个针对中国古瓷文化推理的多模态智能体框架",
-        "实现视觉理解、工具调用和美学评估三方面的对齐",
-        "整合历史专业知识、材料理解与审美判断能力"
+        "采用多模态机器学习方法整合EHR数据预测癌症转移",
+        "基于瑞典多癌队列开展研究",
+        "实现转移的早期预测"
       ],
       "bossQuestions": [
-        "如何让非专家也能进行专业的古瓷鉴赏",
-        "多模态智能体如何处理文化推理中的主观性问题",
-        "如何在保持专业性的同时实现用户友好的交互"
+        "多模态机器学习如何有效整合结构化和非结构化数据？",
+        "该方法在转移早期预测中的准确性和有效性如何？",
+        "研究结果能否推广至其他国家和医疗系统？"
       ],
       "actions": [
-        "设计针对古瓷的多模态感知和推理框架",
-        "构建古瓷知识图谱和美学评估模型",
-        "开发面向非专业用户的交互式鉴赏系统"
+        "构建多模态特征融合模型",
+        "验证模型在不同癌症类型中的预测性能",
+        "探索临床应用可行性"
       ]
     }
   ],
   "recsys": [
     {
       "id": "recsys-1",
+      "title": "Cold-Starts in Generative Recommendation: A Reproducibility Study",
+      "score": 88,
+      "tags": [
+        "冷启动推荐",
+        "生成式推荐",
+        "推荐系统"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.29845v1",
+      "brief": "研究生成式推荐系统中冷启动问题的可复现性，聚焦用户和物品冷启动场景下的推荐效果评估",
+      "highlights": [
+        "聚焦生成式推荐中的用户冷启动和物品冷启动问题",
+        "系统性地复现和评估现有冷启动推荐方法",
+        "分析稀疏交互信号下推荐模型的泛化能力"
+      ],
+      "bossQuestions": [
+        "生成式推荐如何解决新用户冷启动问题",
+        "如何在缺失交互数据时有效推荐新物品",
+        "当前冷启动方法的可复现性和实际效果如何"
+      ],
+      "actions": [
+        "复现现有冷启动推荐方法并评估其效果",
+        "分析生成式推荐模型的泛化性能",
+        "对比不同冷启动策略在稀疏数据下的表现"
+      ]
+    },
+    {
+      "id": "recsys-2",
+      "title": "Drift-Aware Continual Tokenization for Generative Recommendation",
+      "score": 88,
+      "tags": [
+        "Generative Recommendation",
+        "Continual Learning",
+        "Drift-Aware"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.29705v1",
+      "brief": "研究生成式推荐中如何实现漂移感知的持续tokenization，使推荐模型能适应数据分布变化。",
+      "highlights": [
+        "提出漂移感知的持续tokenization方法解决生成式推荐中的数据分布变化问题",
+        "设计可学习的tokenizer将商品映射为离散token序列",
+        "通过持续学习机制使tokenizer适应新的数据模式而不遗忘旧知识"
+      ],
+      "bossQuestions": [
+        "如何在保持旧知识的同时让tokenizer适应新的数据分布？",
+        "漂移检测机制如何准确判断数据分布变化并触发tokenizer更新？",
+        "持续tokenization如何避免灾难性遗忘同时保持模型稳定性？"
+      ],
+      "actions": [
+        "在真实推荐数据集上验证漂移检测和tokenizer更新策略",
+        "探索不同漂移程度下的tokenizer适配机制",
+        "研究tokenization与其他推荐组件的联合优化方法"
+      ]
+    },
+    {
+      "id": "recsys-3",
+      "title": "Aligning Multimodal Sequential Recommendations via Robust Direct Preference Optimization with Sparse MoE",
+      "score": 91,
+      "tags": [
+        "推荐系统",
+        "偏好对齐",
+        "多模态学习"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.29259v1",
+      "brief": "提出一种结合稀疏MoE的鲁棒直接偏好优化方法，用于多模态序列推荐的偏好对齐",
+      "highlights": [
+        "提出结合稀疏MoE的鲁棒直接偏好优化框架",
+        "针对多模态序列推荐系统进行偏好对齐",
+        "通过稀疏MoE提升模型的表达能力和鲁棒性"
+      ],
+      "bossQuestions": [
+        "如何在保持推荐准确性的同时实现偏好对齐",
+        "稀疏MoE如何增强模型的泛化能力和鲁棒性",
+        "该方法在跨模态场景下的有效性如何验证"
+      ],
+      "actions": [
+        "在多模态序列推荐数据集上验证方法效果",
+        "对比传统DPO和其他对齐方法",
+        "分析稀疏MoE对模型性能的影响"
+      ]
+    },
+    {
+      "id": "recsys-4",
       "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
       "score": 88,
       "tags": [
-        "推荐系统",
-        "集体操纵",
+        "推荐系统安全",
+        "集体操纵检测",
         "风险控制"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2603.28476v1",
-      "brief": "研究推荐系统中集体操纵行为及其对风险控制机制的影响",
+      "brief": "研究了在风险控制推荐系统中，集体操纵如何利用社交关系网络影响推荐结果的安全性。",
       "highlights": [
-        "探讨推荐系统中的集体操纵问题",
-        "分析风险控制推荐系统的脆弱性",
-        "研究群体行为对推荐系统的影响"
+        "揭示了社交网络中集体操纵对风险控制推荐系统的攻击机制",
+        "分析了用户在集体操纵中的行为模式和角色分工",
+        "提出了针对集体操纵的检测与防御方法"
       ],
       "bossQuestions": [
-        "如何检测推荐系统中的集体操纵行为",
-        "风险控制机制如何应对协同攻击",
-        "群体操纵如何影响系统安全性"
+        "推荐系统如何有效识别集体操纵行为？",
+        "风险控制机制在面对集体操纵时存在哪些漏洞？",
+        "如何设计更鲁棒的推荐系统来抵御社交网络攻击？"
       ],
       "actions": [
-        "改进风险控制推荐系统设计",
-        "增强对集体操纵的检测能力",
-        "提升推荐系统抵御协同攻击的鲁棒性"
+        "在推荐系统中引入社交关系验证和异常检测机制",
+        "加强风险控制模块对多用户协同行为的监控",
+        "设计防御策略应对利用社交网络的集体操纵攻击"
       ]
     },
     {
-      "id": "recsys-2",
+      "id": "recsys-5",
       "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
       "score": 88,
       "tags": [
         "推荐系统",
-        "生成式模型",
-        "课程学习"
+        "课程学习",
+        "生成式推荐"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2603.28124v1",
-      "brief": "提出RCLRec方法通过逆向课程学习解决大规模生成式推荐系统中稀疏转化目标优化的难题",
+      "brief": "RCLRec提出反向课程学习方法来处理大规模推荐系统中稀疏的转化目标优化问题。",
       "highlights": [
-        "提出RCLRec框架解决生成式推荐中稀疏转化目标的优化问题",
-        "采用逆向课程学习策略从易到难逐步训练模型",
-        "在稀疏转化场景下显著提升推荐效果和转化率"
+        "提出反向课程学习(RCL)方法来建模稀疏转化",
+        "针对大规模推荐系统中的转化目标稀疏性问题",
+        "应用于生成式推荐场景以提升转化率"
       ],
       "bossQuestions": [
-        "如何有效学习稀疏的转化目标信号",
-        "如何在生成式推荐中平衡探索与 exploitation",
-        "如何设计课程学习策略以提高训练效率"
+        "如何有效优化稀疏的转化目标？",
+        "反向课程学习如何改善转化建模效果？",
+        "该方法在生成式推荐中的实际表现如何？"
       ],
       "actions": [
-        "在推荐系统中引入逆向课程学习方法",
-        "采用渐进式训练策略处理稀疏数据",
-        "结合生成模型提升转化率优化效果"
-      ]
-    },
-    {
-      "id": "recsys-3",
-      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
-      "score": 88,
-      "tags": [
-        "顺序推荐系统",
-        "熵基分析",
-        "推荐系统评估"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.27952v1",
-      "brief": "研究顺序推荐系统的准确性上限，揭示当前模型与数据固有限制之间的差距",
-      "highlights": [
-        "提出基于熵的方法量化顺序推荐系统的准确性上限",
-        "揭示当前模型性能与数据内在信息量之间的关系",
-        "为推荐系统性能评估提供新的理论基准"
-      ],
-      "bossQuestions": [
-        "顺序推荐系统的准确性上限由什么决定",
-        "当前模型距离数据固有准确性极限还有多远",
-        "如何利用熵基方法指导推荐系统设计"
-      ],
-      "actions": [
-        "使用熵基方法评估推荐系统的实际改进空间",
-        "重新审视离线评估指标与真实性能的关系",
-        "设计更接近准确性上限的推荐模型"
-      ]
-    },
-    {
-      "id": "recsys-4",
-      "title": "TrendGen: An Outfit Recommendation and Display System",
-      "score": 85,
-      "tags": [
-        "计算机视觉",
-        "时尚推荐",
-        "图像生成"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.27264v1",
-      "brief": "TrendGen是一个基于计算机视觉的穿搭推荐与展示系统，利用图像理解与生成技术为用户提供个性化穿搭建议。",
-      "highlights": [
-        "提出端到端的穿搭推荐与可视化展示框架",
-        "结合图像理解与生成技术提升推荐准确性",
-        "为时尚行业提供智能化解决方案"
-      ],
-      "bossQuestions": [
-        "如何利用计算机视觉技术提升穿搭推荐的准确性？",
-        "如何在推荐系统中实现个性化与多样性的平衡？",
-        "图像生成技术如何应用于时尚搭配的可视化展示？"
-      ],
-      "actions": [
-        "探索计算机视觉在时尚推荐系统中的应用潜力",
-        "研究图像生成与理解技术的结合方法",
-        "开发面向时尚行业的智能穿搭系统"
-      ]
-    },
-    {
-      "id": "recsys-5",
-      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
-      "score": 93,
-      "tags": [
-        "推荐系统",
-        "智能体",
-        "范式转变"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.26100v1",
-      "brief": "这篇论文探讨了大规模工业推荐系统从传统的多阶段流水线架构向智能体化推荐系统的范式转变。",
-      "highlights": [
-        "指出工业推荐系统通常采用固定的多阶段流水线架构（召回-排序-重排）",
-        "描述了推荐系统从协同过滤到深度学习和大型预训练模型的发展历程",
-        "提出从流水线架构向智能体化推荐系统转变的新范式"
-      ],
-      "bossQuestions": [
-        "当前流水线式推荐架构存在哪些局限性",
-        "智能体化推荐系统如何改变传统推荐范式",
-        "这种范式转变对推荐系统设计和实现有什么影响"
-      ],
-      "actions": [
-        "了解传统推荐系统流水线架构的组成",
-        "研究智能体化推荐系统的设计和实现方法",
-        "探索推荐系统范式转变的技术路径"
+        "采用反向课程学习策略处理转化稀疏问题",
+        "在生成式推荐框架中实现RCLRec方法",
+        "结合课程学习与生成模型提升推荐转化"
       ]
     }
   ]

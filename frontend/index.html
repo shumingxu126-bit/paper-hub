@@ -250,8 +250,8 @@ const { createApp, ref, computed, watch, onMounted } = Vue;
 
 createApp({
   setup() {
-    const API_URL = 'http://127.0.0.1:8000/api/papers';
-    const REFRESH_URL = 'http://127.0.0.1:8000/api/refresh';
+    const API_URL = '/api/papers';
+    const REFRESH_URL = '/api/refresh';
     const AUTO_REFRESH_MS = 300000;
 
     const currentCategory = ref('ai');

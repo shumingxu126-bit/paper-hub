@@ -1,123 +1,111 @@
 {
-  "generated_at": "2026-03-31T22:39:02.884332",
+  "generated_at": "2026-04-01T18:24:50.628495",
   "count": 5,
   "papers": [
     {
-      "arxiv_id": "2603.28618v1",
-      "title": "Seeing with You: Perception-Reasoning Coevolution for Multimodal Reasoning",
-      "summary": "Reinforcement learning with verifiable rewards (RLVR) has substantially enhanced the reasoning capabilities of multimodal large language models (MLLMs). However, existing RLVR approaches typically rely on outcome-driven optimization that updates both perception and reasoning using a shared reward based solely on the final answer. This shared reward blurs credit assignment, frequently improving reasoning patterns while failing to reliably enhance the accuracy of upstream visual evidence extraction. To address this perception bottleneck, we introduce PRCO (Perception-Reasoning Coevolution), a dual-role RLVR framework with a shared policy. PRCO consists of two cooperative roles: an Observer that generates an evidence caption tailored to the question and a Solver that predicts the final answer based on this caption. Crucially, PRCO employs role-specific reward signals: the Solver is optimized using verifiable outcome rewards on the final answer, while the Observer receives a utility reward derived from the Solver's downstream success. Extensive experiments across eight challenging multimodal reasoning benchmarks demonstrate that PRCO yields consistent improvements across model scales by over 7 points on average accuracy compared to the base model, outperforming prior open-source RL-tuned baselines.",
+      "arxiv_id": "2603.29977v1",
+      "title": "Quantifying Cross-Modal Interactions in Multimodal Glioma Survival Prediction via InterSHAP: Evidence for Additive Signal Integration",
+      "summary": "Multimodal deep learning for cancer prognosis is commonly assumed to benefit from synergistic cross-modal interactions, yet this assumption has not been directly tested in survival prediction settings. This work adapts InterSHAP, a Shapley interaction index-based metric, from classification to Cox proportional hazards models and applies it to quantify cross-modal interactions in glioma survival prediction. Using TCGA-GBM and TCGA-LGG data (n=575), we evaluate four fusion architectures combining whole-slide image (WSI) and RNA-seq features. Our central finding is an inverse relationship between predictive performance and measured interaction: architectures achieving superior discrimination (C-index 0.64$\\to$0.82) exhibit equivalent or lower cross-modal interaction (4.8\\%$\\to$3.0\\%). Variance decomposition reveals stable additive contributions across all architectures (WSI${\\approx}$40\\%, RNA${\\approx}$55\\%, Interaction${\\approx}$4\\%), indicating that performance gains arise from complementary signal aggregation rather than learned synergy. These findings provide a practical model auditing tool for comparing fusion strategies, reframe the role of architectural complexity in multimodal fusion, and have implications for privacy-preserving federated deployment.",
       "authors": [
-        "Ziqi Miao",
-        "Haonan Jia",
-        "Lijun Li",
-        "Chen Qian",
-        "Yuan Xiong",
-        "Wenting Yan",
-        "Jing Shao"
+        "Iain Swift",
+        "JingHua Ye",
+        "Ruairi O'Reilly"
       ],
-      "published": "2026-03-30T16:03:56+00:00",
-      "updated": "2026-03-30T16:03:56+00:00",
+      "published": "2026-03-31T16:39:56+00:00",
+      "updated": "2026-03-31T16:39:56+00:00",
       "categories": [
-        "cs.AI"
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
       ],
-      "primary_category": "cs.AI",
-      "pdf_url": "https://arxiv.org/pdf/2603.28618v1",
-      "entry_id": "http://arxiv.org/abs/2603.28618v1"
+      "primary_category": "cs.LG",
+      "pdf_url": "https://arxiv.org/pdf/2603.29977v1",
+      "entry_id": "http://arxiv.org/abs/2603.29977v1"
     },
     {
-      "arxiv_id": "2603.28610v1",
-      "title": "ResAdapt: Adaptive Resolution for Efficient Multimodal Reasoning",
-      "summary": "Multimodal Large Language Models (MLLMs) achieve stronger visual understanding by scaling input fidelity, yet the resulting visual token growth makes jointly sustaining high spatial resolution and long temporal context prohibitive. We argue that the bottleneck lies not in how post-encoding representations are compressed but in the volume of pixels the encoder receives, and address it with ResAdapt, an Input-side adaptation framework that learns how much visual budget each frame should receive before encoding. ResAdapt couples a lightweight Allocator with an unchanged MLLM backbone, so the backbone retains its native visual-token interface while receiving an operator-transformed input. We formulate allocation as a contextual bandit and train the Allocator with Cost-Aware Policy Optimization (CAPO), which converts sparse rollout feedback into a stable accuracy-cost learning signal. Across budget-controlled video QA, temporal grounding, and image reasoning tasks, ResAdapt improves low-budget operating points and often lies on or near the efficiency-accuracy frontier, with the clearest gains on reasoning-intensive benchmarks under aggressive compression. Notably, ResAdapt supports up to 16x more frames at the same visual budget while delivering over 15% performance gain. Code is available at https://github.com/Xnhyacinth/ResAdapt.",
+      "arxiv_id": "2603.29903v1",
+      "title": "Multimodal Higher-Order Brain Networks: A Topological Signal Processing Perspective",
+      "summary": "Brain connectomics is still largely dominated by pairwise-based models, such as graphs, which cannot represent circulatory or higher-order functional interactions. In this paper, we propose a multimodal framework based on Topological Signal Processing (TSP) that models the brain as a higher-order topological domain and treats functional interactions as discrete vector fields. We integrate diffusion MRI and resting-state fMRI to learn subject-specific brain cell complexes, where statistically validated structural connectivity defines a sparse scaffold and phase-coupling functional edge signals drive the inference of higher-order interactions (HOIs). Using Hodge-theoretic tools, spectral filtering, and sparse signal representations, our framework disentangles brain connectivity into divergence (source-sink organization), gradient (potential-driven coordination), and curl (circulatory HOIs), enabling the characterization of temporal dynamics through the lens of discrete vector calculus. Across 100 healthy young adults from Human Connectome Project, node-based HOIs are highly individualized, yet robust mesoscale structure emerges under functional-system aggregation. We identify a distributed default mode network-centered gradient backbone and limbic-centered rotational flows; divergence polarization and curl profiles defining circulation regimes with insightful occupancy and dwell-time statistics. These topological signatures yield significant brain-behavior associations, revealing a relevant higher-order organization intrinsic to edge-based models. By making divergence, circulation, and recurrent mesoscale coordination directly measurable, this work enables a principled and interpretable topological phenotyping of brain function.",
       "authors": [
-        "Huanxuan Liao",
-        "Zhongtao Jiang",
-        "Yupu Hao",
-        "Yuqiao Tan",
-        "Shizhu He",
-        "Jun Zhao",
-        "Kun Xu",
-        "Kang Liu"
+        "Breno C. Bispo",
+        "Stefania Sardellitti",
+        "Juliano B. Lima",
+        "Fernando A. N. Santos"
       ],
-      "published": "2026-03-30T15:57:32+00:00",
-      "updated": "2026-03-30T15:57:32+00:00",
+      "published": "2026-03-31T15:49:42+00:00",
+      "updated": "2026-03-31T15:49:42+00:00",
+      "categories": [
+        "q-bio.NC",
+        "eess.SP"
+      ],
+      "primary_category": "q-bio.NC",
+      "pdf_url": "https://arxiv.org/pdf/2603.29903v1",
+      "entry_id": "http://arxiv.org/abs/2603.29903v1"
+    },
+    {
+      "arxiv_id": "2603.29901v1",
+      "title": "Less Is More? Selective Visual Attention to High-Importance Regions for Multimodal Radiology Summarization",
+      "summary": "Automated radiology report summarization aims to distill verbose findings into concise clinical impressions, but existing multimodal models often struggle with visual noise and fail to meaningfully improve over strong text-only baselines in the FINDINGS $\\to$ IMPRESSION transformation. We challenge two prevailing assumptions: (1) that more visual input is always better, and (2) that multimodal models add limited value when findings already contain rich image-derived detail. Through controlled ablations on MIMIC-CXR benchmark, we show that selectively focusing on pathology-relevant visual patches rather than full images yields substantially better performance. We introduce ViTAS, Visual-Text Attention Summarizer, a multi-stage pipeline that combines ensemble-guided MedSAM2 lung segmentation, bidirectional cross-attention for multi-view fusion, Shapley-guided adaptive patch clustering, and hierarchical visual tokenization feeding a ViT. ViTAS achieves SOTA results with 29.25% BLEU-4 and 69.83% ROUGE-L, improved factual alignment in qualitative analysis, and the highest expert-rated human evaluation scores. Our findings demonstrate that less but more relevant visual input is not only sufficient but superior for multimodal radiology summarization.",
+      "authors": [
+        "Mst. Fahmida Sultana Naznin",
+        "Adnan Ibney Faruq",
+        "Mushfiqur Rahman",
+        "Niloy Kumar Mondal",
+        "Md. Mehedi Hasan Shawon",
+        "Md Rakibul Hasan"
+      ],
+      "published": "2026-03-31T15:47:01+00:00",
+      "updated": "2026-03-31T15:47:01+00:00",
       "categories": [
         "cs.CV",
-        "cs.AI",
         "cs.CL"
       ],
       "primary_category": "cs.CV",
-      "pdf_url": "https://arxiv.org/pdf/2603.28610v1",
-      "entry_id": "http://arxiv.org/abs/2603.28610v1"
+      "pdf_url": "https://arxiv.org/pdf/2603.29901v1",
+      "entry_id": "http://arxiv.org/abs/2603.29901v1"
     },
     {
-      "arxiv_id": "2603.28553v1",
-      "title": "Multimodal Analytics of Cybersecurity Crisis Preparation Exercises: What Predicts Success?",
-      "summary": "Instructional alignment, the match between intended cognition and enacted activity, is central to effective instruction but hard to operationalize at scale. We examine alignment in cybersecurity simulations using multimodal traces from 23 teams (76 students) across five exercise sessions. Study 1 codes objectives and team emails with Bloom's taxonomy and models the completion of key exercise tasks with generalized linear mixed models. Alignment, defined as the discrepancy between required and enacted Bloom levels, predicts success, whereas the Bloom category alone does not predict success once discrepancy is considered. Study 2 compares predictive feature families using grouped cross-validation and l1-regularized logistic regression. Text embeddings and log features outperform Bloom-only models (AUC~0.74 and 0.71 vs. 0.55), and their combination performs best (Test AUC~0.80), with Bloom frequencies adding little. Overall, the work offers a measure of alignment for simulations and shows that multimodal traces best forecast performance, while alignment provides interpretable diagnostic insight.",
+      "arxiv_id": "2603.29796v1",
+      "title": "JEPA-MSAC: A Joint-Embedding Predictive Architecture for Multimodal Sensing-Assisted Communications",
+      "summary": "Future wireless systems increasingly require predictive and transferable representations that can support multiple physical-layer (PHY) tasks under dynamic environments. However, most existing supervised learning-based methods are designed for a single task, which leads to high adaptation cost. To address this issue, we propose a joint-embedding predictive architecture for multimodal sensing-assisted communications (JEPA-MSAC), a self-supervised multimodal predictive representation learning framework for wireless environments. The proposed framework first maps multimodal sensing and communication measurements into a unified token space, and then pretrains a shared backbone using temporal block-masked JEPA to learn a predictive latent space that captures environment dynamics and cross-modal dependencies. After pretraining, the backbone is frozen and reused as a general future-feature generator, on top of which lightweight task heads are trained for localization, beam prediction, and received signal strength indicator (RSSI) prediction. Extensive experiments show the latent state supports accurate multi-task prediction with low adaptation cost. Additionally, ablation studies reveal its scaling behavior and the impact of key pretraining setups.",
       "authors": [
-        "Conrad Borchers",
-        "Valdemar Švábenský",
-        "Sandesh K. Kafle",
-        "Kevin K. Tang",
-        "Jan Vykopal"
+        "Can Zheng",
+        "Jiguang He",
+        "Guofa Cai",
+        "Nannan Li",
+        "Mehdi Bennis",
+        "Henk Wymeersch",
+        "Merouane Debbah"
       ],
-      "published": "2026-03-30T15:14:56+00:00",
-      "updated": "2026-03-30T15:14:56+00:00",
+      "published": "2026-03-31T14:29:42+00:00",
+      "updated": "2026-03-31T14:29:42+00:00",
       "categories": [
-        "cs.HC",
-        "cs.CY",
-        "cs.LG"
+        "eess.SP"
       ],
-      "primary_category": "cs.HC",
-      "pdf_url": "https://arxiv.org/pdf/2603.28553v1",
-      "entry_id": "http://arxiv.org/abs/2603.28553v1"
+      "primary_category": "eess.SP",
+      "pdf_url": "https://arxiv.org/pdf/2603.29796v1",
+      "entry_id": "http://arxiv.org/abs/2603.29796v1"
     },
     {
-      "arxiv_id": "2603.28550v1",
-      "title": "MarkushGrapher-2: End-to-end Multimodal Recognition of Chemical Structures",
-      "summary": "Automatically extracting chemical structures from documents is essential for the large-scale analysis of the literature in chemistry. Automatic pipelines have been developed to recognize molecules represented either in figures or in text independently. However, methods for recognizing chemical structures from multimodal descriptions (Markush structures) lag behind in precision and cannot be used for automatic large-scale processing. In this work, we present MarkushGrapher-2, an end-to-end approach for the multimodal recognition of chemical structures in documents. First, our method employs a dedicated OCR model to extract text from chemical images. Second, the text, image, and layout information are jointly encoded through a Vision-Text-Layout encoder and an Optical Chemical Structure Recognition vision encoder. Finally, the resulting encodings are effectively fused through a two-stage training strategy and used to auto-regressively generate a representation of the Markush structure. To address the lack of training data, we introduce an automatic pipeline for constructing a large-scale dataset of real-world Markush structures. In addition, we present IP5-M, a large manually-annotated benchmark of real-world Markush structures, designed to advance research on this challenging task. Extensive experiments show that our approach substantially outperforms state-of-the-art models in multimodal Markush structure recognition, while maintaining strong performance in molecule structure recognition. Code, models, and datasets are released publicly.",
+      "arxiv_id": "2603.29793v1",
+      "title": "Multimodal Machine Learning for Early Prediction of Metastasis in a Swedish Multi-Cancer Cohort",
+      "summary": "Multimodal Machine Learning offers a holistic view of a patient's status, integrating structured and unstructured data from electronic health records (EHR). We propose a framework to predict metastasis risk one month prior to diagnosis, using six months of clinical history from EHR data. Data from four cancer cohorts collected at Karolinska University Hospital (Stockholm, Sweden) were analyzed: breast (n = 743), colon (n = 387), lung (n = 870), and prostate (n = 1890). The dataset included demographics, comorbidities, laboratory results, medications, and clinical text. We compared traditional and deep learning classifiers across single modalities and multimodal combinations, using various fusion strategies and a Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis (TRIPOD) 2a design, with an 80-20 development-validation split to ensure a rigorous, repeatable evaluation. Performance was evaluated using AUROC, AUPRC, F1 score, sensitivity, and specificity. We then employed a multimodal adaptation of SHAP to analyze the classifiers' reasoning. Intermediate fusion achieved the highest F1 scores on breast (0.845), colon (0.786), and prostate cancer (0.845), demonstrating strong predictive performance. For lung cancer, the intermediate fusion achieved an F1 score of 0.819, while the text-only model achieved the highest, with an F1 score of 0.829. Deep learning classifiers consistently outperformed traditional models. Colon cancer, the smallest cohort, had the lowest performance, highlighting the importance of sufficient training data. SHAP analysis showed that the relative importance of modalities varied across cancer types. Fusion strategies offer distinct strengths and weaknesses. Intermediate fusion consistently delivered the best results, but strategy choices should align with data characteristics and organizational needs.",
       "authors": [
-        "Tim Strohmeyer",
-        "Lucas Morin",
-        "Gerhard Ingmar Meijer",
-        "Valéry Weber",
-        "Ahmed Nassar",
-        "Peter Staar"
+        "Franco Rugolon",
+        "Korbinian Randl",
+        "Braslav Jovanovic",
+        "Ioanna Miliou",
+        "Panagiotis Papapetrou"
       ],
-      "published": "2026-03-30T15:11:17+00:00",
-      "updated": "2026-03-30T15:11:17+00:00",
+      "published": "2026-03-31T14:27:21+00:00",
+      "updated": "2026-03-31T14:27:21+00:00",
       "categories": [
-        "cs.CV"
+        "cs.LG",
+        "q-bio.QM"
       ],
-      "primary_category": "cs.CV",
-      "pdf_url": "https://arxiv.org/pdf/2603.28550v1",
-      "entry_id": "http://arxiv.org/abs/2603.28550v1"
-    },
-    {
-      "arxiv_id": "2603.28474v1",
-      "title": "CiQi-Agent: Aligning Vision, Tools and Aesthetics in Multimodal Agent for Cultural Reasoning on Chinese Porcelains",
-      "summary": "The connoisseurship of antique Chinese porcelain demands extensive historical expertise, material understanding, and aesthetic sensitivity, making it difficult for non-specialists to engage. To democratize cultural-heritage understanding and assist expert connoisseurship, we introduce CiQi-Agent -- a domain-specific Porcelain Connoisseurship Agent for intelligent analysis of antique Chinese porcelain. CiQi-Agent supports multi-image porcelain inputs and enables vision tool invocation and multimodal retrieval-augmented generation, performing fine-grained connoisseurship analysis across six attributes: dynasty, reign period, kiln site, glaze color, decorative motif, and vessel shape. Beyond attribute classification, it captures subtle visual details, retrieves relevant domain knowledge, and integrates visual and textual evidence to produce coherent, explainable connoisseurship descriptions. To achieve this capability, we construct a large-scale, expert-annotated dataset CiQi-VQA, comprising 29,596 porcelain specimens, 51,553 images, and 557,940 visual question--answering pairs, and further establish a comprehensive benchmark CiQi-Bench aligned with the previously mentioned six attributes. CiQi-Agent is trained through supervised fine-tuning, reinforcement learning, and a tool-augmented reasoning framework that integrates two categories of tools: a vision tool and multimodal retrieval tools. Experimental results show that CiQi-Agent (7B) outperforms all competitive open- and closed-source models across all six attributes on CiQi-Bench, achieving on average 12.2\\% higher accuracy than GPT-5. The model and dataset have been released and are publicly available at https://huggingface.co/datasets/SII-Monument-Valley/CiQi-VQA.",
-      "authors": [
-        "Wenhan Wang",
-        "Zhixiang Zhou",
-        "Zhongtian Ma",
-        "Yanzhu Chen",
-        "Ziyu Lin",
-        "Hao Sheng",
-        "Pengfei Liu",
-        "Honglin Ma",
-        "Wenqi Shao",
-        "Qiaosheng Zhang",
-        "Yu Qiao"
-      ],
-      "published": "2026-03-30T14:13:47+00:00",
-      "updated": "2026-03-30T14:13:47+00:00",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "primary_category": "cs.CV",
-      "pdf_url": "https://arxiv.org/pdf/2603.28474v1",
-      "entry_id": "http://arxiv.org/abs/2603.28474v1"
+      "primary_category": "cs.LG",
+      "pdf_url": "https://arxiv.org/pdf/2603.29793v1",
+      "entry_id": "http://arxiv.org/abs/2603.29793v1"
     }
   ]
 }
