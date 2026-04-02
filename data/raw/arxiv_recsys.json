@@ -1,7 +1,59 @@
 {
-  "generated_at": "2026-04-01T18:24:58.588123",
+  "generated_at": "2026-04-02T16:27:52.423384",
   "count": 5,
   "papers": [
+    {
+      "arxiv_id": "2604.01036v1",
+      "title": "Aligning Recommendations with User Popularity Preferences",
+      "summary": "Popularity bias is a pervasive problem in recommender systems, where recommendations disproportionately favor popular items. This not only results in \"rich-get-richer\" dynamics and a homogenization of visible content, but can also lead to misalignment of recommendations with individual users' preferences for popular or niche content. This work studies popularity bias through the lens of user-recommender alignment. To this end, we introduce Popularity Quantile Calibration, a measurement framework that quantifies misalignment between a user's historical popularity preference and the popularity of their recommendations. Building on this notion of popularity alignment, we propose SPREE, an inference-time mitigation method for sequential recommenders based on activation steering. SPREE identifies a popularity direction in representation space and adaptively steers model activations based on an estimate of each user's personal popularity bias, allowing both the direction and magnitude of steering to vary across users. Unlike global debiasing approaches, SPREE explicitly targets alignment rather than uniformly reducing popularity. Experiments across multiple datasets show that SPREE consistently improves user-level popularity alignment while preserving recommendation quality.",
+      "authors": [
+        "Mona Schirmer",
+        "Anton Thielmann",
+        "Pola Schwöbel",
+        "Thomas Martynec",
+        "Giuseppe Di Benedetto",
+        "Ben London",
+        "Yannik Stein"
+      ],
+      "published": "2026-04-01T15:45:24+00:00",
+      "updated": "2026-04-01T15:45:24+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.01036v1",
+      "entry_id": "http://arxiv.org/abs/2604.01036v1"
+    },
+    {
+      "arxiv_id": "2604.00590v1",
+      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+      "summary": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders. Currently, there are three mainstream architectures for achieving scaling in recommendation models, namely attention-based, TokenMixer-based, and factorization-machine-based methods, which exhibit fundamental differences in both design philosophy and architectural structure. In this paper, we propose a unified scaling architecture for recommendation systems, namely \\textbf{UniMixer}, to improve scaling efficiency and establish a unified theoretical framework that unifies the mainstream scaling blocks. By transforming the rule-based TokenMixer to an equivalent parameterized structure, we construct a generalized parameterized feature mixing module that allows the token mixing patterns to be optimized and learned during model training. Meanwhile, the generalized parameterized token mixing removes the constraint in TokenMixer that requires the number of heads to be equal to the number of tokens. Furthermore, we establish a unified scaling module design framework for recommender systems, which bridges the connections among attention-based, TokenMixer-based, and factorization-machine-based methods. To further boost scaling ROI, a lightweight UniMixing module is designed, \\textbf{UniMixing-Lite}, which further compresses the model parameters and computational cost while significantly improve the model performance. The scaling curves are shown in the following figure. Extensive offline and online experiments are conducted to verify the superior scaling abilities of \\textbf{UniMixer}.",
+      "authors": [
+        "Mingming Ha",
+        "Guanchen Wang",
+        "Linxun Chen",
+        "Xuan Rao",
+        "Yuexin Shi",
+        "Tianbao Ma",
+        "Zhaojie Liu",
+        "Yunqian Fan",
+        "Zilong Lu",
+        "Yanan Niu",
+        "Han Li",
+        "Kun Gai"
+      ],
+      "published": "2026-04-01T07:57:40+00:00",
+      "updated": "2026-04-01T07:57:40+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.00590v1",
+      "entry_id": "http://arxiv.org/abs/2604.00590v1"
+    },
     {
       "arxiv_id": "2603.29845v1",
       "title": "Cold-Starts in Generative Recommendation: A Reproducibility Study",
@@ -66,51 +118,6 @@
       "primary_category": "cs.IR",
       "pdf_url": "https://arxiv.org/pdf/2603.29259v1",
       "entry_id": "http://arxiv.org/abs/2603.29259v1"
-    },
-    {
-      "arxiv_id": "2603.28476v1",
-      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
-      "summary": "Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities. In response, users increasingly organize and coordinate to steer algorithmic outcomes toward diverse goals, such as promoting relevant content or limiting harmful material, relying on platform affordances -- such as likes, reviews, or ratings. While these mechanisms can serve beneficial purposes, they can also be leveraged for adversarial manipulation, particularly in systems where such feedback directly informs safety guarantees. In this paper, we study this vulnerability in recently proposed risk-controlling recommender systems, which use binary user feedback (e.g., \"Not Interested\") to provably limit exposure to unwanted content via conformal risk control. We empirically demonstrate that their reliance on aggregate feedback signals makes them inherently susceptible to coordinated adversarial user behaviour. Using data from a large-scale online video-sharing platform, we show that a small coordinated group (comprising only 1% of the user population) can induce up to a 20% degradation in nDCG for non-adversarial users by exploiting the affordances provided by risk-controlling recommender systems. We evaluate simple, realistic attack strategies that require little to no knowledge of the underlying recommendation algorithm and find that, while coordinated users can significantly harm overall recommendation quality, they cannot selectively suppress specific content groups through reporting alone. Finally, we propose a mitigation strategy that shifts guarantees from the group level to the user level, showing empirically how it can reduce the impact of adversarial coordinated behaviour while ensuring personalized safety for individuals.",
-      "authors": [
-        "Giovanni De Toni",
-        "Cristian Consonni",
-        "Erasmo Purificato",
-        "Emilia Gomez",
-        "Bruno Lepri"
-      ],
-      "published": "2026-03-30T14:14:48+00:00",
-      "updated": "2026-03-30T14:14:48+00:00",
-      "categories": [
-        "cs.IR",
-        "cs.LG",
-        "cs.SI"
-      ],
-      "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.28476v1",
-      "entry_id": "http://arxiv.org/abs/2603.28476v1"
-    },
-    {
-      "arxiv_id": "2603.28124v1",
-      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
-      "summary": "Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize. Generative recommendation (GR) partially alleviates data sparsity by organizing multi-type behaviors into a unified token sequence with shared representations, but conversion signals remain insufficiently modeled. While recent behavior-aware GR models encode behavior types and employ behavior-aware attention to highlight decision-related intermediate behaviors, they still rely on standard attention over the full history and provide no additional supervision for conversions, leaving conversion sparsity largely unresolved. To address these challenges, we propose RCLRec, a reverse curriculum learning-based GR framework for sparse conversion supervision. For each conversion target, RCLRec constructs a short curriculum by selecting a subsequence of conversion-related items from the history in reverse. Their semantic tokens are fed to the decoder as a prefix, together with the target conversion tokens, under a joint generation objective. This design provides additional instance-specific intermediate supervision, alleviating conversion sparsity and focusing the model on the user's critical decision process. We further introduce a curriculum quality-aware loss to ensure that the selected curricula are informative for conversion prediction. Experiments on offline datasets and an online A/B test show that RCLRec achieves superior performance, with +2.09% advertising revenue and +1.86% orders in online deployment.",
-      "authors": [
-        "Yulei Huang",
-        "Hao Deng",
-        "Haibo Xing",
-        "Jinxin Hu",
-        "Chuanfei Xu",
-        "Zulong Chen",
-        "Yu Zhang",
-        "Xiaoyi Zeng"
-      ],
-      "published": "2026-03-30T07:41:33+00:00",
-      "updated": "2026-03-30T07:41:33+00:00",
-      "categories": [
-        "cs.IR"
-      ],
-      "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.28124v1",
-      "entry_id": "http://arxiv.org/abs/2603.28124v1"
     }
   ]
 }

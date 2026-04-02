@@ -137,21 +137,25 @@
 
           <p class="text-[12px] text-gray-500 line-clamp-2 leading-relaxed mb-5">{{ paper.brief }}</p>
           
+
           <div class="flex items-center justify-between">
-            <div class="flex items-center gap-4">
-                <span class="flex items-center gap-1.5 text-[11px] font-bold text-gray-400">
-                    <span class="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]"></span>相关性 {{ paper.score }}
-                </span>
-                <span class="text-[11px] font-bold text-gray-300 uppercase tracking-tighter">{{ paper.source }}</span>
+            <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1.5 text-[11px] font-bold text-gray-400">
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]"></span>
+                        推荐指数 {{ paper.score }}
+                    </span>
+                    <span class="text-[11px] font-bold text-gray-300 uppercase tracking-tighter">{{ paper.source }}</span>
+                </div>
             </div>
-            
-            <!-- 收藏按钮：去除了Icon，仅保留文字 -->
+
             <button @click.stop="toggleBookmark(paper)" 
                     :class="isBookmarked(paper.id) ? 'bg-black text-white' : 'bg-gray-100 text-gray-600 group-hover:bg-gray-200'"
                     class="px-4 py-1.5 rounded-lg transition-all text-[11px] font-bold">
                 {{ isBookmarked(paper.id) ? '已收藏' : '收藏' }}
             </button>
           </div>
+          
         </div>
         <div v-if="filteredPapers.length === 0" class="text-center py-20">
             <p class="text-sm text-gray-400 font-medium">暂无匹配的情报内容</p>
@@ -172,19 +176,20 @@
             </div>
             <h2 class="text-[32px] font-extrabold text-gray-900 leading-[1.2] mb-10">{{ selectedPaper.title }}</h2>
             
-            <div class="flex gap-16">
-              <div class="flex flex-col">
-                <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1">发表年份</span>
-                <span class="text-xl font-bold">{{ selectedPaper.year }}.{{ selectedPaper.month }}</span>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1">来源平台</span>
-                <span class="text-xl font-bold">{{ selectedPaper.source }}</span>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1 text-blue-500">相关性</span>
-                <span class="text-xl font-bold text-blue-600">{{ selectedPaper.score }}%</span>
-              </div>
+          <div class="flex flex-wrap gap-12">
+            <div class="flex flex-col">
+              <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1">发表年份</span>
+              <span class="text-xl font-bold">{{ selectedPaper.year }}.{{ selectedPaper.month }}</span>
+            </div>
+
+            <div class="flex flex-col">
+              <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1">来源平台</span>
+              <span class="text-xl font-bold">{{ selectedPaper.source }}</span>
+            </div>
+
+            <div class="flex flex-col">
+              <span class="text-[10px] font-black text-gray-300 uppercase tracking-widest mb-1 text-blue-500">综合相关性</span>
+              <span class="text-xl font-bold text-blue-600">{{ selectedPaper.score }}</span>
             </div>
           </div>
 

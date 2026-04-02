@@ -2,304 +2,334 @@
   "ai": [
     {
       "id": "ai-1",
-      "title": "Quantifying Cross-Modal Interactions in Multimodal Glioma Survival Prediction via InterSHAP: Evidence for Additive Signal Integration",
-      "score": 85,
+      "title": "OmniMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 36,
+      "internet_score": 20,
       "tags": [
-        "多模态学习",
-        "医学影像",
-        "生存预测"
+        "cs.AI",
+        "lifelong-learning",
+        "multimodal-memory"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29977v1",
-      "brief": "提出InterSHAP方法量化多模态胶质瘤生存预测中的跨模态交互，发现多模态模型主要通过加性方式而非协同方式整合各模态信息。",
+      "link": "http://arxiv.org/abs/2604.01007v1",
+      "brief": "该论文提出OmniMem系统，通过自动研究引导的方式实现AI代理的终身多模态记忆管理与检索。",
       "highlights": [
-        "提出InterSHAP方法可量化多模态深度学习中的跨模态交互强度",
-        "发现多模态生存预测模型主要表现为加性信号整合而非协同交互",
-        "揭示MRI和临床模态在胶质瘤预后中具有互补性但交互增益有限"
+        "提出Autoresearch-Guided方法自动发现和组织多模态记忆",
+        "解决AI代理在长时间运行中的记忆保留和检索瓶颈",
+        "支持文本、图像等多模态经验的终身学习与记忆管理"
       ],
       "bossQuestions": [
-        "多模态深度学习在生存预测中的跨模态交互机制是什么",
-        "多模态模型是否真正实现了协同效应还是仅做加性整合",
-        "不同模态对预测结果的贡献度和交互程度如何量化"
+        "如何自动构建有效的多模态记忆索引结构",
+        "如何在长时间跨度下保持记忆检索的准确性",
+        "Autoresearch如何引导记忆发现过程"
       ],
       "actions": [
-        "在其他癌种数据集上验证加性整合的普遍性",
-        "探索如何通过架构设计增强跨模态协同效应",
-        "优化模态融合策略以提升预测性能"
+        "探索OmniMem在具体应用场景中的性能表现",
+        "研究自动记忆索引的构建与优化策略",
+        "分析长时间跨度下的记忆演化模式"
       ]
     },
     {
       "id": "ai-2",
-      "title": "Multimodal Higher-Order Brain Networks: A Topological Signal Processing Perspective",
-      "score": 85,
+      "title": "Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 25,
       "tags": [
-        "拓扑信号处理",
-        "高阶脑网络",
-        "连接组学"
+        "cs.CL",
+        "cs.SI",
+        "cs.AI"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29903v1",
-      "brief": "论文提出从拓扑信号处理视角构建多模态高阶脑网络框架，突破传统成对模型无法表示循环或高阶功能交互的局限",
+      "link": "http://arxiv.org/abs/2604.00994v1",
+      "brief": "分析YouTube Shorts上以色列-哈马斯战争的国家资助新闻报道的多模态特征与呈现方式",
       "highlights": [
-        "从拓扑信号处理角度重新定义脑网络分析",
-        "提出多模态高阶脑网络representation方法",
-        "突破传统图模型仅能处理成对交互的局限"
+        "研究YouTube Shorts这一新兴短视频新闻格式的叙事特点",
+        "采用多模态方法分析文本、视觉和音频元素的综合呈现",
+        "聚焦国家资助媒体与私营媒体在报道框架上的差异"
       ],
       "bossQuestions": [
-        "如何利用拓扑数据分析方法处理高阶脑网络结构",
-        "如何有效表示circulatory功能交互而非仅成对关联",
-        "如何量化多模态信息间的协同与交互模式"
+        "YouTube Shorts如何影响地缘政治事件的新闻呈现",
+        "国家资助新闻机构在短视频平台上的报道策略有何特点",
+        "多模态内容如何塑造受众对冲突事件的认知"
       ],
       "actions": [
-        "引入拓扑信号处理技术分析脑网络拓扑特征",
-        "构建支持高阶交互的网络模型框架",
-        "整合多模态数据进行协同表征分析"
+        "建立短视频新闻的多模态分析框架",
+        "对比不同类型媒体的报道框架差异",
+        "评估短视频平台对新闻消费模式的影响"
       ]
     },
     {
       "id": "ai-3",
-      "title": "Less Is More? Selective Visual Attention to High-Importance Regions for Multimodal Radiology Summarization",
-      "score": 85,
+      "title": "Auditing the Reliability of Multimodal Generative Search",
+      "score": 74,
+      "ai_score": 56,
+      "recsys_score": 26,
+      "internet_score": 20,
       "tags": [
-        "多模态学习",
-        "医学影像报告生成",
-        "视觉注意力机制"
+        "多模态大型语言模型",
+        "生成式搜索",
+        "可靠性审计"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29901v1",
-      "brief": "针对放射学报告摘要中的视觉噪声问题，提出选择性视觉注意力机制来聚焦高重要性区域，提升FINDINGS到IMPRESSION的转换效果。",
+      "link": "http://arxiv.org/abs/2604.00944v1",
+      "brief": "本文系统性地审计了多模态大型语言模型作为生成式搜索系统的可靠性，揭示其在从YouTube视频等多媒体内容中检索和合成答案时存在的可靠性问题。",
       "highlights": [
-        "提出选择性视觉注意力机制识别并聚焦影像中的高重要性区域",
-        "有效缓解多模态模型中的视觉噪声干扰问题",
-        "在FINDINGS到IMPRESSION转换任务中超越传统文本基线方法"
+        "首次系统性地审计多模态大型语言模型作为生成式搜索系统的可靠性",
+        "针对YouTube视频等多模态内容评估MLLMs的检索和合成能力",
+        "揭示当前MLLMs在生成式搜索中的可靠性挑战和局限性"
       ],
       "bossQuestions": [
-        "如何精准识别影像中对报告生成最有价值的关键区域？",
-        "视觉注意力与文本信息如何有效融合以避免噪声干扰？",
-        "选择性视觉注意力机制能否提升生成报告的临床准确性？"
+        "MLLMs作为生成式搜索系统的可靠性如何？",
+        "MLLMs从多媒体内容中检索和合成答案的能力是否可靠？",
+        "当前多模态生成式搜索系统存在哪些主要可靠性问题？"
       ],
       "actions": [
-        "探索更精细的视觉区域重要性评估方法",
-        "研究视觉-文本特征融合的更优策略",
-        "在更大规模多中心数据集上验证模型泛化性"
+        "构建多模态生成式搜索可靠性评估框架",
+        "对MLLMs从YouTube视频等多媒体内容中检索和合成答案进行系统性评估",
+        "分析并识别多模态生成式搜索中的可靠性问题"
       ]
     },
     {
       "id": "ai-4",
-      "title": "JEPA-MSAC: A Joint-Embedding Predictive Architecture for Multimodal Sensing-Assisted Communications",
-      "score": 85,
+      "title": "YieldSAT: A Multimodal Benchmark Dataset for High-Resolution Crop Yield Prediction",
+      "score": 72,
+      "ai_score": 50,
+      "recsys_score": 36,
+      "internet_score": 15,
       "tags": [
-        "joint-embedding",
-        "predictive-architecture",
-        "multimodal-sensing"
+        "cs.CV",
+        "crop-yield-prediction",
+        "multimodal-dataset"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29796v1",
-      "brief": "提出JEPA-MSAC联合嵌入预测架构，实现多模态感知辅助通信，支持动态环境下多个物理层任务",
+      "link": "http://arxiv.org/abs/2604.00940v1",
+      "brief": "提出了YieldSAT多模态基准数据集，用于高分辨率作物产量预测任务。",
       "highlights": [
-        "提出JEPA-MSAC联合嵌入预测架构用于多模态感知辅助通信",
-        "支持动态环境下多个物理层任务的预测和可迁移表示",
-        "实现跨任务共享的特征表示学习"
+        "构建了名为YieldSAT的多模态基准数据集",
+        "专注于高分辨率作物产量预测任务",
+        "为可扩展模型训练提供充足数据支持"
       ],
       "bossQuestions": [
-        "如何设计有效的联合嵌入预测架构",
-        "如何保证多模态感知信息的融合效果",
-        "如何实现动态环境下的可迁移表示"
+        "如何有效融合多模态数据提升产量预测精度？",
+        "如何利用高分辨率数据构建可扩展预测模型？",
+        "数据集如何支撑模型训练与性能评估？"
       ],
       "actions": [
-        "研究JEPA架构在通信中的应用",
-        "探索多模态感知与通信的深度融合",
-        "关注动态环境下的自适应通信方法"
+        "使用YieldSAT数据集开展作物产量预测研究",
+        "对比不同多模态融合方法的预测效果",
+        "基于该基准数据集开发和验证新模型"
       ]
     },
     {
       "id": "ai-5",
-      "title": "Multimodal Machine Learning for Early Prediction of Metastasis in a Swedish Multi-Cancer Cohort",
-      "score": 88,
+      "title": "Multimodal Language Models Cannot Spot Spatial Inconsistencies",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 20,
       "tags": [
         "多模态学习",
-        "癌症转移预测",
-        "电子健康记录"
+        "空间推理",
+        "视觉语言模型"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29793v1",
-      "brief": "该研究利用多模态机器学习技术整合电子健康记录中的结构化和非结构化数据，预测瑞典多癌症队列中患者的转移情况",
+      "link": "http://arxiv.org/abs/2604.00799v1",
+      "brief": "该论文系统评估了多模态语言模型检测图像空间不一致性的能力，揭示了GPT-4V等主流模型在空间推理方面的显著局限性。",
       "highlights": [
-        "整合电子健康记录中的结构化和非结构化数据进行多模态学习",
-        "基于瑞典多癌症队列数据进行早期转移预测",
-        "提供癌症患者状态的全面视图"
+        "首次系统评估多模态语言模型的空间不一致检测能力",
+        "揭示GPT-4V等主流多模态模型在空间推理上的明显缺陷",
+        "为多模态模型安全部署提供空间感知风险评估框架"
       ],
       "bossQuestions": [
-        "如何有效整合和融合不同模态的医疗数据",
-        "模型在早期预测转移时的准确性和可靠性如何",
-        "该方法在不同癌症类型中的泛化能力"
+        "多模态语言模型能否识别图像中的空间不一致性？",
+        "当前最先进的多模态模型在空间推理方面的能力边界在哪里？",
+        "如何提升多模态模型对物理世界空间关系的理解？"
       ],
       "actions": [
-        "探索多模态数据融合方法",
-        "验证预测模型的性能",
-        "评估模型在临床实践中的可用性"
+        "构建专门的空间一致性基准数据集进行系统测试",
+        "设计多种空间不一致场景评估模型表现",
+        "对主流多模态模型进行全面的空间推理能力测试"
       ]
     }
   ],
   "recsys": [
     {
       "id": "recsys-1",
+      "title": "Aligning Recommendations with User Popularity Preferences",
+      "score": 82,
+      "ai_score": 45,
+      "recsys_score": 60,
+      "internet_score": 45,
+      "tags": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.01036v1",
+      "brief": "针对推荐系统中热门物品被过度推荐的问题，提出用户流行度偏好对齐的方法来缓解流行度偏差。",
+      "highlights": [
+        "研究推荐系统中普遍存在的流行度偏差问题并分析其成因",
+        "提出将用户流行度偏好与推荐结果对齐的新方法",
+        "通过实验验证方法在平衡推荐准确性与公平性上的有效性"
+      ],
+      "bossQuestions": [
+        "如何准确识别不同用户的流行度偏好？",
+        "如何在保证推荐质量的同时有效降低流行度偏差？",
+        "该方法在不同应用场景下的泛化性能如何？"
+      ],
+      "actions": [
+        "研究者可参考此方法设计更公平的推荐算法",
+        "工程人员可结合业务场景评估流行度偏差的影响",
+        "学者可在此基础上进一步探索用户偏好的细粒度建模"
+      ]
+    },
+    {
+      "id": "recsys-2",
+      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+      "score": 77,
+      "ai_score": 40,
+      "recsys_score": 54,
+      "internet_score": 40,
+      "tags": [
+        "cs.IR",
+        "cs.AI",
+        "recommender-systems"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.00590v1",
+      "brief": "UniMixer是一个统一架构，旨在研究和优化推荐系统中模型性能与参数/计算量之间的缩放定律关系。",
+      "highlights": [
+        "提出UniMixer统一架构来研究推荐系统的缩放定律",
+        "探索模型参数和FLOPs与推荐性能之间的scaling laws关系",
+        "为推荐系统的大规模模型设计提供理论指导"
+      ],
+      "bossQuestions": [
+        "推荐系统的性能如何随模型参数增加而变化？",
+        "计算量(FLOPs)与模型性能之间存在怎样的缩放关系？",
+        "如何设计统一架构来优化推荐系统的缩放效率？"
+      ],
+      "actions": [
+        "基于缩放定律指导推荐模型的参数规模设计",
+        "在UniMixer架构基础上进行模型扩展实验",
+        "利用提出的统一架构优化推荐系统的计算效率"
+      ]
+    },
+    {
+      "id": "recsys-3",
       "title": "Cold-Starts in Generative Recommendation: A Reproducibility Study",
-      "score": 88,
+      "score": 81,
+      "ai_score": 40,
+      "recsys_score": 60,
+      "internet_score": 40,
       "tags": [
         "推荐系统",
-        "冷启动",
-        "生成式推荐"
+        "冷启动问题",
+        "可复现性研究"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2603.29845v1",
-      "brief": "这是一项关于生成式推荐系统中冷启动问题的可重复性研究，系统评估了模型在新用户和新物品场景下的推荐性能。",
+      "brief": "研究生成式推荐中的冷启动问题并进行了可复现性实验验证",
       "highlights": [
-        "首次系统性地对生成式推荐在冷启动场景下的性能进行可重复性验证",
-        "揭示了生成式推荐模型在用户冷启动和物品冷启动下的性能表现差异",
-        "为生成式推荐的冷启动问题提供了基准测试和性能评估框架"
+        "聚焦生成式推荐中的用户冷启动和商品冷启动问题",
+        "针对稀疏或缺失交互信号场景的推荐挑战",
+        "提供了完整的可复现性研究方法和实验验证"
       ],
       "bossQuestions": [
-        "生成式推荐模型在用户冷启动场景下的性能瓶颈是什么",
-        "物品冷启动对生成式推荐效果的具体影响机制",
-        "如何有效提升生成式推荐在稀疏交互场景下的泛化能力"
+        "如何在交互信号稀疏时为新用户进行有效推荐",
+        "如何向现有用户推荐新引入的商品",
+        "生成式推荐在冷启动场景下的效果和局限性如何"
       ],
       "actions": [
-        "开展针对冷启动场景的生成式推荐改进研究",
-        "探索基于预训练或迁移学习的方法缓解冷启动问题",
-        "构建更完善的冷启动评估基准和数据"
+        "深入分析论文中的冷启动实验设计和评估方法",
+        "复现论文中的推荐系统冷启动实验设置",
+        "基于研究发现探索生成式推荐在冷启动场景的改进方案"
       ]
     },
     {
-      "id": "recsys-2",
+      "id": "recsys-4",
       "title": "Drift-Aware Continual Tokenization for Generative Recommendation",
-      "score": 88,
+      "score": 81,
+      "ai_score": 45,
+      "recsys_score": 60,
+      "internet_score": 35,
       "tags": [
-        "Generative Recommendation",
-        "Continual Learning",
-        "Drift Detection"
+        "生成式推荐",
+        "持续学习",
+        "Tokenizer"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2603.29705v1",
-      "brief": "研究如何在生成式推荐系统中实现持续自适应的词元化方法，以应对数据分布变化",
+      "brief": "提出一种漂移感知的持续分词方法用于生成式推荐系统，解决用户兴趣随时间变化的问题",
       "highlights": [
-        "提出针对生成式推荐的持续词元化框架",
-        "设计漂移感知机制以适应数据分布变化",
-        "在推荐任务上验证方法的有效性"
+        "提出漂移感知的持续分词框架解决生成式推荐中的数据分布变化问题",
+        "设计增量更新机制使tokenizer能够适应新用户行为模式",
+        "在多个真实推荐数据集上验证了方法的有效性"
       ],
       "bossQuestions": [
-        "如何有效检测推荐系统中的数据漂移？",
-        "持续词元化如何平衡旧知识与新知识？",
-        "该方法在长尾推荐场景中的表现如何？"
+        "如何平衡新知识学习与旧知识保留",
+        "如何检测数据分布漂移并触发增量更新",
+        "如何保证tokenizer在持续训练中保持序列一致性"
       ],
       "actions": [
-        "探索更细粒度的漂移检测机制",
-        "研究跨领域推荐中的持续学习",
-        "结合用户行为序列进行深入研究"
+        "采用两阶段生成式推荐pipeline架构",
+        "引入漂移检测模块触发增量更新",
+        "设计知识保留的正则化策略"
       ]
     },
     {
-      "id": "recsys-3",
+      "id": "recsys-5",
       "title": "Aligning Multimodal Sequential Recommendations via Robust Direct Preference Optimization with Sparse MoE",
-      "score": 91,
+      "score": 84,
+      "ai_score": 60,
+      "recsys_score": 60,
+      "internet_score": 40,
       "tags": [
-        "推荐系统",
-        "多模态学习",
-        "偏好优化"
+        "多模态推荐",
+        "序列推荐",
+        "偏好对齐"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2603.29259v1",
-      "brief": "提出一种结合稀疏MoE的鲁棒直接偏好优化方法，用于多模态顺序推荐系统的偏好对齐",
+      "brief": "提出了一种结合稀疏MoE和鲁棒直接偏好优化的多模态序列推荐对齐方法",
       "highlights": [
-        "引入稀疏MoE增强多模态特征表示能力",
-        "提出鲁棒直接偏好优化提升推荐精度",
-        "有效解决多模态推荐中的偏好对齐问题"
+        "提出了Robust DPO框架用于多模态序列推荐的偏好对齐",
+        "引入Sparse MoE机制增强模型在稀疏专家混合下的表达能力",
+        "在推荐系统中创新性地应用了直接偏好优化技术"
       ],
       "bossQuestions": [
-        "如何有效融合多模态信息进行顺序推荐",
-        "稀疏MoE如何提升模型的鲁棒性和泛化能力",
-        "直接偏好优化相比传统RLHF方法有哪些优势"
+        "如何在多模态序列推荐中有效融合不同模态的信息",
+        "稀疏MoE如何提升模型的泛化能力和计算效率",
+        "直接偏好优化如何在推荐场景中保证鲁棒性"
       ],
       "actions": [
-        "在推荐系统中部署稀疏MoE架构",
-        "应用直接偏好优化技术",
-        "探索多模态特征融合策略"
-      ]
-    },
-    {
-      "id": "recsys-4",
-      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
-      "score": 88,
-      "tags": [
-        "推荐系统",
-        "集体操纵",
-        "风险控制"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28476v1",
-      "brief": "研究推荐系统中集体操纵行为及其风险控制机制",
-      "highlights": [
-        "提出集体操纵的新攻击范式，利用用户群体协同影响推荐结果",
-        "分析风险控制推荐系统在面对集体操纵时的脆弱性",
-        "揭示社交关系如何被利用于大规模信息操纵"
-      ],
-      "bossQuestions": [
-        "集体操纵如何突破现有风险控制机制?",
-        "如何检测和防御协同的推荐系统攻击?",
-        "推荐系统如何在效率和安全性间取得平衡?"
-      ],
-      "actions": [
-        "设计针对集体操纵的检测算法",
-        "增强风险控制推荐系统的鲁棒性",
-        "引入群体行为分析机制"
-      ]
-    },
-    {
-      "id": "recsys-5",
-      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
-      "score": 88,
-      "tags": [
-        "推荐系统",
-        "生成式模型",
-        "课程学习"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28124v1",
-      "brief": "提出反向课程学习方法解决生成式推荐中稀疏转化目标难以优化的问题",
-      "highlights": [
-        "首次将反向课程学习应用于生成式推荐系统建模稀疏转化目标",
-        "通过课程学习策略逐步从易到难学习稀疏转化模式",
-        "在大规模推荐系统中有效提升转化率优化效果"
-      ],
-      "bossQuestions": [
-        "如何处理推荐系统中转化目标稀疏导致的训练困难",
-        "反向课程学习如何帮助模型聚焦于有价值的样本",
-        "该方法如何平衡探索与 exploitation 以提升生成式推荐性能"
-      ],
-      "actions": [
-        "采用反向课程学习策略从转化样本开始逐步扩展到稀疏样本",
-        "设计课程调度机制让模型优先学习高价值转化模式",
-        "在生成式推荐框架中验证稀疏转化目标的优化效果"
+        "探索稀疏专家混合在推荐系统中的应用潜力",
+        "研究偏好对齐技术在推荐领域的有效性",
+        "设计针对多模态推荐的鲁棒对齐框架"
       ]
     }
   ]

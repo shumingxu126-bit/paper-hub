@@ -1,111 +1,117 @@
 {
-  "generated_at": "2026-04-01T18:24:50.628495",
+  "generated_at": "2026-04-02T16:27:51.493666",
   "count": 5,
   "papers": [
     {
-      "arxiv_id": "2603.29977v1",
-      "title": "Quantifying Cross-Modal Interactions in Multimodal Glioma Survival Prediction via InterSHAP: Evidence for Additive Signal Integration",
-      "summary": "Multimodal deep learning for cancer prognosis is commonly assumed to benefit from synergistic cross-modal interactions, yet this assumption has not been directly tested in survival prediction settings. This work adapts InterSHAP, a Shapley interaction index-based metric, from classification to Cox proportional hazards models and applies it to quantify cross-modal interactions in glioma survival prediction. Using TCGA-GBM and TCGA-LGG data (n=575), we evaluate four fusion architectures combining whole-slide image (WSI) and RNA-seq features. Our central finding is an inverse relationship between predictive performance and measured interaction: architectures achieving superior discrimination (C-index 0.64$\\to$0.82) exhibit equivalent or lower cross-modal interaction (4.8\\%$\\to$3.0\\%). Variance decomposition reveals stable additive contributions across all architectures (WSI${\\approx}$40\\%, RNA${\\approx}$55\\%, Interaction${\\approx}$4\\%), indicating that performance gains arise from complementary signal aggregation rather than learned synergy. These findings provide a practical model auditing tool for comparing fusion strategies, reframe the role of architectural complexity in multimodal fusion, and have implications for privacy-preserving federated deployment.",
+      "arxiv_id": "2604.01007v1",
+      "title": "OmniMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
+      "summary": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck. Building effective lifelong memory requires navigating a vast design space spanning architecture, retrieval strategies, prompt engineering, and data pipelines; this space is too large and interconnected for manual exploration or traditional AutoML to explore effectively. We deploy an autonomous research pipeline to discover OmniMem, a unified multimodal memory framework for lifelong AI agents. Starting from a naïve baseline (F1=0.117 on LoCoMo), the pipeline autonomously executes ${\\sim}50$ experiments across two benchmarks, diagnosing failure modes, proposing architectural modifications, and repairing data pipeline bugs, all without human intervention in the inner loop. The resulting system achieves state-of-the-art on both benchmarks, improving F1 by +411% on LoCoMo (0.117$\\to$0.598) and +214% on Mem-Gallery (0.254$\\to$0.797) relative to the initial configurations. Critically, the most impactful discoveries are not hyperparameter adjustments: bug fixes (+175%), architectural changes (+44%), and prompt engineering (+188\\% on specific categories) each individually exceed the cumulative contribution of all hyperparameter tuning, demonstrating capabilities fundamentally beyond the reach of traditional AutoML. We provide a taxonomy of six discovery types and identify four properties that make multimodal memory particularly suited for autoresearch, offering guidance for applying autonomous research pipelines to other AI system domains. Code is available at this https://github.com/aiming-lab/OmniMem.",
       "authors": [
-        "Iain Swift",
-        "JingHua Ye",
-        "Ruairi O'Reilly"
+        "Jiaqi Liu",
+        "Zipeng Ling",
+        "Shi Qiu",
+        "Yanqing Liu",
+        "Siwei Han",
+        "Peng Xia",
+        "Haoqin Tu",
+        "Zeyu Zheng",
+        "Cihang Xie",
+        "Charles Fleming",
+        "Mingyu Ding",
+        "Huaxiu Yao"
       ],
-      "published": "2026-03-31T16:39:56+00:00",
-      "updated": "2026-03-31T16:39:56+00:00",
+      "published": "2026-04-01T15:06:23+00:00",
+      "updated": "2026-04-01T15:06:23+00:00",
       "categories": [
-        "cs.LG",
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "pdf_url": "https://arxiv.org/pdf/2604.01007v1",
+      "entry_id": "http://arxiv.org/abs/2604.01007v1"
+    },
+    {
+      "arxiv_id": "2604.00994v1",
+      "title": "Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts",
+      "summary": "YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited. To address this gap, we present a multimodal pipeline that combines automatic transcription, aspect-based sentiment analysis (ABSA), and semantic scene classification. The pipeline is first assessed for feasibility and then applied to analyze short-form coverage of the Israel-Hamas war by state-funded outlets. Using over 2,300 conflict-related Shorts and more than 94,000 visual frames, we systematically examine war reporting across major international broadcasters. Our findings reveal that the sentiment expressed in transcripts regarding specific aspects differs across outlets and over time, whereas scene-type classifications reflect visual cues consistent with real-world events. Notably, smaller domain-adapted models outperform large transformers and even LLMs for sentiment analysis, underscoring the value of resource-efficient approaches for humanities research. The pipeline serves as a template for other short-form platforms, such as TikTok and Instagram, and demonstrates how multimodal methods, combined with qualitative interpretation, can characterize sentiment patterns and visual cues in algorithmically driven video environments.",
+      "authors": [
+        "Daniel Miehling",
+        "Sandra Kuebler"
+      ],
+      "published": "2026-04-01T14:55:58+00:00",
+      "updated": "2026-04-01T14:55:58+00:00",
+      "categories": [
+        "cs.CL",
         "cs.AI",
-        "q-bio.QM"
+        "cs.SI"
       ],
-      "primary_category": "cs.LG",
-      "pdf_url": "https://arxiv.org/pdf/2603.29977v1",
-      "entry_id": "http://arxiv.org/abs/2603.29977v1"
+      "primary_category": "cs.CL",
+      "pdf_url": "https://arxiv.org/pdf/2604.00994v1",
+      "entry_id": "http://arxiv.org/abs/2604.00994v1"
     },
     {
-      "arxiv_id": "2603.29903v1",
-      "title": "Multimodal Higher-Order Brain Networks: A Topological Signal Processing Perspective",
-      "summary": "Brain connectomics is still largely dominated by pairwise-based models, such as graphs, which cannot represent circulatory or higher-order functional interactions. In this paper, we propose a multimodal framework based on Topological Signal Processing (TSP) that models the brain as a higher-order topological domain and treats functional interactions as discrete vector fields. We integrate diffusion MRI and resting-state fMRI to learn subject-specific brain cell complexes, where statistically validated structural connectivity defines a sparse scaffold and phase-coupling functional edge signals drive the inference of higher-order interactions (HOIs). Using Hodge-theoretic tools, spectral filtering, and sparse signal representations, our framework disentangles brain connectivity into divergence (source-sink organization), gradient (potential-driven coordination), and curl (circulatory HOIs), enabling the characterization of temporal dynamics through the lens of discrete vector calculus. Across 100 healthy young adults from Human Connectome Project, node-based HOIs are highly individualized, yet robust mesoscale structure emerges under functional-system aggregation. We identify a distributed default mode network-centered gradient backbone and limbic-centered rotational flows; divergence polarization and curl profiles defining circulation regimes with insightful occupancy and dwell-time statistics. These topological signatures yield significant brain-behavior associations, revealing a relevant higher-order organization intrinsic to edge-based models. By making divergence, circulation, and recurrent mesoscale coordination directly measurable, this work enables a principled and interpretable topological phenotyping of brain function.",
+      "arxiv_id": "2604.00944v1",
+      "title": "Auditing the Reliability of Multimodal Generative Search",
+      "summary": "Multimodal Large Language Models (MLLMs) increasingly function as generative search systems that retrieve and synthesize answers from multimedia content, including YouTube videos. Although these systems project authority by citing specific videos as evidence, the extent to which these citations genuinely substantiate the generated claims remains unexamined. We present a large-scale audit of the Gemini 2.5 Pro multimodal search system, analyzing 11,943 claim-video pairs generated across Medical, Economic, and General domains. Through automated verification using three independent LLM judges (87.7% inter-rater agreement), validated against human annotations, we find that depending on the judge's strictness, between 3.7% and 18.7% of video-grounded claims are not supported by their cited sources. The dominant failure modes are not outright contradictions but rather unverifiable specificities and overstated claims, suggesting the system injects precise but ungrounded details from parametric knowledge while citing videos as evidence. Exploratory post-hoc analysis via logistic regression reveals properties associated with these failures: claims departing from source vocabulary ($β= -1.6$ to $-3.1$, $p < 0.01$) and claims with low semantic similarity to the video transcript ($β= -2.1$ to $-11.6$, $p < 0.01$) are significantly more likely to be unsupported. These findings characterize the current trustworthiness of video-based generative search and highlight the gap between the confidence these systems project and the fidelity of their outputs.",
       "authors": [
-        "Breno C. Bispo",
-        "Stefania Sardellitti",
-        "Juliano B. Lima",
-        "Fernando A. N. Santos"
+        "Erfan Samieyan Sahneh",
+        "Luca Maria Aiello"
       ],
-      "published": "2026-03-31T15:49:42+00:00",
-      "updated": "2026-03-31T15:49:42+00:00",
+      "published": "2026-04-01T14:15:41+00:00",
+      "updated": "2026-04-01T14:15:41+00:00",
       "categories": [
-        "q-bio.NC",
-        "eess.SP"
+        "cs.CY"
       ],
-      "primary_category": "q-bio.NC",
-      "pdf_url": "https://arxiv.org/pdf/2603.29903v1",
-      "entry_id": "http://arxiv.org/abs/2603.29903v1"
+      "primary_category": "cs.CY",
+      "pdf_url": "https://arxiv.org/pdf/2604.00944v1",
+      "entry_id": "http://arxiv.org/abs/2604.00944v1"
     },
     {
-      "arxiv_id": "2603.29901v1",
-      "title": "Less Is More? Selective Visual Attention to High-Importance Regions for Multimodal Radiology Summarization",
-      "summary": "Automated radiology report summarization aims to distill verbose findings into concise clinical impressions, but existing multimodal models often struggle with visual noise and fail to meaningfully improve over strong text-only baselines in the FINDINGS $\\to$ IMPRESSION transformation. We challenge two prevailing assumptions: (1) that more visual input is always better, and (2) that multimodal models add limited value when findings already contain rich image-derived detail. Through controlled ablations on MIMIC-CXR benchmark, we show that selectively focusing on pathology-relevant visual patches rather than full images yields substantially better performance. We introduce ViTAS, Visual-Text Attention Summarizer, a multi-stage pipeline that combines ensemble-guided MedSAM2 lung segmentation, bidirectional cross-attention for multi-view fusion, Shapley-guided adaptive patch clustering, and hierarchical visual tokenization feeding a ViT. ViTAS achieves SOTA results with 29.25% BLEU-4 and 69.83% ROUGE-L, improved factual alignment in qualitative analysis, and the highest expert-rated human evaluation scores. Our findings demonstrate that less but more relevant visual input is not only sufficient but superior for multimodal radiology summarization.",
+      "arxiv_id": "2604.00940v1",
+      "title": "YieldSAT: A Multimodal Benchmark Dataset for High-Resolution Crop Yield Prediction",
+      "summary": "Crop yield prediction requires substantial data to train scalable models. However, creating yield prediction datasets is constrained by high acquisition costs, heterogeneous data quality, and data privacy regulations. Consequently, existing datasets are scarce, low in quality, or limited to regional levels or single crop types, hindering the development of scalable data-driven solutions. In this work, we release YieldSAT, a large, high-quality, and multimodal dataset for high-resolution crop yield prediction. YieldSAT spans various climate zones across multiple countries, including Argentina, Brazil, Uruguay, and Germany, and includes major crop types, including corn, rapeseed, soybeans, and wheat, across 2,173 expert-curated fields. In total, over 12.2 million yield samples are available, each with a spatial resolution of 10 m. Each field is paired with multispectral satellite imagery, resulting in 113,555 labeled satellite images, complemented by auxiliary environmental data. We demonstrate the potential of large-scale and high-resolution crop yield prediction as a pixel regression task by comparing various deep learning models and data fusion architectures. Furthermore, we highlight open challenges arising from severe distribution shifts in the ground truth data under real-world conditions. To mitigate this, we explore a domain-informed Deep Ensemble approach that exhibits significant performance gains. The dataset is available at https://yieldsat.github.io/.",
       "authors": [
-        "Mst. Fahmida Sultana Naznin",
-        "Adnan Ibney Faruq",
-        "Mushfiqur Rahman",
-        "Niloy Kumar Mondal",
-        "Md. Mehedi Hasan Shawon",
-        "Md Rakibul Hasan"
+        "Miro Miranda",
+        "Deepak Pathak",
+        "Patrick Helber",
+        "Benjamin Bischke",
+        "Hiba Najjar",
+        "Francisco Mena",
+        "Cristhian Sanchez",
+        "Akshay Pai",
+        "Diego Arenas",
+        "Matias Valdenegro-Toro",
+        "Marcela Charfuelan",
+        "Marlon Nuske",
+        "Andreas Dengel"
       ],
-      "published": "2026-03-31T15:47:01+00:00",
-      "updated": "2026-03-31T15:47:01+00:00",
+      "published": "2026-04-01T14:13:23+00:00",
+      "updated": "2026-04-01T14:13:23+00:00",
       "categories": [
-        "cs.CV",
-        "cs.CL"
+        "cs.CV"
       ],
       "primary_category": "cs.CV",
-      "pdf_url": "https://arxiv.org/pdf/2603.29901v1",
-      "entry_id": "http://arxiv.org/abs/2603.29901v1"
+      "pdf_url": "https://arxiv.org/pdf/2604.00940v1",
+      "entry_id": "http://arxiv.org/abs/2604.00940v1"
     },
     {
-      "arxiv_id": "2603.29796v1",
-      "title": "JEPA-MSAC: A Joint-Embedding Predictive Architecture for Multimodal Sensing-Assisted Communications",
-      "summary": "Future wireless systems increasingly require predictive and transferable representations that can support multiple physical-layer (PHY) tasks under dynamic environments. However, most existing supervised learning-based methods are designed for a single task, which leads to high adaptation cost. To address this issue, we propose a joint-embedding predictive architecture for multimodal sensing-assisted communications (JEPA-MSAC), a self-supervised multimodal predictive representation learning framework for wireless environments. The proposed framework first maps multimodal sensing and communication measurements into a unified token space, and then pretrains a shared backbone using temporal block-masked JEPA to learn a predictive latent space that captures environment dynamics and cross-modal dependencies. After pretraining, the backbone is frozen and reused as a general future-feature generator, on top of which lightweight task heads are trained for localization, beam prediction, and received signal strength indicator (RSSI) prediction. Extensive experiments show the latent state supports accurate multi-task prediction with low adaptation cost. Additionally, ablation studies reveal its scaling behavior and the impact of key pretraining setups.",
+      "arxiv_id": "2604.00799v1",
+      "title": "Multimodal Language Models Cannot Spot Spatial Inconsistencies",
+      "summary": "Spatial consistency is a fundamental property of the visual world and a key requirement for models that aim to understand physical reality. Despite recent advances, multimodal large language models (MLLMs) often struggle to reason about 3D geometry across multiple views. Rather than asking models to describe scene attributes, we introduce a more challenging task: given two views of the same scene, identify the object that violates 3D motion consistency. We propose a simple and scalable method for generating realistic, spatially inconsistent image pairs from multi-view scenes, enabling systematic evaluation of this capability. Our results show that state-of-the-art MLLMs significantly underperform human observers and exhibit substantial variability across different scene attributes, revealing a fragile and incomplete understanding of 3D structure. We hope our findings underscore the need for approaches that develop a more deeply grounded understanding of the physical world.",
       "authors": [
-        "Can Zheng",
-        "Jiguang He",
-        "Guofa Cai",
-        "Nannan Li",
-        "Mehdi Bennis",
-        "Henk Wymeersch",
-        "Merouane Debbah"
+        "Om Khangaonkar",
+        "Hadi J. Rad",
+        "Hamed Pirsiavash"
       ],
-      "published": "2026-03-31T14:29:42+00:00",
-      "updated": "2026-03-31T14:29:42+00:00",
+      "published": "2026-04-01T12:06:54+00:00",
+      "updated": "2026-04-01T12:06:54+00:00",
       "categories": [
-        "eess.SP"
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
       ],
-      "primary_category": "eess.SP",
-      "pdf_url": "https://arxiv.org/pdf/2603.29796v1",
-      "entry_id": "http://arxiv.org/abs/2603.29796v1"
-    },
-    {
-      "arxiv_id": "2603.29793v1",
-      "title": "Multimodal Machine Learning for Early Prediction of Metastasis in a Swedish Multi-Cancer Cohort",
-      "summary": "Multimodal Machine Learning offers a holistic view of a patient's status, integrating structured and unstructured data from electronic health records (EHR). We propose a framework to predict metastasis risk one month prior to diagnosis, using six months of clinical history from EHR data. Data from four cancer cohorts collected at Karolinska University Hospital (Stockholm, Sweden) were analyzed: breast (n = 743), colon (n = 387), lung (n = 870), and prostate (n = 1890). The dataset included demographics, comorbidities, laboratory results, medications, and clinical text. We compared traditional and deep learning classifiers across single modalities and multimodal combinations, using various fusion strategies and a Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis (TRIPOD) 2a design, with an 80-20 development-validation split to ensure a rigorous, repeatable evaluation. Performance was evaluated using AUROC, AUPRC, F1 score, sensitivity, and specificity. We then employed a multimodal adaptation of SHAP to analyze the classifiers' reasoning. Intermediate fusion achieved the highest F1 scores on breast (0.845), colon (0.786), and prostate cancer (0.845), demonstrating strong predictive performance. For lung cancer, the intermediate fusion achieved an F1 score of 0.819, while the text-only model achieved the highest, with an F1 score of 0.829. Deep learning classifiers consistently outperformed traditional models. Colon cancer, the smallest cohort, had the lowest performance, highlighting the importance of sufficient training data. SHAP analysis showed that the relative importance of modalities varied across cancer types. Fusion strategies offer distinct strengths and weaknesses. Intermediate fusion consistently delivered the best results, but strategy choices should align with data characteristics and organizational needs.",
-      "authors": [
-        "Franco Rugolon",
-        "Korbinian Randl",
-        "Braslav Jovanovic",
-        "Ioanna Miliou",
-        "Panagiotis Papapetrou"
-      ],
-      "published": "2026-03-31T14:27:21+00:00",
-      "updated": "2026-03-31T14:27:21+00:00",
-      "categories": [
-        "cs.LG",
-        "q-bio.QM"
-      ],
-      "primary_category": "cs.LG",
-      "pdf_url": "https://arxiv.org/pdf/2603.29793v1",
-      "entry_id": "http://arxiv.org/abs/2603.29793v1"
+      "primary_category": "cs.CV",
+      "pdf_url": "https://arxiv.org/pdf/2604.00799v1",
+      "entry_id": "http://arxiv.org/abs/2604.00799v1"
     }
   ]
 }

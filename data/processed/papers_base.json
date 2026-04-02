@@ -2,20 +2,21 @@
   "ai": [
     {
       "id": "ai-1",
-      "title": "Quantifying Cross-Modal Interactions in Multimodal Glioma Survival Prediction via InterSHAP: Evidence for Additive Signal Integration",
-      "score": 85,
+      "title": "OmniMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 36,
+      "internet_score": 20,
       "tags": [
-        "cs.LG",
-        "cs.AI",
-        "q-bio.QM"
+        "cs.AI"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29977v1",
-      "brief": "Multimodal deep learning for cancer prognosis is commonly assumed to benefit from synergistic cross-modal interactions, yet this assumption has not been directly tested in survival prediction settings。",
+      "link": "http://arxiv.org/abs/2604.01007v1",
+      "brief": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck。",
       "highlights": [
-        "论文核心关注点是：Multimodal deep learning for cancer prognosis is commonly assumed to benefit from synergistic cross-modal interactions, yet this assumption has not been directly tested in survival prediction settings。",
+        "论文核心关注点是：AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -32,19 +33,23 @@
     },
     {
       "id": "ai-2",
-      "title": "Multimodal Higher-Order Brain Networks: A Topological Signal Processing Perspective",
-      "score": 85,
+      "title": "Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 25,
       "tags": [
-        "q-bio.NC",
-        "eess.SP"
+        "cs.CL",
+        "cs.AI",
+        "cs.SI"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29903v1",
-      "brief": "Brain connectomics is still largely dominated by pairwise-based models, such as graphs, which cannot represent circulatory or higher-order functional interactions。",
+      "link": "http://arxiv.org/abs/2604.00994v1",
+      "brief": "YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited。",
       "highlights": [
-        "论文核心关注点是：Brain connectomics is still largely dominated by pairwise-based models, such as graphs, which cannot represent circulatory or higher-order functional interactions。",
+        "论文核心关注点是：YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -61,19 +66,21 @@
     },
     {
       "id": "ai-3",
-      "title": "Less Is More? Selective Visual Attention to High-Importance Regions for Multimodal Radiology Summarization",
-      "score": 85,
+      "title": "Auditing the Reliability of Multimodal Generative Search",
+      "score": 74,
+      "ai_score": 56,
+      "recsys_score": 26,
+      "internet_score": 20,
       "tags": [
-        "cs.CV",
-        "cs.CL"
+        "cs.CY"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29901v1",
-      "brief": "Automated radiology report summarization aims to distill verbose findings into concise clinical impressions, but existing multimodal models often struggle with visual noise and fail to meaningfully improve over strong text-only baselines in the FINDINGS $\\to$ IMPRESSION transformation。",
+      "link": "http://arxiv.org/abs/2604.00944v1",
+      "brief": "Multimodal Large Language Models (MLLMs) increasingly function as generative search systems that retrieve and synthesize answers from multimedia content, including YouTube videos。",
       "highlights": [
-        "论文核心关注点是：Automated radiology report summarization aims to distill verbose findings into concise clinical impressions, but existing multimodal models often struggle with visual noise and fail to meaningfully improve over strong text-only baselines in the FINDINGS $\\to$ IMPRESSION transformation。",
+        "论文核心关注点是：Multimodal Large Language Models (MLLMs) increasingly function as generative search systems that retrieve and synthesize answers from multimedia content, including YouTube videos。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -90,18 +97,21 @@
     },
     {
       "id": "ai-4",
-      "title": "JEPA-MSAC: A Joint-Embedding Predictive Architecture for Multimodal Sensing-Assisted Communications",
-      "score": 85,
+      "title": "YieldSAT: A Multimodal Benchmark Dataset for High-Resolution Crop Yield Prediction",
+      "score": 72,
+      "ai_score": 50,
+      "recsys_score": 36,
+      "internet_score": 15,
       "tags": [
-        "eess.SP"
+        "cs.CV"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29796v1",
-      "brief": "Future wireless systems increasingly require predictive and transferable representations that can support multiple physical-layer (PHY) tasks under dynamic environments。",
+      "link": "http://arxiv.org/abs/2604.00940v1",
+      "brief": "Crop yield prediction requires substantial data to train scalable models。",
       "highlights": [
-        "论文核心关注点是：Future wireless systems increasingly require predictive and transferable representations that can support multiple physical-layer (PHY) tasks under dynamic environments。",
+        "论文核心关注点是：Crop yield prediction requires substantial data to train scalable models。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -118,19 +128,23 @@
     },
     {
       "id": "ai-5",
-      "title": "Multimodal Machine Learning for Early Prediction of Metastasis in a Swedish Multi-Cancer Cohort",
-      "score": 88,
+      "title": "Multimodal Language Models Cannot Spot Spatial Inconsistencies",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 20,
       "tags": [
-        "cs.LG",
-        "q-bio.QM"
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
       ],
       "year": 2026,
-      "month": "03",
+      "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29793v1",
-      "brief": "Multimodal Machine Learning offers a holistic view of a patient's status, integrating structured and unstructured data from electronic health records (EHR)。",
+      "link": "http://arxiv.org/abs/2604.00799v1",
+      "brief": "Spatial consistency is a fundamental property of the visual world and a key requirement for models that aim to understand physical reality。",
       "highlights": [
-        "论文核心关注点是：Multimodal Machine Learning offers a holistic view of a patient's status, integrating structured and unstructured data from electronic health records (EHR)。",
+        "论文核心关注点是：Spatial consistency is a fundamental property of the visual world and a key requirement for models that aim to understand physical reality。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -149,8 +163,76 @@
   "recsys": [
     {
       "id": "recsys-1",
+      "title": "Aligning Recommendations with User Popularity Preferences",
+      "score": 82,
+      "ai_score": 45,
+      "recsys_score": 60,
+      "internet_score": 45,
+      "tags": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.01036v1",
+      "brief": "Popularity bias is a pervasive problem in recommender systems, where recommendations disproportionately favor popular items。",
+      "highlights": [
+        "论文核心关注点是：Popularity bias is a pervasive problem in recommender systems, where recommendations disproportionately favor popular items。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-2",
+      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
+      "score": 77,
+      "ai_score": 40,
+      "recsys_score": 54,
+      "internet_score": 40,
+      "tags": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.00590v1",
+      "brief": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders。",
+      "highlights": [
+        "论文核心关注点是：In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-3",
       "title": "Cold-Starts in Generative Recommendation: A Reproducibility Study",
-      "score": 88,
+      "score": 81,
+      "ai_score": 40,
+      "recsys_score": 60,
+      "internet_score": 40,
       "tags": [
         "cs.IR"
       ],
@@ -176,9 +258,12 @@
       ]
     },
     {
-      "id": "recsys-2",
+      "id": "recsys-4",
       "title": "Drift-Aware Continual Tokenization for Generative Recommendation",
-      "score": 88,
+      "score": 81,
+      "ai_score": 45,
+      "recsys_score": 60,
+      "internet_score": 35,
       "tags": [
         "cs.IR"
       ],
@@ -204,9 +289,12 @@
       ]
     },
     {
-      "id": "recsys-3",
+      "id": "recsys-5",
       "title": "Aligning Multimodal Sequential Recommendations via Robust Direct Preference Optimization with Sparse MoE",
-      "score": 91,
+      "score": 84,
+      "ai_score": 60,
+      "recsys_score": 60,
+      "internet_score": 40,
       "tags": [
         "cs.IR",
         "cs.CL"
@@ -218,64 +306,6 @@
       "brief": "Preference-based alignment objectives have been widely adopted, from RLHF-style pairwise learning in large language models to emerging applications in recommender systems。",
       "highlights": [
         "论文核心关注点是：Preference-based alignment objectives have been widely adopted, from RLHF-style pairwise learning in large language models to emerging applications in recommender systems。",
-        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
-        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
-      ],
-      "bossQuestions": [
-        "这篇论文更接近推荐策略优化，还是模型结构创新？",
-        "它更适合用于召回、排序还是冷启动？",
-        "这种方法在真实业务里是否有上线价值？"
-      ],
-      "actions": [
-        "先纳入推荐系统论文池，后续再做人工复筛。",
-        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
-        "后续结合自动总结模块生成更完整解读。"
-      ]
-    },
-    {
-      "id": "recsys-4",
-      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
-      "score": 88,
-      "tags": [
-        "cs.IR",
-        "cs.LG",
-        "cs.SI"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28476v1",
-      "brief": "Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities。",
-      "highlights": [
-        "论文核心关注点是：Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities。",
-        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
-        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
-      ],
-      "bossQuestions": [
-        "这篇论文更接近推荐策略优化，还是模型结构创新？",
-        "它更适合用于召回、排序还是冷启动？",
-        "这种方法在真实业务里是否有上线价值？"
-      ],
-      "actions": [
-        "先纳入推荐系统论文池，后续再做人工复筛。",
-        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
-        "后续结合自动总结模块生成更完整解读。"
-      ]
-    },
-    {
-      "id": "recsys-5",
-      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
-      "score": 88,
-      "tags": [
-        "cs.IR"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.28124v1",
-      "brief": "Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize。",
-      "highlights": [
-        "论文核心关注点是：Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize。",
         "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
         "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
       ],

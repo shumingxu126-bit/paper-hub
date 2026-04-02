@@ -49,26 +49,105 @@ def build_tags(categories):
     return categories[:3]
 
 
-def build_score(paper, category_name: str):
+def keyword_score(text: str, title: str, keywords: list[str], title_weight=8, summary_weight=4):
+    score = 0
+    for kw in keywords:
+        kw = kw.lower()
+        if kw in title:
+            score += title_weight
+        elif kw in text:
+            score += summary_weight
+    return score
+
+
+def penalty_score(text: str, title: str, keywords: list[str], title_weight=10, summary_weight=5):
+    score = 0
+    for kw in keywords:
+        kw = kw.lower()
+        if kw in title:
+            score += title_weight
+        elif kw in text:
+            score += summary_weight
+    return score
+
+
+def build_ai_score(paper):
     title = (paper.get("title") or "").lower()
     summary = (paper.get("summary") or "").lower()
 
-    score = 80
+    ai_keywords = [
+        "multimodal", "vision-language", "vision language", "llm",
+        "large language model", "agent", "reasoning", "foundation model",
+        "alignment", "diffusion", "transformer"
+    ]
 
+    non_internet_penalties = [
+        "disease", "clinical", "medical", "patient", "healthcare",
+        "chemical", "molecule", "drug", "protein", "biology",
+        "cybersecurity", "forensics"
+    ]
+
+    score = 40
+    score += keyword_score(summary, title, ai_keywords, title_weight=10, summary_weight=5)
+    score -= penalty_score(summary, title, non_internet_penalties, title_weight=8, summary_weight=4)
+
+    return max(0, min(score, 100))
+
+
+def build_recsys_score(paper):
+    title = (paper.get("title") or "").lower()
+    summary = (paper.get("summary") or "").lower()
+
+    recsys_keywords = [
+        "recommendation", "recommender system", "recommender",
+        "ranking", "retrieval", "ctr", "click-through rate",
+        "personalization", "user behavior", "sequential recommender",
+        "generative recommendation", "candidate generation"
+    ]
+
+    non_recsys_penalties = [
+        "disease", "clinical", "medical", "molecule", "chemical",
+        "cybersecurity", "robot", "porcelain"
+    ]
+
+    score = 30
+    score += keyword_score(summary, title, recsys_keywords, title_weight=12, summary_weight=6)
+    score -= penalty_score(summary, title, non_recsys_penalties, title_weight=8, summary_weight=4)
+
+    return max(0, min(score, 100))
+
+
+def build_internet_score(paper):
+    title = (paper.get("title") or "").lower()
+    summary = (paper.get("summary") or "").lower()
+
+    internet_keywords = [
+        "online", "platform", "user", "content", "feed", "ads",
+        "advertising", "e-commerce", "social", "creator", "consumer",
+        "engagement", "conversion", "click", "ranking", "recommendation",
+        "personalization"
+    ]
+
+    offline_or_vertical_penalties = [
+        "disease", "clinical", "medical", "patient",
+        "chemical", "molecule", "protein", "biology",
+        "satellite", "geology", "material", "robotics"
+    ]
+
+    score = 20
+    score += keyword_score(summary, title, internet_keywords, title_weight=10, summary_weight=5)
+    score -= penalty_score(summary, title, offline_or_vertical_penalties, title_weight=10, summary_weight=5)
+
+    return max(0, min(score, 100))
+
+def build_final_score(ai_score, recsys_score, internet_score, category_name: str):
     if category_name == "ai":
-        keywords = ["multimodal", "vision", "language model", "agent", "reasoning"]
+        score = 35 + 0.60 * ai_score + 0.15 * recsys_score + 0.10 * internet_score
     else:
-        keywords = ["recommendation", "recommender", "ranking", "retrieval", "personalization"]
+        score = 35 + 0.60 * recsys_score + 0.15 * ai_score + 0.10 * internet_score
 
-    for kw in keywords:
-        if kw in title:
-            score += 5
-        elif kw in summary:
-            score += 3
-
-    return min(score, 99)
-
-
+    return max(60, min(round(score), 95))
+    
 def build_highlights(paper, category_name: str):
     summary = (paper.get("summary") or "").strip()
     short_summary = safe_first_sentence(summary)
@@ -116,13 +195,21 @@ def build_actions(category_name: str):
             "后续结合自动总结模块生成更完整解读。"
         ]
 
-
 def transform_paper(paper, category_name: str, index: int):
     year, month = extract_year_month(paper.get("published", ""))
+
+    ai_score = build_ai_score(paper)
+    recsys_score = build_recsys_score(paper)
+    internet_score = build_internet_score(paper)
+    final_score = build_final_score(ai_score, recsys_score, internet_score, category_name)
+
     return {
         "id": f"{category_name}-{index + 1}",
         "title": paper.get("title", "Untitled Paper"),
-        "score": build_score(paper, category_name),
+        "score": final_score,
+        "ai_score": ai_score,
+        "recsys_score": recsys_score,
+        "internet_score": internet_score,
         "tags": build_tags(paper.get("categories", [])),
         "year": year,
         "month": month,
@@ -133,7 +220,6 @@ def transform_paper(paper, category_name: str, index: int):
         "bossQuestions": build_boss_questions(category_name),
         "actions": build_actions(category_name),
     }
-
 
 def transform_category(raw_data, category_name: str):
     papers = raw_data.get("papers", [])
