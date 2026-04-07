@@ -1,7 +1,369 @@
 {
-  "generated_at": "2026-04-02T16:48:01.393172",
-  "count": 5,
+  "generated_at": "2026-04-07T20:58:37.442591",
+  "count": 30,
   "papers": [
+    {
+      "arxiv_id": "2604.04457v1",
+      "title": "Retrieval Augmented Conversational Recommendation with Reinforcement Learning",
+      "summary": "Large language models (LLMs) exhibit enhanced capabilities in language understanding and generation. By utilizing their embedded knowledge, LLMs are increasingly used as conversational recommender systems (CRS), achieving improved performance across diverse scenarios. However, existing LLM-based methods rely on pretrained knowledge without external retrieval mechanisms for novel items. Additionally, the lack of a unified corpus poses challenges for integrating retrieval augmentation into CRS. Motivated by these challenges, we present RAR, a novel two-stage retrieval augmented conversational recommendation framework that aligns retrieval and generation to enhance both performance and factuality. To support this framework and provide a unified corpus, we construct a large-scale movie corpus, comprising over 300k movies with rich metadata, such as titles, casts and plot summaries. Leveraging this data, our primary contribution is RAR, the first framework to departs from standard two-stage CRS by dynamically bridging retrieval and generation. First, a retriever model generates candidate items based on user history; in the subsequent stage, an LLM refines the recommendations by incorporating conversational context with retrieved results. In addition, we introduce a novel reinforcement learning (RL) method that leverages LLM feedback to iteratively update the retriever. By creating a collaborative feedback loop that reinforces sampled candidate sets with higher ranking metrics, RAR effectively mitigates the misalignment between the retrieval and generation stages. Furthermore, grounding the LLM in factual metadata allows our RL-driven approach to capture subtle user intentions and generate context-aware recommendations with reduced hallucinations. We validate our approach through extensive experiments on multiple benchmarks, where RAR consistently outperforms state-of-the-art baseline methods.",
+      "authors": [
+        "Zhenrui Yue",
+        "Honglei Zhuang",
+        "Zhen Qin",
+        "Zhankui He",
+        "Huimin Zeng",
+        "Julian McAuley",
+        "Dong Wang"
+      ],
+      "published": "2026-04-06T06:08:03+00:00",
+      "updated": "2026-04-06T06:08:03+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.04457v1",
+      "entry_id": "http://arxiv.org/abs/2604.04457v1"
+    },
+    {
+      "arxiv_id": "2604.04427v1",
+      "title": "FAVE: Flow-based Average Velocity Establishment for Sequential Recommendation",
+      "summary": "Generative recommendation has emerged as a transformative paradigm for capturing the dynamic evolution of user intents in sequential recommendation. While flow-based methods improve the efficiency of diffusion models, they remain hindered by the ``Noise-to-Data'' paradigm, which introduces two critical inefficiencies: prior mismatch, where generation starts from uninformative noise, forcing a lengthy recovery trajectory; and linear redundancy, where iterative solvers waste computation on modeling deterministic preference transitions. To address these limitations, we propose a Flow-based Average Velocity Establishment (Fave) framework for one-step generation recommendation that learns a direct trajectory from an informative prior to the target distribution. Fave is structured via a progressive two-stage training strategy. In Stage 1, we establish a stable preference space through dual-end semantic alignment, applying constraints at both the source (user history) and target (next item) to prevent representation collapse. In Stage 2, we directly resolve the efficiency bottlenecks by introducing a semantic anchor prior, which initializes the flow with a masked embedding from the user's interaction history, providing an informative starting point. Then we learn a global average velocity, consolidating the multi-step trajectory into a single displacement vector, and enforce trajectory straightness via a JVP-based consistency constraint to ensure one-step generation. Extensive experiments on three benchmarks demonstrate that Fave not only achieves state-of-the-art recommendation performance but also delivers an order-of-magnitude improvement in inference efficiency, making it practical for latency-sensitive scenarios.",
+      "authors": [
+        "Ke Shi",
+        "Yao Zhang",
+        "Feng Guo",
+        "Jinyuan Zhang",
+        "JunShuo Zhang",
+        "Shen Gao",
+        "Shuo Shang"
+      ],
+      "published": "2026-04-06T05:17:43+00:00",
+      "updated": "2026-04-06T05:17:43+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.04427v1",
+      "entry_id": "http://arxiv.org/abs/2604.04427v1"
+    },
+    {
+      "arxiv_id": "2604.04270v1",
+      "title": "A Logical-Rule Autoencoder for Interpretable Recommendations",
+      "summary": "Most deep learning recommendation models operate as black boxes, relying on latent representations that obscure their decision process. This lack of intrinsic interpretability raises concerns in applications that require transparency and accountability. In this work, we propose a Logical-rule Interpretable Autoencoder (LIA) for collaborative filtering that is interpretable by design. LIA introduces a learnable logical rule layer in which each rule neuron is equipped with a gate parameter that automatically selects between AND and OR operators during training, enabling the model to discover diverse logical patterns directly from data. To support functional completeness without doubling the input dimensionality, LIA encodes negation through the sign of connection weights, providing a parameter-efficient mechanism for expressing both positive and negated item conditions within each rule. By learning explicit, human-readable reconstruction rules, LIA allows users to directly trace the decision process behind each recommendation. Extensive experiments show that our method achieves improved recommendation performance over traditional baselines while remaining fully interpretable. Code and data are available at https://github.com/weibowen555/LIA.",
+      "authors": [
+        "Jinhao Pan",
+        "Bowen Wei",
+        "Ziwei Zhu"
+      ],
+      "published": "2026-04-05T21:21:37+00:00",
+      "updated": "2026-04-05T21:21:37+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.04270v1",
+      "entry_id": "http://arxiv.org/abs/2604.04270v1"
+    },
+    {
+      "arxiv_id": "2604.04038v1",
+      "title": "FLAME: Condensing Ensemble Diversity into a Single Network for Efficient Sequential Recommendation",
+      "summary": "Sequential recommendation requires capturing diverse user behaviors, which a single network often fails to capture. While ensemble methods mitigate this by leveraging multiple networks, training them all from scratch leads to high computational cost and instability from noisy mutual supervision. We propose {\\bf F}rozen and {\\bf L}earnable networks with {\\bf A}ligned {\\bf M}odular {\\bf E}nsemble ({\\bf FLAME}), a novel framework that condenses ensemble-level diversity into a single network for efficient sequential recommendation. During training, FLAME simulates exponential diversity using only two networks via {\\it modular ensemble}. By decomposing each network into sub-modules (e.g., layers or blocks) and dynamically combining them, FLAME generates a rich space of diverse representation patterns. To stabilize this process, we pretrain and freeze one network to serve as a semantic anchor and employ {\\it guided mutual learning}. This aligns the diverse representations into the space of the remaining learnable network, ensuring robust optimization. Consequently, at inference, FLAME utilizes only the learnable network, achieving ensemble-level performance with zero overhead compared to a single network. Experiments on six datasets show that FLAME outperforms state-of-the-art baselines, achieving up to 7.69$\\times$ faster convergence and 9.70\\% improvement in NDCG@20. We provide the source code of FLAME at https://github.com/woo-joo/FLAME_SIGIR26.",
+      "authors": [
+        "WooJoo Kim",
+        "JunYoung Kim",
+        "JaeHyung Lim",
+        "SeongJin Choi",
+        "SeongKu Kang",
+        "HwanJo Yu"
+      ],
+      "published": "2026-04-05T09:41:30+00:00",
+      "updated": "2026-04-05T09:41:30+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.04038v1",
+      "entry_id": "http://arxiv.org/abs/2604.04038v1"
+    },
+    {
+      "arxiv_id": "2604.03949v1",
+      "title": "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices",
+      "summary": "Effective item identifiers (IDs) are an important component for recommender systems (RecSys) in practice, and are commonly adopted in many use cases such as retrieval and ranking. IDs can encode collaborative filtering signals within training data, such that RecSys models can extrapolate during the inference and personalize the prediction based on users' behavioral histories. Recently, Semantic IDs (SIDs) have become a trending paradigm for RecSys. In comparison to the conventional atomic ID, an SID is an ordered list of codes, derived from tokenizers such as residual quantization, applied to semantic representations commonly extracted from foundation models or collaborative signals. SIDs have drastically smaller cardinality than the atomic counterpart, and induce semantic clustering in the ID space. At Snapchat, we apply SIDs as auxiliary features for ranking models, and also explore SIDs as additional retrieval sources in different ML applications. In this paper, we discuss practical technical challenges we encountered while applying SIDs, experiments we have conducted, and design choices we have iterated to mitigate these challenges. Backed by promising offline results on both internal data and academic benchmarks as well as online A/B studies, SID variants have been launched in multiple production models with positive metrics impact.",
+      "authors": [
+        "Clark Mingxuan Ju",
+        "Tong Zhao",
+        "Leonardo Neves",
+        "Liam Collins",
+        "Bhuvesh Kumar",
+        "Jiwen Ren",
+        "Lili Zhang",
+        "Wenfeng Zhuo",
+        "Vincent Zhang",
+        "Xiao Bai",
+        "Jinchao Li",
+        "Karthik Iyer",
+        "Zihao Fan",
+        "Yilun Xu",
+        "Yiwen Chen",
+        "Peicheng Yu",
+        "Manish Malik",
+        "Neil Shah"
+      ],
+      "published": "2026-04-05T03:46:52+00:00",
+      "updated": "2026-04-05T03:46:52+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.03949v1",
+      "entry_id": "http://arxiv.org/abs/2604.03949v1"
+    },
+    {
+      "arxiv_id": "2604.03724v1",
+      "title": "Rank, Don't Generate: Statement-level Ranking for Explainable Recommendation",
+      "summary": "Textual explanations, generated with large language models (LLMs), are increasingly used to justify recommendations. Yet, evaluating these explanations remains a critical challenge. We advocate a shift in objective: rank, don't generate. We formalize explainable recommendation as a statement-level ranking problem, where systems rank candidate explanatory statements derived from reviews and return the top-k as explanation. This formulation mitigates hallucination by construction and enables fine-grained factual analysis. It also models factor importance through relevance scores and supports standardized, reproducible evaluation with established ranking metrics. Meaningful assessment, however, requires each statement to be explanatory (item facts affecting user experience), atomic (one opinion about one aspect), and unique (paraphrases consolidated), which is challenging to obtain from noisy reviews. We address this with (i) an LLM-based extraction pipeline producing explanatory and atomic statements, and (ii) a scalable, semantic clustering method consolidating paraphrases to enforce uniqueness. Building on this pipeline, we introduce StaR, a benchmark for statement ranking in explainable recommendation, constructed from four Amazon Reviews 2014 product categories. We evaluate popularity-based baselines and state-of-the-art models under global-level (all statements) and item-level (target item statements) ranking. Popularity baselines are competitive in global-level ranking but outperform state-of-the-art models on average in item-level ranking, exposing critical limitations in personalized explanation ranking.",
+      "authors": [
+        "Ben Kabongo",
+        "Arthur Satouf",
+        "Vincent Guigue"
+      ],
+      "published": "2026-04-04T13:01:45+00:00",
+      "updated": "2026-04-04T13:01:45+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.03724v1",
+      "entry_id": "http://arxiv.org/abs/2604.03724v1"
+    },
+    {
+      "arxiv_id": "2604.03688v1",
+      "title": "Fusion and Alignment Enhancement with Large Language Models for Tail-item Sequential Recommendation",
+      "summary": "Sequential Recommendation (SR) learns user preferences from their historical interaction sequences and provides personalized suggestions. In real-world scenarios, most items exhibit sparse interactions, known as the tail-item problem. This issue limits the model's ability to accurately capture item transition patterns. To tackle this, large language models (LLMs) offer a promising solution by capturing semantic relationships between items. Despite previous efforts to leverage LLM-derived embeddings for enriching tail items, they still face the following limitations: 1) They struggle to effectively fuse collaborative signals with semantic knowledge, leading to suboptimal item embedding quality. 2) Existing methods overlook the structural inconsistency between the ID and LLM embedding spaces, causing conflicting signals that degrade recommendation accuracy. In this work, we propose a Fusion and Alignment Enhancement framework with LLMs for Tail-item Sequential Recommendation (FAERec), which improves item representations by generating coherently-fused and structurally consistent embeddings. For the information fusion challenge, we design an adaptive gating mechanism that dynamically fuses ID and LLM embeddings. Then, we propose a dual-level alignment approach to mitigate structural inconsistency. The item-level alignment establishes correspondences between ID and LLM embeddings of the same item through contrastive learning, while the feature-level alignment constrains the correlation patterns between corresponding dimensions across the two embedding spaces. Furthermore, the weights of the two alignments are adjusted by a curriculum learning scheduler to avoid premature optimization of the complex feature-level objective. Extensive experiments across three widely used datasets with multiple representative SR backbones demonstrate the effectiveness and generalizability of our framework.",
+      "authors": [
+        "Zhifu Wei",
+        "Yizhou Dang",
+        "Guibing Guo",
+        "Chuang Zhao",
+        "Zhu Sun"
+      ],
+      "published": "2026-04-04T11:19:08+00:00",
+      "updated": "2026-04-04T11:19:08+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.03688v1",
+      "entry_id": "http://arxiv.org/abs/2604.03688v1"
+    },
+    {
+      "arxiv_id": "2604.03671v1",
+      "title": "User Simulator-Guided Multi-Turn Preference Optimization for Reasoning LLM-based Conversational Recommendation",
+      "summary": "Conversational Recommender Systems (CRSs) leverage natural language interactions for personalized recommendation, yet information-scarce dialogue histories and single-turn recommendation paradigms may severely hinder accurate modeling of complex user preferences. To alleviate this issue, recent studies have introduced LLM-based user simulators, which generate natural language feedback and perform simulated multi-turn interactions to assist recommendation. Nevertheless, since simulators cannot access true user preference labels during inference, their feedback may deviate from actual user interests, causing errors to accumulate over multiple interactions and severely affecting the generalization of the recommender. Inspired by the multi-step reasoning capabilities of LLMs and the effectiveness of reinforcement learning in policy optimization, we propose SMTPO, a user simulator-guided multi-turn preference optimization conversational recommendation framework. To align simulator-generated feedback with true user preferences in the absence of explicit labels, we enhance feedback quality via multi-task supervised fine-tuning (SFT), enabling the simulator to better reflect users' complex and diverse needs. To address the challenge of biased feedback destabilizing multi-turn optimization, we first allow the reasoning LLM-based recommender to learn preference reasoning and recommendation patterns through SFT and then employ reinforcement learning with fine-grained reward design to progressively align with true user preferences, improving recommendation performance. Extensive experiments on public datasets demonstrate the effectiveness and transferability of our method.",
+      "authors": [
+        "Xingyuan Xiang",
+        "Xiangchen Pan",
+        "Wei Wei"
+      ],
+      "published": "2026-04-04T09:52:30+00:00",
+      "updated": "2026-04-04T09:52:30+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.03671v1",
+      "entry_id": "http://arxiv.org/abs/2604.03671v1"
+    },
+    {
+      "arxiv_id": "2604.03666v1",
+      "title": "MMP-Refer: Multimodal Path Retrieval-augmented LLMs For Explainable Recommendation",
+      "summary": "Explainable recommendations help improve the transparency and credibility of recommendation systems, and play an important role in personalized recommendation scenarios. At present, methods for explainable recommendation based on large language models(LLMs) often consider introducing collaborative information to enhance the personalization and accuracy of the model, but ignore the multimodal information in the recommendation dataset; In addition, collaborative information needs to be aligned with the semantic space of LLM. Introducing collaborative signals through retrieval paths is a good choice, but most of the existing retrieval path collection schemes use the existing Explainable GNN algorithms. Although these methods are effective, they are relatively unexplainable and not be suitable for the recommendation field.   To address the above challenges, we propose MMP-Refer, a framework using \\textbf{M}ulti\\textbf{M}odal Retrieval \\textbf{P}aths with \\textbf{Re}trieval-augmented LLM \\textbf{F}or \\textbf{E}xplainable \\textbf{R}ecommendation. We use a sequential recommendation model based on joint residual coding to obtain multimodal embeddings, and design a heuristic search algorithm to obtain retrieval paths by multimodal embeddings; In the generation phase, we integrated a trainable lightweight collaborative adapter to map the graph encoding of interaction subgraphs to the semantic space of the LLM, as soft prompts to enhance the understanding of interaction information by the LLM. Extensive experiments have demonstrated the effectiveness of our approach. Codes and data are available at https://github.com/pxcstart/MMP-Refer.",
+      "authors": [
+        "Xiangchen Pan",
+        "Wei Wei"
+      ],
+      "published": "2026-04-04T09:35:05+00:00",
+      "updated": "2026-04-04T09:35:05+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.03666v1",
+      "entry_id": "http://arxiv.org/abs/2604.03666v1"
+    },
+    {
+      "arxiv_id": "2604.03654v1",
+      "title": "Joint Behavior-guided and Modality-coherence Conditional Graph Diffusion Denoising for Multi Modal Recommendation",
+      "summary": "In recent years, multimodal recommendation has received significant attention and achieved remarkable success in GCN-based recommendation methods. However, there are two key challenges here: (1) There is a significant amount of redundant information in multimodal features that is unrelated to user preferences. Directly injecting multimodal features into the interaction graph can affect the collaborative feature learning between users and items. (2) There are false negative and false positive behaviors caused by system errors such as accidental clicks and non-exposure. This feedback bias can affect the ranking accuracy of training sample pairs, thereby reducing the recommendation accuracy of the model.   To address these challenges, this work proposes a Joint Behavior-guided and Modal-consistent Conditional Graph Diffusion Model (JBM-Diff) for joint denoising of multimodal features and user feedback. We design a diffusion model conditioned on collaborative features for each modal feature to remove preference-irrelevant information, and enhance the alignment between collaborative features and modal semantic information through multi-view message propagation and feature fusion. Finally, we detect the partial order consistency of sample pairs from a behavioral perspective based on learned modal preferences, set the credibility for sample pairs, and achieve data augmentation. Extensive experiments on three public datasets demonstrate the effectiveness of this work. Codes are available at https://github.com/pxcstart/JBMDiff.",
+      "authors": [
+        "Xiangchen Pan",
+        "Wei Wei"
+      ],
+      "published": "2026-04-04T09:10:35+00:00",
+      "updated": "2026-04-04T09:10:35+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.03654v1",
+      "entry_id": "http://arxiv.org/abs/2604.03654v1"
+    },
+    {
+      "arxiv_id": "2604.03014v1",
+      "title": "User-Aware Conditional Generative Total Correlation Learning for Multi-Modal Recommendation",
+      "summary": "Multi-modal recommendation (MMR) enriches item representations by introducing item content, e.g., visual and textual descriptions, to improve upon interaction-only recommenders. The success of MMR hinges on aligning these content modalities with user preferences derived from interaction data, yet dominant practices based on disentangling modality-invariant preference-driving signals from modality-specific preference-irrelevant noises are flawed. First, they assume a one-size-fits-all relevance of item content to user preferences for all users, which contradicts the user-conditional fact of preferences. Second, they optimize pairwise contrastive losses separately toward cross-modal alignment, systematically ignoring higher-order dependencies inherent when multiple content modalities jointly influence user choices. In this paper, we introduce GTC, a conditional Generative Total Correlation learning framework. We employ an interaction-guided diffusion model to perform user-aware content feature filtering, preserving only personalized features relevant to each individual user. Furthermore, to capture complete cross-modal dependencies, we optimize a tractable lower bound of the total correlation of item representations across all modalities. Experiments on standard MMR benchmarks show GTC consistently outperforms state-of-the-art, with gains of up to 28.30% in NDCG@5. Ablation studies validate both conditional preference-driven feature filtering and total correlation optimization, confirming the ability of GTC to model user-conditional relationships in MMR tasks. The code is available at: https://github.com/jingdu-cs/GTC.",
+      "authors": [
+        "Jing Du",
+        "Zesheng Ye",
+        "Congbo Ma",
+        "Feng Liu",
+        "Flora. D. Salim"
+      ],
+      "published": "2026-04-03T12:56:58+00:00",
+      "updated": "2026-04-03T12:56:58+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.03014v1",
+      "entry_id": "http://arxiv.org/abs/2604.03014v1"
+    },
+    {
+      "arxiv_id": "2604.02833v1",
+      "title": "Bilateral Intent-Enhanced Sequential Recommendation with Embedding Perturbation-Based Contrastive Learning",
+      "summary": "Accurately modeling users' evolving preferences from sequential interactions remains a central challenge in recommender systems. Recent studies emphasize the importance of capturing multiple latent intents underlying user behaviors. However, existing methods often fail to effectively exploit collective intent signals shared across users and items, leading to information isolation and limited robustness. Meanwhile, current contrastive learning approaches struggle to construct views that are both semantically consistent and sufficiently discriminative. In this work, we propose BIPCL, an end-to-end Bilateral Intent-enhanced, Embedding Perturbation-based Contrastive Learning framework. BIPCL explicitly integrates multi-intent signals into both item and sequence representations via a bilateral intent-enhancement mechanism. Specifically, shared intent prototypes on the user and item sides capture collective intent semantics distilled from behaviorally similar entities, which are subsequently integrated into representation learning. This design alleviates information isolation and improves robustness under sparse supervision. To construct effective contrastive views without disrupting temporal or structural dependencies, BIPCL injects bounded, direction-aware perturbations directly into structural item embeddings. On this basis, BIPCL further enforces multi-level contrastive alignment across interaction- and intent-level representations. Extensive experiments on benchmark datasets demonstrate that BIPCL consistently outperforms state-of-the-art baselines, with ablation studies confirming the contribution of each component.",
+      "authors": [
+        "Shanfan Zhang",
+        "Yongyi Lin",
+        "Yuan Rao"
+      ],
+      "published": "2026-04-03T07:55:04+00:00",
+      "updated": "2026-04-03T07:55:04+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.02833v1",
+      "entry_id": "http://arxiv.org/abs/2604.02833v1"
+    },
+    {
+      "arxiv_id": "2604.02684v1",
+      "title": "MBGR: Multi-Business Prediction for Generative Recommendation at Meituan",
+      "summary": "Generative recommendation (GR) has recently emerged as a promising paradigm for industrial recommendations. GR leverages Semantic IDs (SIDs) to reduce the encoding-decoding space and employs the Next Token Prediction (NTP) framework to explore scaling laws. However, existing GR methods suffer from two critical issues: (1) a \\textbf{seesaw phenomenon} in multi-business scenarios arises due to NTP's inability to capture complex cross-business behavioral patterns; and (2) a unified SID space causes \\textbf{representation confusion} by failing to distinguish distinct semantic information across businesses. To address these issues, we propose Multi-Business Generative Recommendation (MBGR), the first GR framework tailored for multi-business scenarios. Our framework comprises three key components. First, we design a Business-aware semantic ID (BID) module that preserves semantic integrity via domain-aware tokenization. Then, we introduce a Multi-Business Prediction (MBP) structure to provide business-specific prediction capabilities. Furthermore, we develop a Label Dynamic Routing (LDR) module that transforms sparse multi-business labels into dense labels to further enhance the multi-business generation capability. Extensive offline and online experiments on Meituan's food delivery platform validate MBGR's effectiveness, and we have successfully deployed it in production.",
+      "authors": [
+        "Changhao Li",
+        "Junwei Yin",
+        "Zhilin Zeng",
+        "Senjie Kou",
+        "Shuli Wang",
+        "Wenshuai Chen",
+        "Yinhua Zhu",
+        "Haitao Wang",
+        "Xingxing Wang"
+      ],
+      "published": "2026-04-03T03:26:36+00:00",
+      "updated": "2026-04-03T03:26:36+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.02684v1",
+      "entry_id": "http://arxiv.org/abs/2604.02684v1"
+    },
+    {
+      "arxiv_id": "2604.02324v1",
+      "title": "Grounded Token Initialization for New Vocabulary in LMs for Generative Recommendation",
+      "summary": "Language models (LMs) are increasingly extended with new learnable vocabulary tokens for domain-specific tasks, such as Semantic-ID tokens in generative recommendation. The standard practice initializes these new tokens as the mean of existing vocabulary embeddings, then relies on supervised fine-tuning to learn their representations. We present a systematic analysis of this strategy: through spectral and geometric diagnostics, we show that mean initialization collapses all new tokens into a degenerate subspace, erasing inter-token distinctions that subsequent fine-tuning struggles to fully recover. These findings suggest that \\emph{token initialization} is a key bottleneck when extending LMs with new vocabularies. Motivated by this diagnosis, we propose the \\emph{Grounded Token Initialization Hypothesis}: linguistically grounding novel tokens in the pretrained embedding space before fine-tuning better enables the model to leverage its general-purpose knowledge for novel-token domains. We operationalize this hypothesis as GTI (Grounded Token Initialization), a lightweight grounding stage that, prior to fine-tuning, maps new tokens to distinct, semantically meaningful locations in the pretrained embedding space using only paired linguistic supervision. Despite its simplicity, GTI outperforms both mean initialization and existing auxiliary-task adaptation methods in the majority of evaluation settings across multiple generative recommendation benchmarks, including industry-scale and public datasets. Further analyses show that grounded embeddings produce richer inter-token structure that persists through fine-tuning, corroborating the hypothesis that initialization quality is a key bottleneck in vocabulary extension.",
+      "authors": [
+        "Daiwei Chen",
+        "Zhoutong Fu",
+        "Chengming Jiang",
+        "Haichao Zhang",
+        "Ran Zhou",
+        "Tan Wang",
+        "Chunnan Yao",
+        "Guoyao Li",
+        "Rui Cai",
+        "Yihan Cao",
+        "Ruijie Jiang",
+        "Fedor Borisyuk",
+        "Jianqiang Shen",
+        "Jingwei Wu",
+        "Ramya Korlakai Vinayak"
+      ],
+      "published": "2026-04-02T17:59:19+00:00",
+      "updated": "2026-04-02T17:59:19+00:00",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "primary_category": "cs.CL",
+      "pdf_url": "https://arxiv.org/pdf/2604.02324v1",
+      "entry_id": "http://arxiv.org/abs/2604.02324v1"
+    },
+    {
+      "arxiv_id": "2604.02211v1",
+      "title": "Multi-Agent Video Recommenders: Evolution, Patterns, and Open Challenges",
+      "summary": "Video recommender systems are among the most popular and impactful applications of AI, shaping content consumption and influencing culture for billions of users. Traditional single-model recommenders, which optimize static engagement metrics, are increasingly limited in addressing the dynamic requirements of modern platforms. In response, multi-agent architectures are redefining how video recommender systems serve, learn, and adapt to both users and datasets. These agent-based systems coordinate specialized agents responsible for video understanding, reasoning, memory, and feedback, to provide precise, explainable recommendations. In this survey, we trace the evolution of multi-agent video recommendation systems (MAVRS). We combine ideas from multi-agent recommender systems, foundation models, and conversational AI, culminating in the emerging field of large language model (LLM)-powered MAVRS. We present a taxonomy of collaborative patterns and analyze coordination mechanisms across diverse video domains, ranging from short-form clips to educational platforms. We discuss representative frameworks, including early multi-agent reinforcement learning (MARL) systems such as MMRF and recent LLM-driven architectures like MACRec and Agent4Rec, to illustrate these patterns. We also outline open challenges in scalability, multimodal understanding, incentive alignment, and identify research directions such as hybrid reinforcement learning-LLM systems, lifelong personalization and self-improving recommender systems.",
+      "authors": [
+        "Srivaths Ranganathan",
+        "Abhishek Dharmaratnakar",
+        "Anushree Sinha",
+        "Debanshu Das"
+      ],
+      "published": "2026-04-02T16:04:52+00:00",
+      "updated": "2026-04-02T16:04:52+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.02211v1",
+      "entry_id": "http://arxiv.org/abs/2604.02211v1"
+    },
+    {
+      "arxiv_id": "2604.02200v1",
+      "title": "Towards Position-Robust Talent Recommendation via Large Language Models",
+      "summary": "Talent recruitment is a critical, yet costly process for many industries, with high recruitment costs and long hiring cycles. Existing talent recommendation systems increasingly adopt large language models (LLMs) due to their remarkable language understanding capabilities. However, most prior approaches follow a pointwise paradigm, which requires LLMs to repeatedly process some text and fails to capture the relationships among candidates in the list, resulting in higher token consumption and suboptimal recommendations. Besides, LLMs exhibit position bias and the lost-in-the-middle issue when answering multiple-choice questions and processing multiple long documents. To address these issues, we introduce an implicit strategy to utilize LLM's potential output for the recommendation task and propose L3TR, a novel framework for listwise talent recommendation with LLMs. In this framework, we propose a block attention mechanism and a local positional encoding method to enhance inter-document processing and mitigate the position bias and concurrent token bias issue. We also introduce an ID sampling method for resolving the inconsistency between candidate set sizes in the training phase and the inference phase. We design evaluation methods to detect position bias and token bias and training-free debiasing methods. Extensive experiments on two real-world datasets validated the effectiveness of L3TR, showing consistent improvements over existing baselines.",
+      "authors": [
+        "Silin Du",
+        "Hongyan Liu"
+      ],
+      "published": "2026-04-02T15:54:03+00:00",
+      "updated": "2026-04-02T15:54:03+00:00",
+      "categories": [
+        "cs.CL"
+      ],
+      "primary_category": "cs.CL",
+      "pdf_url": "https://arxiv.org/pdf/2604.02200v1",
+      "entry_id": "http://arxiv.org/abs/2604.02200v1"
+    },
+    {
+      "arxiv_id": "2604.02183v1",
+      "title": "TRU: Targeted Reverse Update for Efficient Multimodal Recommendation Unlearning",
+      "summary": "Multimodal recommendation systems (MRS) jointly model user-item interaction graphs and rich item content, but this tight coupling makes user data difficult to remove once learned. Approximate machine unlearning offers an efficient alternative to full retraining, yet existing methods for MRS mainly rely on a largely uniform reverse update across the model. We show that this assumption is fundamentally mismatched to modern MRS: deleted-data influence is not uniformly distributed, but concentrated unevenly across \\textit{ranking behavior}, \\textit{modality branches}, and \\textit{network layers}. This non-uniformity gives rise to three bottlenecks in MRS unlearning: target-item persistence in the collaborative graph, modality imbalance across feature branches, and layer-wise sensitivity in the parameter space. To address this mismatch, we propose \\textbf{targeted reverse update} (TRU), a plug-and-play unlearning framework for MRS. Instead of applying a blind global reversal, TRU performs three coordinated interventions across the model hierarchy: a ranking fusion gate to suppress residual target-item influence in ranking, branch-wise modality scaling to preserve retained multimodal representations, and capacity-aware layer isolation to localize reverse updates to deletion-sensitive modules. Experiments across two representative backbones, three datasets, and three unlearning regimes show that TRU consistently achieves a better retain-forget trade-off than prior approximate baselines, while security audits further confirm deeper forgetting and behavior closer to a full retraining on the retained data.",
+      "authors": [
+        "Zhanting Zhou",
+        "KaHou Tam",
+        "Ziqiang Zheng",
+        "Zeyu Ma",
+        "Zhanting Zhou"
+      ],
+      "published": "2026-04-02T15:45:03+00:00",
+      "updated": "2026-04-02T15:45:03+00:00",
+      "categories": [
+        "cs.AI"
+      ],
+      "primary_category": "cs.AI",
+      "pdf_url": "https://arxiv.org/pdf/2604.02183v1",
+      "entry_id": "http://arxiv.org/abs/2604.02183v1"
+    },
     {
       "arxiv_id": "2604.01036v1",
       "title": "Aligning Recommendations with User Popularity Preferences",
@@ -27,7 +389,7 @@
       "entry_id": "http://arxiv.org/abs/2604.01036v1"
     },
     {
-      "arxiv_id": "2604.00590v1",
+      "arxiv_id": "2604.00590v2",
       "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
       "summary": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders. Currently, there are three mainstream architectures for achieving scaling in recommendation models, namely attention-based, TokenMixer-based, and factorization-machine-based methods, which exhibit fundamental differences in both design philosophy and architectural structure. In this paper, we propose a unified scaling architecture for recommendation systems, namely \\textbf{UniMixer}, to improve scaling efficiency and establish a unified theoretical framework that unifies the mainstream scaling blocks. By transforming the rule-based TokenMixer to an equivalent parameterized structure, we construct a generalized parameterized feature mixing module that allows the token mixing patterns to be optimized and learned during model training. Meanwhile, the generalized parameterized token mixing removes the constraint in TokenMixer that requires the number of heads to be equal to the number of tokens. Furthermore, we establish a unified scaling module design framework for recommender systems, which bridges the connections among attention-based, TokenMixer-based, and factorization-machine-based methods. To further boost scaling ROI, a lightweight UniMixing module is designed, \\textbf{UniMixing-Lite}, which further compresses the model parameters and computational cost while significantly improve the model performance. The scaling curves are shown in the following figure. Extensive offline and online experiments are conducted to verify the superior scaling abilities of \\textbf{UniMixer}.",
       "authors": [
@@ -45,17 +407,17 @@
         "Kun Gai"
       ],
       "published": "2026-04-01T07:57:40+00:00",
-      "updated": "2026-04-01T07:57:40+00:00",
+      "updated": "2026-04-02T02:32:28+00:00",
       "categories": [
         "cs.IR",
         "cs.AI"
       ],
       "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2604.00590v1",
-      "entry_id": "http://arxiv.org/abs/2604.00590v1"
+      "pdf_url": "https://arxiv.org/pdf/2604.00590v2",
+      "entry_id": "http://arxiv.org/abs/2604.00590v2"
     },
     {
-      "arxiv_id": "2603.29845v1",
+      "arxiv_id": "2603.29845v2",
       "title": "Cold-Starts in Generative Recommendation: A Reproducibility Study",
       "summary": "Cold-start recommendation remains a central challenge in dynamic, open-world platforms, requiring models to recommend for newly registered users (user cold-start) and to recommend newly introduced items to existing users (item cold-start) under sparse or missing interaction signals. Recent generative recommenders built on pre-trained language models (PLMs) are often expected to mitigate cold-start by using item semantic information (e.g., titles and descriptions) and test-time conditioning on limited user context. However, cold-start is rarely treated as a primary evaluation setting in existing studies, and reported gains are difficult to interpret because key design choices, such as model scale, identifier design, and training strategy, are frequently changed together. In this work, we present a systematic reproducibility study of generative recommendation under a unified suite of cold-start protocols.",
       "authors": [
@@ -67,13 +429,13 @@
         "Zhaochun Ren"
       ],
       "published": "2026-03-31T15:06:31+00:00",
-      "updated": "2026-03-31T15:06:31+00:00",
+      "updated": "2026-04-06T13:22:37+00:00",
       "categories": [
         "cs.IR"
       ],
       "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.29845v1",
-      "entry_id": "http://arxiv.org/abs/2603.29845v1"
+      "pdf_url": "https://arxiv.org/pdf/2603.29845v2",
+      "entry_id": "http://arxiv.org/abs/2603.29845v2"
     },
     {
       "arxiv_id": "2603.29705v1",
@@ -118,6 +480,172 @@
       "primary_category": "cs.IR",
       "pdf_url": "https://arxiv.org/pdf/2603.29259v1",
       "entry_id": "http://arxiv.org/abs/2603.29259v1"
+    },
+    {
+      "arxiv_id": "2603.28476v1",
+      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
+      "summary": "Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities. In response, users increasingly organize and coordinate to steer algorithmic outcomes toward diverse goals, such as promoting relevant content or limiting harmful material, relying on platform affordances -- such as likes, reviews, or ratings. While these mechanisms can serve beneficial purposes, they can also be leveraged for adversarial manipulation, particularly in systems where such feedback directly informs safety guarantees. In this paper, we study this vulnerability in recently proposed risk-controlling recommender systems, which use binary user feedback (e.g., \"Not Interested\") to provably limit exposure to unwanted content via conformal risk control. We empirically demonstrate that their reliance on aggregate feedback signals makes them inherently susceptible to coordinated adversarial user behaviour. Using data from a large-scale online video-sharing platform, we show that a small coordinated group (comprising only 1% of the user population) can induce up to a 20% degradation in nDCG for non-adversarial users by exploiting the affordances provided by risk-controlling recommender systems. We evaluate simple, realistic attack strategies that require little to no knowledge of the underlying recommendation algorithm and find that, while coordinated users can significantly harm overall recommendation quality, they cannot selectively suppress specific content groups through reporting alone. Finally, we propose a mitigation strategy that shifts guarantees from the group level to the user level, showing empirically how it can reduce the impact of adversarial coordinated behaviour while ensuring personalized safety for individuals.",
+      "authors": [
+        "Giovanni De Toni",
+        "Cristian Consonni",
+        "Erasmo Purificato",
+        "Emilia Gomez",
+        "Bruno Lepri"
+      ],
+      "published": "2026-03-30T14:14:48+00:00",
+      "updated": "2026-03-30T14:14:48+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.LG",
+        "cs.SI"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.28476v1",
+      "entry_id": "http://arxiv.org/abs/2603.28476v1"
+    },
+    {
+      "arxiv_id": "2603.28124v1",
+      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
+      "summary": "Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize. Generative recommendation (GR) partially alleviates data sparsity by organizing multi-type behaviors into a unified token sequence with shared representations, but conversion signals remain insufficiently modeled. While recent behavior-aware GR models encode behavior types and employ behavior-aware attention to highlight decision-related intermediate behaviors, they still rely on standard attention over the full history and provide no additional supervision for conversions, leaving conversion sparsity largely unresolved. To address these challenges, we propose RCLRec, a reverse curriculum learning-based GR framework for sparse conversion supervision. For each conversion target, RCLRec constructs a short curriculum by selecting a subsequence of conversion-related items from the history in reverse. Their semantic tokens are fed to the decoder as a prefix, together with the target conversion tokens, under a joint generation objective. This design provides additional instance-specific intermediate supervision, alleviating conversion sparsity and focusing the model on the user's critical decision process. We further introduce a curriculum quality-aware loss to ensure that the selected curricula are informative for conversion prediction. Experiments on offline datasets and an online A/B test show that RCLRec achieves superior performance, with +2.09% advertising revenue and +1.86% orders in online deployment.",
+      "authors": [
+        "Yulei Huang",
+        "Hao Deng",
+        "Haibo Xing",
+        "Jinxin Hu",
+        "Chuanfei Xu",
+        "Zulong Chen",
+        "Yu Zhang",
+        "Xiaoyi Zeng"
+      ],
+      "published": "2026-03-30T07:41:33+00:00",
+      "updated": "2026-03-30T07:41:33+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.28124v1",
+      "entry_id": "http://arxiv.org/abs/2603.28124v1"
+    },
+    {
+      "arxiv_id": "2603.27952v1",
+      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
+      "summary": "Sequential recommender systems have achieved steady gains in offline accuracy, yet it remains unclear how close current models are to the intrinsic accuracy limit imposed by the data. A reliable, model-agnostic estimate of this ceiling would enable principled difficulty assessment and headroom estimation before costly model development. Existing predictability analyses typically combine entropy estimation with Fano's inequality inversion; however, in recommendation they are hindered by sensitivity to candidate-space specification and distortion from Fano-based scaling in low-predictability regimes. We develop an entropy-induced, training-free approach for quantifying accuracy limits in sequential recommendation, yielding a candidate-size-agnostic estimate. Experiments on controlled synthetic generators and diverse real-world benchmarks show that the estimator tracks oracle-controlled difficulty more faithfully than baselines, remains insensitive to candidate-set size, and achieves high rank consistency with best-achieved offline accuracy across state-of-the-art sequential recommenders (Spearman rho up to 0.914). It also supports user-group diagnostics by stratifying users by novelty preference, long-tail exposure, and activity, revealing systematic predictability differences. Furthermore, predictability can guide training data selection: training sets constructed from high-predictability users yield strong downstream performance under reduced data budgets. Overall, the proposed estimator provides a practical reference for assessing attainable accuracy limits, supporting user-group diagnostics, and informing data-centric decisions in sequential recommendation.",
+      "authors": [
+        "En Xu",
+        "Jingtao Ding",
+        "Yong Li"
+      ],
+      "published": "2026-03-30T01:57:30+00:00",
+      "updated": "2026-03-30T01:57:30+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.27952v1",
+      "entry_id": "http://arxiv.org/abs/2603.27952v1"
+    },
+    {
+      "arxiv_id": "2603.27264v1",
+      "title": "TrendGen: An Outfit Recommendation and Display System",
+      "summary": "Recent advances in Computer Vision have significantly improved image understanding and generation, revolutionizing the fashion industry. However, challenges such as inconsistent lighting, non-ideal garment angles, complex backgrounds, and occlusions in raw images hinder their full potential. Overcoming these obstacles is crucial for developing robust fashion AI systems capable of real-world applications.   In this paper, we introduce TrendGen, a Fashion AI system designed to enhance online shopping with intelligent outfit recommendations. Deployed on a major e-commerce platform, TrendGen leverages cloth images and product attributes to generate trend-aligned, cohesive outfit suggestions. Additionally, it employs Generative AI to transform raw images into high-quality lay-down views, offering a clear and structured presentation of garments.   Our evaluation on production data demonstrates TrendGen's consistent high-quality outfits and lay-down images, marking a significant advancement in AI-driven solutions for fashion retail.",
+      "authors": [
+        "Theodoros Koukopoulos",
+        "Dimos Klimenof",
+        "Ioannis Xarchakos"
+      ],
+      "published": "2026-03-28T13:11:29+00:00",
+      "updated": "2026-03-28T13:11:29+00:00",
+      "categories": [
+        "cs.CV"
+      ],
+      "primary_category": "cs.CV",
+      "pdf_url": "https://arxiv.org/pdf/2603.27264v1",
+      "entry_id": "http://arxiv.org/abs/2603.27264v1"
+    },
+    {
+      "arxiv_id": "2603.26100v1",
+      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
+      "summary": "Large-scale industrial recommenders typically use a fixed multi-stage pipeline (recall, ranking, re-ranking) and have progressed from collaborative filtering to deep and large pre-trained models. However, both multi-stage and so-called One Model designs remain essentially static: models are black boxes, and system improvement relies on manual hypotheses and engineering, which is hard to scale under heterogeneous data and multi-objective business constraints. We propose an Agentic Recommender System (AgenticRS) that reorganizes key modules as agents. Modules are promoted to agents only when they form a functionally closed loop, can be independently evaluated, and possess an evolvable decision space. For model agents, we outline two self-evolution mechanisms: reinforcement learning style optimization in well-defined action spaces, and large language model based generation and selection of new architectures and training schemes in open-ended design spaces. We further distinguish individual evolution of single agents from compositional evolution over how multiple agents are selected and connected, and use a layered inner and outer reward design to couple local optimization with global objectives. This provides a concise blueprint for turning static pipelines into self-evolving agentic recommender systems.",
+      "authors": [
+        "Jinxin Hu",
+        "Hao Deng",
+        "Lingyu Mu",
+        "Hao Zhang",
+        "Shizhun Wang",
+        "Yu Zhang",
+        "Xiaoyi Zeng"
+      ],
+      "published": "2026-03-27T06:14:18+00:00",
+      "updated": "2026-03-27T06:14:18+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.26100v1",
+      "entry_id": "http://arxiv.org/abs/2603.26100v1"
+    },
+    {
+      "arxiv_id": "2603.26085v1",
+      "title": "AgenticRS-Architecture: System Design for Agentic Recommender Systems",
+      "summary": "AutoModel is an agent based architecture for the full lifecycle of industrial recommender systems. Instead of a fixed recall and ranking pipeline, AutoModel organizes recommendation as a set of interacting evolution agents with long term memory and self improvement capability. We instantiate three core agents along the axes of models, features, and resources: AutoTrain for model design and training, AutoFeature for data analysis and feature evolution, and AutoPerf for performance, deployment, and online experimentation. A shared coordination and knowledge layer connects these agents and records decisions, configurations, and outcomes. Through a case study of a module called paper autotrain, we show how AutoTrain automates paper driven model reproduction by closing the loop from method parsing to code generation, large scale training, and offline comparison, reducing manual effort for method transfer. AutoModel enables locally automated yet globally aligned evolution of large scale recommender systems and can be generalized to other AI systems such as search and advertising.",
+      "authors": [
+        "Hao Zhang",
+        "Jinxin Hu",
+        "Hao Deng",
+        "Lingyu Mu",
+        "Shizhun Wang",
+        "Yu Zhang",
+        "Xiaoyi Zeng"
+      ],
+      "published": "2026-03-27T05:26:31+00:00",
+      "updated": "2026-03-27T05:26:31+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2603.26085v1",
+      "entry_id": "http://arxiv.org/abs/2603.26085v1"
+    },
+    {
+      "arxiv_id": "2603.25624v1",
+      "title": "Visual or Textual: Effects of Explanation Format and Personal Characteristics on the Perception of Explanations in an Educational Recommender System",
+      "summary": "Explanations are central to improving transparency, trust, and user satisfaction in recommender systems (RS), yet it remains unclear how different explanation formats (visual vs. textual) are suited to users with different personal characteristics (PCs). To this end, we report a within-subject user study (n=54) comparing visual and textual explanations and examine how explanation format and PCs jointly influence perceived control, transparency, trust, and satisfaction in an educational recommender system (ERS). Using robust mixed-effects models, we analyze the moderating effects of a wide range of PCs, including Big Five traits, need for cognition, decision making style, visualization familiarity, and technical expertise. Our results show that a well-designed visual, simple, interactive, selective, easy to understand visualization that clearly and intuitively communicates how user preferences are linked to recommendations, fosters perceived control, transparency, appropriate trust, and satisfaction in the ERS for most users, independent of their PCs. Moreover, we derive a set of guidelines to support the effective design of explanations in ERSs.",
+      "authors": [
+        "Qurat Ul Ain",
+        "Mohamed Amine Chatti",
+        "Nasim Yazdian Varjani",
+        "Farah Kamal",
+        "Astrid Rosenthal-von der Pütten"
+      ],
+      "published": "2026-03-26T16:37:13+00:00",
+      "updated": "2026-03-26T16:37:13+00:00",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "primary_category": "cs.HC",
+      "pdf_url": "https://arxiv.org/pdf/2603.25624v1",
+      "entry_id": "http://arxiv.org/abs/2603.25624v1"
+    },
+    {
+      "arxiv_id": "2603.25302v1",
+      "title": "Auditing the Impact of Cross-Site Web Tracking on YouTube Political and Misinformation Recommendations",
+      "summary": "YouTube has today become the primary news source for many users, which raises concerns about the role its recommendation algorithm can play in the spread of misinformation and political polarization. Prior work in this area has mainly analyzed how recommendations evolve based on users' watch history within the platform. Nevertheless, recommendations can also depend on off-platform browsing activity that Google collects via trackers on news websites, a factor that has not been considered so far. To fill this gap, we propose a sock-puppet-based experimental framework that automatically interacts with news media articles and then collects YouTube recommendations to measure how cross-site tracking affects the political and misinformation content users see. Moreover, by running our audits in both tracking-permissive and tracking-restrictive browser environments, we assess whether common privacy-focused browsers can protect users from tracking-driven political and misinformation bubbles on YouTube.",
+      "authors": [
+        "Salim Chouaki",
+        "Savaiz Nazir",
+        "Sandra Siby"
+      ],
+      "published": "2026-03-26T10:45:24+00:00",
+      "updated": "2026-03-26T10:45:24+00:00",
+      "categories": [
+        "cs.CY",
+        "cs.SI"
+      ],
+      "primary_category": "cs.CY",
+      "pdf_url": "https://arxiv.org/pdf/2603.25302v1",
+      "entry_id": "http://arxiv.org/abs/2603.25302v1"
     }
   ]
 }

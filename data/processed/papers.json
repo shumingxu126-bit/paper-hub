@@ -1,335 +1,665 @@
 {
   "ai": [
     {
-      "id": "ai-1",
-      "title": "OmniMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
-      "score": 78,
-      "ai_score": 60,
-      "recsys_score": 36,
-      "internet_score": 20,
-      "tags": [
-        "多模态学习",
-        "智能体系统",
-        "终身学习"
-      ],
-      "year": 2026,
-      "month": "04",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.01007v1",
-      "brief": "OmniMem是一个自主研究引导的终身多模态智能体记忆发现系统，旨在解决AI智能体在长时间运行中保留、组织和回忆多模态体验的能力瓶颈。",
-      "highlights": [
-        "提出Autoresearch-Guided方法自动发现有效的记忆结构",
-        "实现跨文本、图像、视频等多模态经验的统一存储与检索",
-        "支持智能体在无限时间 horizon 下持续学习和适应"
-      ],
-      "bossQuestions": [
-        "如何构建能随时间扩展的多模态记忆架构",
-        "如何在长期运行中保持记忆质量和检索效率",
-        "如何实现跨模态信息的有效组织和关联"
-      ],
-      "actions": [
-        "结合Transformer架构改进多模态记忆编码",
-        "引入持续学习方法防止灾难性遗忘",
-        "探索记忆压缩与检索的平衡策略"
-      ]
-    },
-    {
-      "id": "ai-2",
-      "title": "Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts",
-      "score": 78,
-      "ai_score": 60,
-      "recsys_score": 30,
-      "internet_score": 25,
-      "tags": [
-        "多模态分析",
-        "YouTube Shorts",
-        "地缘政治传播"
-      ],
-      "year": 2026,
-      "month": "04",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00994v1",
-      "brief": "研究分析了YouTube Shorts上政府资助媒体如何以短视频形式呈现以色列-哈马斯战争，填补了地缘政治事件在短视频平台的多模态呈现研究空白。",
-      "highlights": [
-        "首次系统性分析YouTube Shorts上政府资助新闻报道的多模态特征",
-        "揭示了国家资助媒体在短视频平台的叙事框架和传播策略",
-        "提供了地缘政治冲突在社交媒体短视频中呈现的实证研究"
-      ],
-      "bossQuestions": [
-        "政府资助媒体如何选择在YouTube Shorts上呈现战争的哪些方面",
-        "短视频形式如何影响地缘政治事件的信息传递和情感动员",
-        "多模态元素（视觉、文本、音频）如何相互作用构建战争叙事"
-      ],
-      "actions": [
-        "加强短视频平台新闻内容的监管和来源透明度",
-        "提升用户对政府资助媒体叙事的批判性解读能力",
-        "进一步研究不同资金来源媒体在危机事件报道中的框架差异"
-      ]
-    },
-    {
-      "id": "ai-3",
-      "title": "Auditing the Reliability of Multimodal Generative Search",
-      "score": 74,
-      "ai_score": 56,
+      "id": "ai-15",
+      "title": "VLA-Forget: Vision-Language-Action Unlearning for Embodied Foundation Models",
+      "score": 86,
+      "ai_score": 75,
       "recsys_score": 26,
       "internet_score": 20,
       "tags": [
-        "多模态大语言模型",
-        "生成式搜索",
-        "系统可靠性"
+        "机器人操作",
+        "模型安全",
+        "嵌入式学习"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00944v1",
-      "brief": "这篇论文审计了多模态大语言模型作为生成式搜索系统从YouTube等多媒体内容中检索和合成答案的可靠性。",
+      "link": "http://arxiv.org/abs/2604.03956v1",
+      "brief": "这篇论文提出VLA-Forget方法，用于从视觉-语言-动作模型中移除不安全、虚假或隐私敏感的行为，同时保持模型的感知、语言理解和动作控制能力。",
       "highlights": [
-        "首次系统性地审计多模态大语言模型在生成式搜索场景下的可靠性表现",
-        "针对YouTube视频等多模态内容评估MLLMs的答案检索与合成能力",
-        "揭示当前多模态生成式搜索系统存在的主要可靠性问题和局限性"
+        "提出首个针对VLA模型的unlearning框架，解决机器人操作中的行为安全问题",
+        "能够在移除不良行为的同时保持模型的感知、语言理解和动作控制能力",
+        "为嵌入式基础模型的持续安全部署提供了新思路"
       ],
       "bossQuestions": [
-        "MLLMs在多媒体内容检索中的准确性究竟如何",
-        "不同类型多媒体内容对生成式搜索可靠性有何影响",
-        "当前多模态生成式搜索系统的可靠性评估标准是什么"
+        "VLA模型如何在移除不良行为的同时保持核心能力不下降?",
+        "如何有效评估unlearning后模型的安全性和可靠性?",
+        "该方法在实际机器人部署中的计算效率和泛化能力如何?"
       ],
       "actions": [
-        "建立更完善的多模态生成式搜索可靠性评估框架",
-        "针对YouTube等视频内容优化MLLMs的检索与合成能力",
-        "提升多模态生成式搜索系统在真实应用场景中的可靠性"
+        "在更多样化的机器人操作场景中验证VLA-Forget的适用性",
+        "开发更全面的unlearning效果评估指标和基准",
+        "探索该方法与其他安全机制的集成方案"
       ]
     },
     {
-      "id": "ai-4",
-      "title": "YieldSAT: A Multimodal Benchmark Dataset for High-Resolution Crop Yield Prediction",
-      "score": 72,
-      "ai_score": 50,
-      "recsys_score": 36,
-      "internet_score": 15,
+      "id": "ai-6",
+      "title": "Scalable and Explainable Learner-Video Interaction Prediction using Multimodal Large Language Models",
+      "score": 82,
+      "ai_score": 65,
+      "recsys_score": 30,
+      "internet_score": 30,
       "tags": [
-        "cs.CV",
-        "computer vision",
-        "agriculture"
+        "多模态大语言模型",
+        "教育视频",
+        "学习行为预测"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00940v1",
-      "brief": "YieldSAT是一个用于高分辨率作物产量预测的多模态基准数据集，旨在帮助训练可扩展的模型。",
+      "link": "http://arxiv.org/abs/2604.04482v1",
+      "brief": "利用多模态大语言模型预测学习者在教育视频中的交互行为，实现可扩展且可解释的学习行为预测。",
       "highlights": [
-        "提出首个高分辨率作物产量预测的多模态基准数据集",
-        "整合卫星遥感数据与气象数据等多模态信息",
-        "支持可扩展的作物产量预测模型训练"
+        "利用多模态大语言模型预测学习者的视频控制行为",
+        "通过视频控制信号揭示认知过程和教学设计质量",
+        "提供可扩展且可解释的预测能力"
       ],
       "bossQuestions": [
-        "如何构建高质量的作物产量预测训练数据？",
-        "多模态数据如何提升产量预测精度？",
-        "如何在高分辨率下实现准确的产量预测？"
+        "如何利用视频交互数据预测学习者的认知加工过程？",
+        "如何实现大规模且可解释的学习行为预测？",
+        "多模态大语言模型如何提升教育视频质量评估的可解释性？"
       ],
       "actions": [
-        "利用YieldSAT数据集训练和评估产量预测模型",
-        "探索多模态数据融合在农业预测中的潜力",
-        "基于高分辨率数据进行精细化农业管理"
+        "构建基于多模态大语言模型的学习者行为预测系统",
+        "分析视频控制信号以评估教学设计质量",
+        "开发可扩展的教育视频部署前预测工具"
+      ]
+    },
+    {
+      "id": "ai-1",
+      "title": "ClickAIXR: On-Device Multimodal Vision-Language Interaction with Real-World Objects in Extended Reality",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 24,
+      "tags": [
+        "computer vision",
+        "extended reality",
+        "human-computer interaction"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04905v1",
+      "brief": "ClickAIXR是一个用于增强现实中与真实世界物体进行多模态视觉语言交互的设备端框架。",
+      "highlights": [
+        "提出创新的设备端多模态视觉语言交互框架ClickAIXR",
+        "支持在XR环境中与真实物体进行自然交互",
+        "针对资源受限设备优化了视觉语言模型部署"
+      ],
+      "bossQuestions": [
+        "如何在移动设备上实现高效的视觉语言交互？",
+        "如何在XR场景中准确识别和理解真实世界物体？",
+        "如何平衡模型性能与设备计算资源限制？"
+      ],
+      "actions": [
+        "在设备端部署轻量级视觉语言模型",
+        "构建XR环境中物体识别与交互的原型系统",
+        "优化模型以适配移动XR设备的算力"
       ]
     },
     {
       "id": "ai-5",
-      "title": "Multimodal Language Models Cannot Spot Spatial Inconsistencies",
+      "title": "A Patch-based Cross-view Regularized Framework for Backdoor Defense in Multimodal Large Language Models",
       "score": 78,
       "ai_score": 60,
       "recsys_score": 30,
       "internet_score": 20,
       "tags": [
-        "多模态学习",
-        "空间推理",
+        "cs.CV",
+        "cs.LG",
+        "后门防御"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04488v1",
+      "brief": "本文提出一种基于补丁的跨视图正则化框架，用于防御多模态大语言模型中的后门攻击。",
+      "highlights": [
+        "提出补丁级跨视图正则化方法防御后门攻击",
+        "针对多模态大语言模型的统一视觉语言处理",
+        "增强模型对恶意嵌入的鲁棒性"
+      ],
+      "bossQuestions": [
+        "如何检测多模态LLM中的后门触发器？",
+        "跨视图正则化如何消除恶意嵌入？",
+        "该框架在实际应用中的有效性如何？"
+      ],
+      "actions": [
+        "设计补丁级特征对齐机制",
+        "构建跨视图一致性约束",
+        "评估模型对后门攻击的防御效果"
+      ]
+    },
+    {
+      "id": "ai-10",
+      "title": "Don't Blink: Evidence Collapse during Multimodal Reasoning",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "cs.AI",
+        "多模态推理",
         "视觉语言模型"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00799v1",
-      "brief": "研究表明多模态语言模型无法识别图像中的空间不一致性，揭示了当前AI系统在物理世界空间推理方面的重大缺陷。",
+      "link": "http://arxiv.org/abs/2604.04207v1",
+      "brief": "研究表明推理型多模态大语言模型在推理过程中准确率提升的同时会逐渐失去视觉 grounding，形成所谓的'证据 collapse'现象。",
       "highlights": [
-        "多模态语言模型在检测空间不一致性方面存在显著缺陷",
-        "空间一致性是理解物理现实的基本属性",
-        "当前模型缺乏对物理世界空间关系的准确推理能力"
+        "首次揭示推理 VLMs 中存在的 evidence collapse 现象",
+        "发现模型准确率提升与视觉 grounding 下降之间的 trade-off",
+        "提供定量证据证明推理过程中视觉信息的渐进式丢失"
       ],
       "bossQuestions": [
-        "多模态语言模型为何无法检测空间不一致性?",
-        "这一缺陷如何影响模型对物理现实的理解?",
-        "如何提升多模态模型的空间推理能力?"
+        "为什么推理过程中会出现视觉 grounding 丢失？",
+        "如何在大语言模型推理中保持视觉 grounding？",
+        "evidence collapse 是否是普遍现象还是特定模型的问题？"
       ],
       "actions": [
-        "开发专门评估空间一致性的基准测试",
-        "研究增强模型空间推理能力的新方法",
-        "探索将空间关系知识融入多模态训练的策略"
+        "研究防止 evidence collapse 的方法",
+        "设计能够同时保持准确率和视觉 grounding 的 VLMs",
+        "探索视觉 grounding 与推理能力之间的关系"
+      ]
+    },
+    {
+      "id": "ai-12",
+      "title": "GENFIG1: Visual Summaries of Scholarly Work as a Challenge for Vision-Language Models",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "视觉-语言模型",
+        "科学图表理解",
+        "多模态学习"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04172v1",
+      "brief": "研究科学论文中Figure 1作为核心视觉摘要的特性及其对视觉-语言模型的挑战",
+      "highlights": [
+        "提出科学论文中Figure 1作为视觉摘要的新视角",
+        "分析视觉-语言模型理解科学图表的关键挑战",
+        "构建相关基准数据集评估模型能力"
+      ],
+      "bossQuestions": [
+        "视觉-语言模型能否准确理解科学论文的Figure 1？",
+        "如何评估模型对科学视觉摘要的理解能力？",
+        "现有VLMs处理科学图表面临哪些核心挑战？"
+      ],
+      "actions": [
+        "分析科学论文Figure 1的视觉摘要特性",
+        "构建视觉-语言模型挑战基准",
+        "探索提升模型科学图表理解能力的方法"
+      ]
+    },
+    {
+      "id": "ai-11",
+      "title": "Scale-Aware Vision-Language Adaptation for Extreme Far-Distance Video Person Re-identification",
+      "score": 77,
+      "ai_score": 55,
+      "recsys_score": 42,
+      "internet_score": 25,
+      "tags": [
+        "行人重识别",
+        "视觉-语言模型",
+        "尺度感知"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04183v1",
+      "brief": "针对极端远距离视频行人重识别任务，提出尺度感知视觉-语言适配方法解决尺度压缩、分辨率降级和视角不匹配等挑战",
+      "highlights": [
+        "提出尺度感知视觉-语言适配框架解决极端远距离下的人员识别难题",
+        "有效应对尺度压缩和分辨率降质带来的识别精度下降问题",
+        "缓解空对地视角不匹配导致的跨场景识别挑战"
+      ],
+      "bossQuestions": [
+        "如何有效处理极端远距离下的尺度压缩问题",
+        "如何解决空对地视角不匹配的核心挑战",
+        "如何在低分辨率和运动模糊条件下保持识别精度"
+      ],
+      "actions": [
+        "深入研究视觉-语言模型在远距离ReID任务中的应用",
+        "探索尺度自适应机制以提升极端远距离场景的识别效果",
+        "研究跨视角特征对齐方法以改善空对地场景适配"
+      ]
+    },
+    {
+      "id": "ai-4",
+      "title": "Is a Picture Worth a Thousand Words? Adaptive Multimodal Fact-Checking with Visual Evidence Necessity",
+      "score": 75,
+      "ai_score": 55,
+      "recsys_score": 30,
+      "internet_score": 25,
+      "tags": [
+        "multimodal",
+        "fact-checking",
+        "visual-evidence"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04692v1",
+      "brief": "研究多模态事实核查中如何自适应判断视觉证据的必要性",
+      "highlights": [
+        "提出自适应方法判断事实核查中视觉证据是否必要",
+        "构建多模态事实核查新框架，评估视觉信息的关键作用",
+        "探索文本与图像在假新闻检测中的交互机制"
+      ],
+      "bossQuestions": [
+        "图片在事实核查中的价值如何量化评估？",
+        "如何自适应判断何时需要视觉证据而非仅文本？",
+        "多模态信息如何有效结合以提升事实核查准确率？"
+      ],
+      "actions": [
+        "设计自适应模型判断视觉证据必要性",
+        "开展多模态事实核查实验",
+        "分析视觉与文本信息在不同场景下的贡献"
+      ]
+    },
+    {
+      "id": "ai-3",
+      "title": "CLEAR: Unlocking Generative Potential for Degraded Image Understanding in Unified Multimodal Models",
+      "score": 74,
+      "ai_score": 55,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "cs.CV",
+        "multimodal",
+        "image-restoration"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04780v1",
+      "brief": "提出CLEAR框架通过释放生成潜力实现统一多模态模型对退化图像的理解",
+      "highlights": [
+        "首次在统一多模态模型中系统性处理图像退化问题",
+        "提出释放生成潜力的方法来提升退化图像理解能力",
+        "框架能够处理blur、noise、compression等多种退化类型"
+      ],
+      "bossQuestions": [
+        "如何在多模态模型中有效处理各种图像退化",
+        "统一模型与专用模型相比在退化图像理解上的性能差异",
+        "如何在单一框架内同时处理多种退化类型"
+      ],
+      "actions": [
+        "构建能处理退化的统一多模态框架",
+        "研究生成潜力释放在图像理解中的作用",
+        "在基准数据集上验证框架性能"
+      ]
+    },
+    {
+      "id": "ai-7",
+      "title": "Beyond Standard Benchmarks: A Systematic Audit of Vision-Language Model's Robustness to Natural Semantic Variation Across Diverse Tasks",
+      "score": 74,
+      "ai_score": 55,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "cs.CV",
+        "cs.LG",
+        "cs.AI"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04473v1",
+      "brief": "该论文系统性地审计了视觉语言模型在多种任务上对自然语义变化的鲁棒性，超越了标准基准测试的评估范围。",
+      "highlights": [
+        "首次系统性地审计视觉语言模型对自然语义变化的鲁棒性",
+        "揭示了现有VLM在语义变体情况下的性能脆弱性",
+        "构建了涵盖多种视觉任务的综合评估框架"
+      ],
+      "bossQuestions": [
+        "视觉语言模型在面对自然语义变化时的鲁棒性如何",
+        "标准基准测试是否充分评估了模型的真实泛化能力",
+        "不同任务类型的VLM在语义变体上的表现是否存在显著差异"
+      ],
+      "actions": [
+        "系统性地测试了VLM在多种自然语义变体场景下的性能",
+        "提供了超越标准基准的全面鲁棒性评估方法",
+        "为未来VLM的性能提升和基准设计提供了重要洞见"
       ]
     }
   ],
   "recsys": [
     {
       "id": "recsys-1",
-      "title": "Aligning Recommendations with User Popularity Preferences",
-      "score": 82,
-      "ai_score": 45,
-      "recsys_score": 60,
-      "internet_score": 45,
+      "title": "Retrieval Augmented Conversational Recommendation with Reinforcement Learning",
+      "score": 91,
+      "ai_score": 55,
+      "recsys_score": 72,
+      "internet_score": 50,
       "tags": [
-        "推荐系统",
-        "流行度偏差",
-        "公平性"
+        "conversational-recommendation",
+        "reinforcement-learning",
+        "retrieval-augmentation"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.01036v1",
-      "brief": "该论文研究推荐系统中的流行度偏差问题，提出将推荐结果与用户对流行物品的真实偏好进行对齐的方法。",
+      "link": "http://arxiv.org/abs/2604.04457v1",
+      "brief": "提出一种结合检索增强与强化学习的会话式推荐方法，利用大语言模型提升推荐效果",
       "highlights": [
-        "提出解决推荐系统中流行度偏差问题的新方法",
-        "分析用户对流行物品的真实偏好与推荐结果的差异",
-        "提供评估推荐系统公平性和多样性的新框架"
+        "将检索增强技术引入会话式推荐系统",
+        "采用强化学习优化推荐策略",
+        "利用大语言模型增强语言理解和生成能力"
       ],
       "bossQuestions": [
-        "如何准确识别用户对流行物品的真实偏好",
-        "如何在保证推荐准确性的同时减少流行度偏差",
-        "如何平衡推荐系统中的公平性与用户满意度"
+        "如何将检索增强与大语言模型结合用于会话式推荐",
+        "如何通过强化学习优化推荐策略",
+        "会话式推荐中如何平衡探索与利用"
       ],
       "actions": [
-        "设计考虑用户流行度偏好的公平推荐算法",
-        "在推荐评估中引入流行度偏差指标",
-        "根据用户偏好类型差异化推荐策略"
+        "在推荐系统中集成检索模块",
+        "采用强化学习算法训练推荐模型",
+        "利用大语言模型改进用户交互体验"
       ]
     },
     {
-      "id": "recsys-2",
-      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
-      "score": 77,
+      "id": "recsys-27",
+      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
+      "score": 89,
+      "ai_score": 55,
+      "recsys_score": 72,
+      "internet_score": 30,
+      "tags": [
+        "推荐系统",
+        "智能体",
+        "范式转变"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.26100v1",
+      "brief": "论文提出将传统多阶段推荐管道升级为智能体驱动的新范式，以适应动态用户需求和大规模工业应用",
+      "highlights": [
+        "提出从固定管道向智能体架构的推荐系统范式转变",
+        "分析工业级推荐系统多阶段管道的技术局限与挑战",
+        "探讨大模型时代推荐系统向端到端智能体演进的方向"
+      ],
+      "bossQuestions": [
+        "智能体推荐系统如何比传统管道更灵活地捕捉用户动态意图",
+        "如何在推荐系统中高效融合大模型推理能力同时保持实时性",
+        "Agentic架构在工业级推荐系统中部署面临的核心挑战"
+      ],
+      "actions": [
+        "调研推荐系统从管道式向智能体化转型的技术路径",
+        "设计融合大模型推理能力的端到端推荐框架",
+        "探索智能体推荐系统的评估指标与在线优化方法"
+      ]
+    },
+    {
+      "id": "recsys-15",
+      "title": "Multi-Agent Video Recommenders: Evolution, Patterns, and Open Challenges",
+      "score": 88,
+      "ai_score": 80,
+      "recsys_score": 60,
+      "internet_score": 55,
+      "tags": [
+        "多智能体系统",
+        "视频推荐",
+        "信息检索"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.02211v1",
+      "brief": "综述了多智能体视频推荐系统的演化历程、技术模式与开放挑战，探讨了其在数十亿用户内容消费和文化影响中的应用。",
+      "highlights": [
+        "系统梳理了视频推荐系统从单智能体到多智能体的技术演进路径",
+        "分析了多智能体架构在协同推荐、意图理解和交互决策中的创新模式",
+        "提出了多智能体视频推荐面临的可扩展性、可解释性和公平性等开放挑战"
+      ],
+      "bossQuestions": [
+        "多智能体系统如何平衡个性化与内容多样性之间的矛盾",
+        "如何确保多智能体推荐系统的透明度和用户隐私保护",
+        "大规模部署多智能体推荐系统面临哪些计算资源和系统架构瓶颈"
+      ],
+      "actions": [
+        "探索跨模态多智能体协同的端到端推荐框架",
+        "研究基于强化学习的多智能体长期用户满意度优化",
+        "设计兼顾公平性和多样性的多智能体推荐评估指标"
+      ]
+    },
+    {
+      "id": "recsys-25",
+      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
+      "score": 87,
       "ai_score": 40,
-      "recsys_score": 54,
+      "recsys_score": 72,
+      "internet_score": 25,
+      "tags": [
+        "推荐系统",
+        "信息论",
+        "理论分析"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.27952v1",
+      "brief": "研究顺序推荐系统的准确性理论极限，提出基于熵的方法量化数据本身对推荐精度的固有限制。",
+      "highlights": [
+        "首次从信息论角度分析顺序推荐系统的准确性上界",
+        "提出基于熵的框架量化用户行为序列中的不确定性",
+        "为评估现有模型与理论极限的接近程度提供定量方法"
+      ],
+      "bossQuestions": [
+        "顺序推荐系统的理论准确性极限是多少",
+        "当前模型与理论极限之间还存在多大差距",
+        "如何基于熵来指导推荐系统的设计与优化"
+      ],
+      "actions": [
+        "使用熵基方法评估现有推荐模型的性能边界",
+        "探索降低用户行为不确定性的特征工程策略",
+        "将理论极限作为模型改进的目标基准"
+      ]
+    },
+    {
+      "id": "recsys-24",
+      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
+      "score": 86,
+      "ai_score": 40,
+      "recsys_score": 66,
+      "internet_score": 55,
+      "tags": [
+        "cs.IR",
+        "推荐系统",
+        "课程学习"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28124v1",
+      "brief": "提出反向课程学习方法RCLRec来解决生成式推荐中稀疏转化目标难以优化的问题",
+      "highlights": [
+        "提出反向课程学习框架处理推荐系统中稀疏转化目标优化难题",
+        "设计课程采样策略从难到易逐步降低学习难度",
+        "在生成式推荐模型中验证稀疏转化建模的有效性"
+      ],
+      "bossQuestions": [
+        "如何解决大规模推荐系统中转化目标稀疏的优化难题",
+        "反向课程学习如何应用于生成式推荐模型训练",
+        "课程学习策略如何平衡样本难度与模型收敛速度"
+      ],
+      "actions": [
+        "引入反向课程学习范式替代传统难例挖掘方法",
+        "设计渐进式采样策略动态调整训练样本分布",
+        "构建转化导向的生成式推荐评估框架"
+      ]
+    },
+    {
+      "id": "recsys-28",
+      "title": "AgenticRS-Architecture: System Design for Agentic Recommender Systems",
+      "score": 86,
+      "ai_score": 50,
+      "recsys_score": 66,
       "internet_score": 40,
       "tags": [
         "cs.IR",
-        "cs.AI",
-        "推荐系统"
-      ],
-      "year": 2026,
-      "month": "04",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00590v1",
-      "brief": "UniMixer是一种统一架构，用于研究推荐系统中模型性能与参数数量、FLOPs之间的缩放定律关系。",
-      "highlights": [
-        "提出统一架构UniMixer来研究推荐系统的缩放定律",
-        "探索模型性能与参数数量、计算量之间的量化关系",
-        "为推荐系统的大规模模型设计与部署提供理论指导"
-      ],
-      "bossQuestions": [
-        "推荐模型性能与参数量的缩放定律是什么",
-        "如何设计统一架构来揭示缩放关系",
-        "不同推荐模型架构的缩放行为有何差异"
-      ],
-      "actions": [
-        "验证推荐模型的参数-性能缩放关系",
-        "构建统一的推荐系统缩放定律框架",
-        "探索计算资源约束下的最优模型设计"
-      ]
-    },
-    {
-      "id": "recsys-3",
-      "title": "Cold-Starts in Generative Recommendation: A Reproducibility Study",
-      "score": 81,
-      "ai_score": 40,
-      "recsys_score": 60,
-      "internet_score": 40,
-      "tags": [
         "推荐系统",
-        "冷启动",
-        "生成式模型"
+        "智能体架构"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29845v1",
-      "brief": "这是一篇关于生成式推荐系统中冷启动问题的可重复性研究论文，探讨用户冷启动和物品冷启动的挑战。",
+      "link": "http://arxiv.org/abs/2603.26085v1",
+      "brief": "提出AutoModel基于智能体的架构,用于工业推荐系统的完整生命周期管理",
       "highlights": [
-        "研究生成式推荐系统中的用户冷启动和物品冷启动问题",
-        "在稀疏或缺失交互信号场景下评估推荐效果",
-        "提供冷启动推荐的可重复性研究框架"
+        "基于智能体的工业推荐系统架构设计",
+        "覆盖推荐系统完整生命周期的解决方案",
+        "AutoModel实现推荐系统的自动化建模和优化"
       ],
       "bossQuestions": [
-        "如何在用户冷启动场景下进行有效推荐",
-        "如何将新物品推荐给现有用户",
-        "如何在交互信号稀疏时构建推荐模型"
+        "AutoModel架构如何处理推荐系统的冷启动问题",
+        "该架构如何平衡推荐精度和系统性能",
+        "智能体架构在实际工业场景中的可扩展性如何"
       ],
       "actions": [
-        "查看论文的实验方法和结果",
-        "评估不同冷启动策略的效果",
-        "探索结合稀疏信号的推荐技术"
-      ]
-    },
-    {
-      "id": "recsys-4",
-      "title": "Drift-Aware Continual Tokenization for Generative Recommendation",
-      "score": 81,
-      "ai_score": 45,
-      "recsys_score": 60,
-      "internet_score": 35,
-      "tags": [
-        "生成式推荐",
-        "持续学习",
-        "数据漂移"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29705v1",
-      "brief": "本文提出感知漂移的持续tokenization方法，解决生成式推荐系统中item到token映射的持续学习问题并自适应处理数据分布漂移",
-      "highlights": [
-        "提出Drift-Aware Continual Tokenization(DACT)框架解决生成式推荐的持续学习问题",
-        "设计漂移检测机制自适应识别推荐数据分布随时间的变化",
-        "在保持旧tokenization能力的同时学习新的item表示避免灾难性遗忘"
-      ],
-      "bossQuestions": [
-        "如何在生成式推荐中实现持续有效的item到token映射",
-        "如何检测和适应推荐系统中的数据漂移",
-        "如何在持续学习过程中平衡新知识学习与旧知识保留"
-      ],
-      "actions": [
-        "在推荐系统中部署持续tokenization机制",
-        "引入漂移检测模块监控数据分布变化",
-        "设计增量更新策略平衡模型稳定性与适应性"
+        "研究AutoModel在多场景推荐中的应用",
+        "探索该架构与其他推荐方法的对比实验",
+        "分析智能体在推荐系统生命周期中的具体角色"
       ]
     },
     {
       "id": "recsys-5",
+      "title": "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices",
+      "score": 85,
+      "ai_score": 45,
+      "recsys_score": 66,
+      "internet_score": 40,
+      "tags": [
+        "推荐系统",
+        "语义编码",
+        "系统设计"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.03949v1",
+      "brief": "本文介绍了Snapchat推荐系统中语义ID的设计、实现及其技术挑战",
+      "highlights": [
+        "提出将语义信息融入推荐系统ID设计以提升检索和排序效果",
+        "解决了大规模推荐系统中项目标识符的核心挑战",
+        "提供了实际生产环境中的设计选择和实践经验"
+      ],
+      "bossQuestions": [
+        "这篇论文的核心创新点是什么？",
+        "它更偏方法创新还是工程优化？",
+        "它和当前关注方向的关系有多强？"
+      ],
+      "actions": [
+        "评估现有推荐系统ID设计的不足",
+        "考虑引入语义ID提升系统性能",
+        "借鉴Snapchat的实践经验优化自身系统"
+      ]
+    },
+    {
+      "id": "recsys-9",
+      "title": "MMP-Refer: Multimodal Path Retrieval-augmented LLMs For Explainable Recommendation",
+      "score": 85,
+      "ai_score": 65,
+      "recsys_score": 60,
+      "internet_score": 45,
+      "tags": [
+        "可解释推荐",
+        "多模态",
+        "LLM"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.03666v1",
+      "brief": "提出多模态路径检索增强的大语言模型用于可解释推荐，提升推荐系统的透明度和可信度",
+      "highlights": [
+        "多模态路径检索增强LLM方法",
+        "提升推荐系统透明度",
+        "应用于个性化推荐场景"
+      ],
+      "bossQuestions": [
+        "如何增强推荐的可解释性",
+        "如何提升推荐系统的可信度",
+        "如何有效利用多模态信息"
+      ],
+      "actions": [
+        "构建多模态路径检索框架",
+        "利用大语言模型生成推荐解释",
+        "设计可解释推荐算法"
+      ]
+    },
+    {
+      "id": "recsys-22",
       "title": "Aligning Multimodal Sequential Recommendations via Robust Direct Preference Optimization with Sparse MoE",
       "score": 84,
       "ai_score": 60,
       "recsys_score": 60,
-      "internet_score": 40,
+      "internet_score": 35,
       "tags": [
-        "cs.IR",
-        "cs.CL",
-        "cs.AI"
+        "多模态推荐",
+        "直接偏好优化",
+        "稀疏MoE"
       ],
       "year": 2026,
       "month": "03",
       "source": "arXiv",
       "link": "http://arxiv.org/abs/2603.29259v1",
-      "brief": "提出一种结合稀疏MoE的鲁棒直接偏好优化方法，用于多模态序列推荐的用户偏好对齐。",
+      "brief": "提出一种结合稀疏MoE的鲁棒直接偏好优化方法来提升多模态顺序推荐系统的用户偏好对齐效果",
       "highlights": [
-        "引入稀疏MoE机制增强多模态特征融合的表示能力和鲁棒性",
-        "采用直接偏好优化替代传统RLHF成对学习，降低训练复杂度",
-        "设计针对推荐场景的对齐目标，有效缓解用户偏好漂移问题"
+        "提出Robust DPO方法直接优化推荐系统的用户偏好对齐",
+        "引入Sparse MoE增强模型的稀疏专家混合表达能力",
+        "针对多模态顺序推荐场景进行偏好对齐优化"
       ],
       "bossQuestions": [
-        "如何有效融合文本、图像等多模态信息以提升序列推荐性能？",
-        "如何避免传统RLHF方法在推荐系统中产生的偏好漂移和 reward hacking？",
-        "稀疏MoE如何帮助模型在噪声数据和分布偏移场景下保持稳定？"
+        "如何确保偏好优化过程中的鲁棒性和稳定性",
+        "稀疏MoE如何提升多模态特征的融合效果",
+        "如何在保持推荐准确性的同时实现有效的偏好对齐"
       ],
       "actions": [
-        "尝试将本方法应用于其他多模态推荐场景进行验证",
-        "探索结合用户反馈信号设计更精细的偏好优化目标",
-        "研究稀疏MoE在不同模态组合下的性能差异"
+        "构建多模态推荐系统的偏好对齐框架",
+        "设计稀疏专家混合网络提升模型表达能力",
+        "验证Robust DPO在顺序推荐任务中的有效性"
+      ]
+    },
+    {
+      "id": "recsys-18",
+      "title": "Aligning Recommendations with User Popularity Preferences",
+      "score": 82,
+      "ai_score": 45,
+      "recsys_score": 60,
+      "internet_score": 40,
+      "tags": [
+        "推荐系统",
+        "流行度偏差",
+        "用户偏好"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.01036v1",
+      "brief": "研究推荐系统中的流行度偏差问题，提出将推荐与用户个体流行度偏好对齐的方法",
+      "highlights": [
+        "提出解决推荐系统中流行度偏差的方法",
+        "分析用户对流行度商品的个体偏好差异",
+        "设计将推荐结果与用户偏好对齐的机制"
+      ],
+      "bossQuestions": [
+        "用户对流行度偏好如何影响推荐效果",
+        "如何在准确性和公平性之间取得平衡",
+        "不同用户群体的流行度偏好有何差异"
+      ],
+      "actions": [
+        "详细阅读论文方法论部分",
+        "复现论文中的实验设置",
+        "在基准数据集上评估方法"
       ]
     }
   ]

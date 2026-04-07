@@ -30,7 +30,7 @@ def paper_to_dict(result):
     }
 
 
-def fetch_papers(query: str, max_results: int = 5):
+def fetch_papers(query: str, max_results: int = 30):
     print(f"正在执行 query: {query}")
 
     client = arxiv.Client(
@@ -77,22 +77,22 @@ def save_json(path: Path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
-
 def main():
     ensure_dirs()
 
-    ai_query = 'ti:"multimodal"'
-    recsys_query = 'ti:"recommendation"'
+    ai_query = 'ti:"multimodal" OR ti:"vision-language" OR ti:"multimodal reasoning" OR ti:"MLLM"'
+    recsys_query = 'ti:"recommendation" OR ti:"recommender system" OR ti:"sequential recommender" OR ti:"generative recommendation"'
 
     print(f"AI 输出文件: {AI_OUTPUT_PATH}")
     print(f"推荐系统输出文件: {RECSYS_OUTPUT_PATH}")
 
     print("开始抓取 AI 论文...")
-    ai_papers = fetch_papers(ai_query, max_results=5)
+    ai_papers = fetch_papers(ai_query, max_results=30)
     save_json(AI_OUTPUT_PATH, ai_papers)
 
     print("开始抓取推荐系统论文...")
-    recsys_papers = fetch_papers(recsys_query, max_results=5)
+    recsys_papers = fetch_papers(recsys_query, max_results=30)
     save_json(RECSYS_OUTPUT_PATH, recsys_papers)
+
 if __name__ == "__main__":
     main()

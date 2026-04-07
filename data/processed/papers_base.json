@@ -1,22 +1,54 @@
 {
   "ai": [
     {
-      "id": "ai-1",
-      "title": "OmniMem: Autoresearch-Guided Discovery of Lifelong Multimodal Agent Memory",
-      "score": 78,
-      "ai_score": 60,
-      "recsys_score": 36,
+      "id": "ai-15",
+      "title": "VLA-Forget: Vision-Language-Action Unlearning for Embodied Foundation Models",
+      "score": 86,
+      "ai_score": 75,
+      "recsys_score": 26,
       "internet_score": 20,
+      "tags": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.03956v1",
+      "brief": "Vision-language-action (VLA) models are emerging as embodied foundation models for robotic manipulation, but their deployment introduces a new unlearning challenge: removing unsafe, spurious, or privacy-sensitive behaviors without degrading perception, language grounding, and action control。",
+      "highlights": [
+        "论文核心关注点是：Vision-language-action (VLA) models are emerging as embodied foundation models for robotic manipulation, but their deployment introduces a new unlearning challenge: removing unsafe, spurious, or privacy-sensitive behaviors without degrading perception, language grounding, and action control。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-6",
+      "title": "Scalable and Explainable Learner-Video Interaction Prediction using Multimodal Large Language Models",
+      "score": 82,
+      "ai_score": 65,
+      "recsys_score": 30,
+      "internet_score": 30,
       "tags": [
         "cs.AI"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.01007v1",
-      "brief": "AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck。",
+      "link": "http://arxiv.org/abs/2604.04482v1",
+      "brief": "Learners' use of video controls in educational videos provides implicit signals of cognitive processing and instructional design quality, yet the lack of scalable and explainable predictive models limits instructors' ability to anticipate such behavior before deployment。",
       "highlights": [
-        "论文核心关注点是：AI agents increasingly operate over extended time horizons, yet their ability to retain, organize, and recall multimodal experiences remains a critical bottleneck。",
+        "论文核心关注点是：Learners' use of video controls in educational videos provides implicit signals of cognitive processing and instructional design quality, yet the lack of scalable and explainable predictive models limits instructors' ability to anticipate such behavior before deployment。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -32,86 +64,24 @@
       ]
     },
     {
-      "id": "ai-2",
-      "title": "Multimodal Analysis of State-Funded News Coverage of the Israel-Hamas War on YouTube Shorts",
+      "id": "ai-1",
+      "title": "ClickAIXR: On-Device Multimodal Vision-Language Interaction with Real-World Objects in Extended Reality",
       "score": 78,
       "ai_score": 60,
       "recsys_score": 30,
-      "internet_score": 25,
+      "internet_score": 24,
       "tags": [
-        "cs.CL",
-        "cs.AI",
-        "cs.SI"
+        "cs.CV",
+        "cs.GR",
+        "cs.HC"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00994v1",
-      "brief": "YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited。",
+      "link": "http://arxiv.org/abs/2604.04905v1",
+      "brief": "We present ClickAIXR, a novel on-device framework for multimodal vision-language interaction with objects in extended reality (XR)。",
       "highlights": [
-        "论文核心关注点是：YouTube Shorts have become central to news consumption on the platform, yet research on how geopolitical events are represented in this format remains limited。",
-        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
-        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
-      ],
-      "bossQuestions": [
-        "这篇论文解决的是能力问题，还是工程落地问题？",
-        "它是否适合进入我们的长期跟踪列表？",
-        "这项能力能否迁移到内容理解或信息产品中？"
-      ],
-      "actions": [
-        "先纳入 AI 论文池，后续再做人工复筛。",
-        "补充更细粒度标签，如多模态、Agent、推理、生成。",
-        "后续结合自动总结模块生成更完整解读。"
-      ]
-    },
-    {
-      "id": "ai-3",
-      "title": "Auditing the Reliability of Multimodal Generative Search",
-      "score": 74,
-      "ai_score": 56,
-      "recsys_score": 26,
-      "internet_score": 20,
-      "tags": [
-        "cs.CY"
-      ],
-      "year": 2026,
-      "month": "04",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00944v1",
-      "brief": "Multimodal Large Language Models (MLLMs) increasingly function as generative search systems that retrieve and synthesize answers from multimedia content, including YouTube videos。",
-      "highlights": [
-        "论文核心关注点是：Multimodal Large Language Models (MLLMs) increasingly function as generative search systems that retrieve and synthesize answers from multimedia content, including YouTube videos。",
-        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
-        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
-      ],
-      "bossQuestions": [
-        "这篇论文解决的是能力问题，还是工程落地问题？",
-        "它是否适合进入我们的长期跟踪列表？",
-        "这项能力能否迁移到内容理解或信息产品中？"
-      ],
-      "actions": [
-        "先纳入 AI 论文池，后续再做人工复筛。",
-        "补充更细粒度标签，如多模态、Agent、推理、生成。",
-        "后续结合自动总结模块生成更完整解读。"
-      ]
-    },
-    {
-      "id": "ai-4",
-      "title": "YieldSAT: A Multimodal Benchmark Dataset for High-Resolution Crop Yield Prediction",
-      "score": 72,
-      "ai_score": 50,
-      "recsys_score": 36,
-      "internet_score": 15,
-      "tags": [
-        "cs.CV"
-      ],
-      "year": 2026,
-      "month": "04",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00940v1",
-      "brief": "Crop yield prediction requires substantial data to train scalable models。",
-      "highlights": [
-        "论文核心关注点是：Crop yield prediction requires substantial data to train scalable models。",
+        "论文核心关注点是：We present ClickAIXR, a novel on-device framework for multimodal vision-language interaction with objects in extended reality (XR)。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -128,23 +98,211 @@
     },
     {
       "id": "ai-5",
-      "title": "Multimodal Language Models Cannot Spot Spatial Inconsistencies",
+      "title": "A Patch-based Cross-view Regularized Framework for Backdoor Defense in Multimodal Large Language Models",
       "score": 78,
       "ai_score": 60,
       "recsys_score": 30,
       "internet_score": 20,
       "tags": [
         "cs.CV",
-        "cs.CL",
         "cs.LG"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00799v1",
-      "brief": "Spatial consistency is a fundamental property of the visual world and a key requirement for models that aim to understand physical reality。",
+      "link": "http://arxiv.org/abs/2604.04488v1",
+      "brief": "Multimodal large language models have become an important infrastructure for unified processing of visual and linguistic tasks。",
       "highlights": [
-        "论文核心关注点是：Spatial consistency is a fundamental property of the visual world and a key requirement for models that aim to understand physical reality。",
+        "论文核心关注点是：Multimodal large language models have become an important infrastructure for unified processing of visual and linguistic tasks。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-10",
+      "title": "Don't Blink: Evidence Collapse during Multimodal Reasoning",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "cs.AI"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04207v1",
+      "brief": "Reasoning VLMs can become more accurate while progressively losing visual grounding as they think。",
+      "highlights": [
+        "论文核心关注点是：Reasoning VLMs can become more accurate while progressively losing visual grounding as they think。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-12",
+      "title": "GENFIG1: Visual Summaries of Scholarly Work as a Challenge for Vision-Language Models",
+      "score": 78,
+      "ai_score": 60,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04172v1",
+      "brief": "In many science papers, \"Figure 1\" serves as the primary visual summary of the core research idea。",
+      "highlights": [
+        "论文核心关注点是：In many science papers, \"Figure 1\" serves as the primary visual summary of the core research idea。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-11",
+      "title": "Scale-Aware Vision-Language Adaptation for Extreme Far-Distance Video Person Re-identification",
+      "score": 77,
+      "ai_score": 55,
+      "recsys_score": 42,
+      "internet_score": 25,
+      "tags": [
+        "cs.CV"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04183v1",
+      "brief": "Extreme far-distance video person re-identification (ReID) is particularly challenging due to scale compression, resolution degradation, motion blur, and aerial-ground viewpoint mismatch。",
+      "highlights": [
+        "论文核心关注点是：Extreme far-distance video person re-identification (ReID) is particularly challenging due to scale compression, resolution degradation, motion blur, and aerial-ground viewpoint mismatch。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-4",
+      "title": "Is a Picture Worth a Thousand Words? Adaptive Multimodal Fact-Checking with Visual Evidence Necessity",
+      "score": 75,
+      "ai_score": 55,
+      "recsys_score": 30,
+      "internet_score": 25,
+      "tags": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04692v1",
+      "brief": "Automated fact-checking is a crucial task not only in journalism but also across web platforms, where it supports a responsible information ecosystem and mitigates the harms of misinformation。",
+      "highlights": [
+        "论文核心关注点是：Automated fact-checking is a crucial task not only in journalism but also across web platforms, where it supports a responsible information ecosystem and mitigates the harms of misinformation。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-3",
+      "title": "CLEAR: Unlocking Generative Potential for Degraded Image Understanding in Unified Multimodal Models",
+      "score": 74,
+      "ai_score": 55,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "cs.CV"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04780v1",
+      "brief": "Image degradation from blur, noise, compression, and poor illumination severely undermines multimodal understanding in real-world settings。",
+      "highlights": [
+        "论文核心关注点是：Image degradation from blur, noise, compression, and poor illumination severely undermines multimodal understanding in real-world settings。",
+        "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
+        "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
+      ],
+      "bossQuestions": [
+        "这篇论文解决的是能力问题，还是工程落地问题？",
+        "它是否适合进入我们的长期跟踪列表？",
+        "这项能力能否迁移到内容理解或信息产品中？"
+      ],
+      "actions": [
+        "先纳入 AI 论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如多模态、Agent、推理、生成。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "ai-7",
+      "title": "Beyond Standard Benchmarks: A Systematic Audit of Vision-Language Model's Robustness to Natural Semantic Variation Across Diverse Tasks",
+      "score": 74,
+      "ai_score": 55,
+      "recsys_score": 30,
+      "internet_score": 20,
+      "tags": [
+        "cs.CV"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04473v1",
+      "brief": "Recent advances in vision-language models (VLMs) trained on web-scale image-text pairs have enabled impressive zero-shot transfer across a diverse range of visual tasks。",
+      "highlights": [
+        "论文核心关注点是：Recent advances in vision-language models (VLMs) trained on web-scale image-text pairs have enabled impressive zero-shot transfer across a diverse range of visual tasks。",
         "从当前标题和摘要看，这篇论文更适合进入 AI 论文观察池做进一步筛选。",
         "后续可结合更细的标签体系判断其是否属于真正值得推荐的重点论文。"
       ],
@@ -163,23 +321,85 @@
   "recsys": [
     {
       "id": "recsys-1",
-      "title": "Aligning Recommendations with User Popularity Preferences",
-      "score": 82,
-      "ai_score": 45,
+      "title": "Retrieval Augmented Conversational Recommendation with Reinforcement Learning",
+      "score": 91,
+      "ai_score": 55,
+      "recsys_score": 72,
+      "internet_score": 50,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.04457v1",
+      "brief": "Large language models (LLMs) exhibit enhanced capabilities in language understanding and generation。",
+      "highlights": [
+        "论文核心关注点是：Large language models (LLMs) exhibit enhanced capabilities in language understanding and generation。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-27",
+      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
+      "score": 89,
+      "ai_score": 55,
+      "recsys_score": 72,
+      "internet_score": 30,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.26100v1",
+      "brief": "Large-scale industrial recommenders typically use a fixed multi-stage pipeline (recall, ranking, re-ranking) and have progressed from collaborative filtering to deep and large pre-trained models。",
+      "highlights": [
+        "论文核心关注点是：Large-scale industrial recommenders typically use a fixed multi-stage pipeline (recall, ranking, re-ranking) and have progressed from collaborative filtering to deep and large pre-trained models。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-15",
+      "title": "Multi-Agent Video Recommenders: Evolution, Patterns, and Open Challenges",
+      "score": 88,
+      "ai_score": 80,
       "recsys_score": 60,
-      "internet_score": 45,
+      "internet_score": 55,
       "tags": [
         "cs.IR",
         "cs.AI",
-        "cs.CY"
+        "cs.MA"
       ],
       "year": 2026,
       "month": "04",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.01036v1",
-      "brief": "Popularity bias is a pervasive problem in recommender systems, where recommendations disproportionately favor popular items。",
+      "link": "http://arxiv.org/abs/2604.02211v1",
+      "brief": "Video recommender systems are among the most popular and impactful applications of AI, shaping content consumption and influencing culture for billions of users。",
       "highlights": [
-        "论文核心关注点是：Popularity bias is a pervasive problem in recommender systems, where recommendations disproportionately favor popular items。",
+        "论文核心关注点是：Video recommender systems are among the most popular and impactful applications of AI, shaping content consumption and influencing culture for billions of users。",
         "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
         "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
       ],
@@ -195,23 +415,22 @@
       ]
     },
     {
-      "id": "recsys-2",
-      "title": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems",
-      "score": 77,
+      "id": "recsys-25",
+      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
+      "score": 87,
       "ai_score": 40,
-      "recsys_score": 54,
-      "internet_score": 40,
+      "recsys_score": 72,
+      "internet_score": 25,
       "tags": [
-        "cs.IR",
-        "cs.AI"
+        "cs.IR"
       ],
       "year": 2026,
-      "month": "04",
+      "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2604.00590v1",
-      "brief": "In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders。",
+      "link": "http://arxiv.org/abs/2603.27952v1",
+      "brief": "Sequential recommender systems have achieved steady gains in offline accuracy, yet it remains unclear how close current models are to the intrinsic accuracy limit imposed by the data。",
       "highlights": [
-        "论文核心关注点是：In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders。",
+        "论文核心关注点是：Sequential recommender systems have achieved steady gains in offline accuracy, yet it remains unclear how close current models are to the intrinsic accuracy limit imposed by the data。",
         "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
         "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
       ],
@@ -227,11 +446,42 @@
       ]
     },
     {
-      "id": "recsys-3",
-      "title": "Cold-Starts in Generative Recommendation: A Reproducibility Study",
-      "score": 81,
+      "id": "recsys-24",
+      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
+      "score": 86,
       "ai_score": 40,
-      "recsys_score": 60,
+      "recsys_score": 66,
+      "internet_score": 55,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "03",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2603.28124v1",
+      "brief": "Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize。",
+      "highlights": [
+        "论文核心关注点是：Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-28",
+      "title": "AgenticRS-Architecture: System Design for Agentic Recommender Systems",
+      "score": 86,
+      "ai_score": 50,
+      "recsys_score": 66,
       "internet_score": 40,
       "tags": [
         "cs.IR"
@@ -239,41 +489,10 @@
       "year": 2026,
       "month": "03",
       "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29845v1",
-      "brief": "Cold-start recommendation remains a central challenge in dynamic, open-world platforms, requiring models to recommend for newly registered users (user cold-start) and to recommend newly introduced items to existing users (item cold-start) under sparse or missing interaction signals。",
+      "link": "http://arxiv.org/abs/2603.26085v1",
+      "brief": "AutoModel is an agent based architecture for the full lifecycle of industrial recommender systems。",
       "highlights": [
-        "论文核心关注点是：Cold-start recommendation remains a central challenge in dynamic, open-world platforms, requiring models to recommend for newly registered users (user cold-start) and to recommend newly introduced items to existing users (item cold-start) under sparse or missing interaction signals。",
-        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
-        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
-      ],
-      "bossQuestions": [
-        "这篇论文更接近推荐策略优化，还是模型结构创新？",
-        "它更适合用于召回、排序还是冷启动？",
-        "这种方法在真实业务里是否有上线价值？"
-      ],
-      "actions": [
-        "先纳入推荐系统论文池，后续再做人工复筛。",
-        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
-        "后续结合自动总结模块生成更完整解读。"
-      ]
-    },
-    {
-      "id": "recsys-4",
-      "title": "Drift-Aware Continual Tokenization for Generative Recommendation",
-      "score": 81,
-      "ai_score": 45,
-      "recsys_score": 60,
-      "internet_score": 35,
-      "tags": [
-        "cs.IR"
-      ],
-      "year": 2026,
-      "month": "03",
-      "source": "arXiv",
-      "link": "http://arxiv.org/abs/2603.29705v1",
-      "brief": "Generative recommendation commonly adopts a two-stage pipeline in which a learnable tokenizer maps items to discrete token sequences (i.e。",
-      "highlights": [
-        "论文核心关注点是：Generative recommendation commonly adopts a two-stage pipeline in which a learnable tokenizer maps items to discrete token sequences (i.e。",
+        "论文核心关注点是：AutoModel is an agent based architecture for the full lifecycle of industrial recommender systems。",
         "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
         "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
       ],
@@ -290,11 +509,73 @@
     },
     {
       "id": "recsys-5",
+      "title": "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices",
+      "score": 85,
+      "ai_score": 45,
+      "recsys_score": 66,
+      "internet_score": 40,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.03949v1",
+      "brief": "Effective item identifiers (IDs) are an important component for recommender systems (RecSys) in practice, and are commonly adopted in many use cases such as retrieval and ranking。",
+      "highlights": [
+        "论文核心关注点是：Effective item identifiers (IDs) are an important component for recommender systems (RecSys) in practice, and are commonly adopted in many use cases such as retrieval and ranking。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-9",
+      "title": "MMP-Refer: Multimodal Path Retrieval-augmented LLMs For Explainable Recommendation",
+      "score": 85,
+      "ai_score": 65,
+      "recsys_score": 60,
+      "internet_score": 45,
+      "tags": [
+        "cs.IR"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.03666v1",
+      "brief": "Explainable recommendations help improve the transparency and credibility of recommendation systems, and play an important role in personalized recommendation scenarios。",
+      "highlights": [
+        "论文核心关注点是：Explainable recommendations help improve the transparency and credibility of recommendation systems, and play an important role in personalized recommendation scenarios。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-22",
       "title": "Aligning Multimodal Sequential Recommendations via Robust Direct Preference Optimization with Sparse MoE",
       "score": 84,
       "ai_score": 60,
       "recsys_score": 60,
-      "internet_score": 40,
+      "internet_score": 35,
       "tags": [
         "cs.IR",
         "cs.CL"
@@ -306,6 +587,39 @@
       "brief": "Preference-based alignment objectives have been widely adopted, from RLHF-style pairwise learning in large language models to emerging applications in recommender systems。",
       "highlights": [
         "论文核心关注点是：Preference-based alignment objectives have been widely adopted, from RLHF-style pairwise learning in large language models to emerging applications in recommender systems。",
+        "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
+        "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
+      ],
+      "bossQuestions": [
+        "这篇论文更接近推荐策略优化，还是模型结构创新？",
+        "它更适合用于召回、排序还是冷启动？",
+        "这种方法在真实业务里是否有上线价值？"
+      ],
+      "actions": [
+        "先纳入推荐系统论文池，后续再做人工复筛。",
+        "补充更细粒度标签，如召回、排序、冷启动、用户建模。",
+        "后续结合自动总结模块生成更完整解读。"
+      ]
+    },
+    {
+      "id": "recsys-18",
+      "title": "Aligning Recommendations with User Popularity Preferences",
+      "score": 82,
+      "ai_score": 45,
+      "recsys_score": 60,
+      "internet_score": 40,
+      "tags": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "year": 2026,
+      "month": "04",
+      "source": "arXiv",
+      "link": "http://arxiv.org/abs/2604.01036v1",
+      "brief": "Popularity bias is a pervasive problem in recommender systems, where recommendations disproportionately favor popular items。",
+      "highlights": [
+        "论文核心关注点是：Popularity bias is a pervasive problem in recommender systems, where recommendations disproportionately favor popular items。",
         "从当前标题和摘要看，这篇论文与推荐系统、排序或个性化方向相关。",
         "后续可结合业务场景判断其更适合召回、排序还是用户理解方向。"
       ],

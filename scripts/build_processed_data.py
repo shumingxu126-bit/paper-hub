@@ -125,18 +125,19 @@ def build_internet_score(paper):
         "online", "platform", "user", "content", "feed", "ads",
         "advertising", "e-commerce", "social", "creator", "consumer",
         "engagement", "conversion", "click", "ranking", "recommendation",
-        "personalization"
+        "personalization", "retrieval", "search", "matching", "behavior"
     ]
 
     offline_or_vertical_penalties = [
         "disease", "clinical", "medical", "patient",
         "chemical", "molecule", "protein", "biology",
-        "satellite", "geology", "material", "robotics"
+        "policy", "regulation", "law", "governance",
+        "satellite", "geology", "material", "robotics", "porcelain"
     ]
 
-    score = 20
+    score = 15
     score += keyword_score(summary, title, internet_keywords, title_weight=10, summary_weight=5)
-    score -= penalty_score(summary, title, offline_or_vertical_penalties, title_weight=10, summary_weight=5)
+    score -= penalty_score(summary, title, offline_or_vertical_penalties, title_weight=12, summary_weight=6)
 
     return max(0, min(score, 100))
 
@@ -147,7 +148,7 @@ def build_final_score(ai_score, recsys_score, internet_score, category_name: str
         score = 35 + 0.60 * recsys_score + 0.15 * ai_score + 0.10 * internet_score
 
     return max(60, min(round(score), 95))
-    
+
 def build_highlights(paper, category_name: str):
     summary = (paper.get("summary") or "").strip()
     short_summary = safe_first_sentence(summary)
@@ -221,10 +222,79 @@ def transform_paper(paper, category_name: str, index: int):
         "actions": build_actions(category_name),
     }
 
+def is_internet_relevant(paper, category_name: str):
+    ai_score = build_ai_score(paper)
+    recsys_score = build_recsys_score(paper)
+    internet_score = build_internet_score(paper)
+
+    title = (paper.get("title") or "").lower()
+    summary = (paper.get("summary") or "").lower()
+    text = f"{title} {summary}"
+
+    strong_penalties = [
+        "disease", "clinical", "medical", "patient", "healthcare",
+        "chemical", "molecule", "drug", "protein", "biology",
+        "genome", "diagnosis", "treatment", "hospital",
+        "policy", "regulation", "governance", "law",
+        "satellite", "geology", "material", "robotics"
+    ]
+
+    penalty_hits = sum(1 for kw in strong_penalties if kw in text)
+
+    # 核心原则：
+    # 1. 至少要有一定互联网相关性
+    # 2. AI区允许 AI 强 + 互联网中等
+    # 3. 推荐区要求 推荐强 + 互联网中等
+    # 4. 医疗/化学/政策等强垂类直接压掉
+    if penalty_hits >= 2:
+        return False
+
+    if category_name == "ai":
+        return ai_score >= 45 and internet_score >= 18
+    else:
+        return recsys_score >= 40 and internet_score >= 18
+
+
+def is_internet_relevant(paper, category_name: str):
+    title = (paper.get("title") or "").lower()
+    summary = (paper.get("summary") or "").lower()
+    text = f"{title} {summary}"
+
+    ai_score = build_ai_score(paper)
+    recsys_score = build_recsys_score(paper)
+    internet_score = build_internet_score(paper)
+
+    strong_penalties = [
+        "disease", "clinical", "medical", "patient", "healthcare",
+        "chemical", "molecule", "drug", "protein", "biology",
+        "policy", "regulation", "law", "governance",
+        "satellite", "geology", "material", "robotics"
+    ]
+
+    penalty_hits = sum(1 for kw in strong_penalties if kw in text)
+    if penalty_hits >= 2:
+        return False
+
+    if category_name == "ai":
+        return ai_score >= 45 and internet_score >= 18
+    else:
+        return recsys_score >= 40 and internet_score >= 18
+
+
 def transform_category(raw_data, category_name: str):
     papers = raw_data.get("papers", [])
-    return [transform_paper(p, category_name, idx) for idx, p in enumerate(papers)]
 
+    # 先过滤
+    filtered = [p for p in papers if is_internet_relevant(p, category_name)]
+
+    # 再转结构
+    transformed = [transform_paper(p, category_name, idx) for idx, p in enumerate(filtered)]
+
+    # 按推荐指数降序
+    transformed.sort(key=lambda x: x.get("score", 0), reverse=True)
+
+    # 只保留前10篇
+    return transformed[:10]
 
 def main():
     raw_ai = load_json(RAW_AI_PATH)
