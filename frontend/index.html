@@ -135,7 +135,7 @@
           </div>
         </div>
         <div class="mt-3 min-h-[18px]">
-          <p v-if="isSearching" class="text-[11px] text-gray-400 font-medium">正在实时搜索相关论文，请稍候...</p>
+          <p v-if="isSearching" class="text-[11px] text-gray-400 font-medium">正在从 arXiv 搜索相关论文，新的搜索会自动中断上一次请求...</p>
           <p v-else-if="loading" class="text-[11px] text-gray-400 font-medium">正在加载论文数据...</p>
           <p v-else-if="loadError" class="text-[11px] text-red-500 font-medium">{{ loadError }}</p>
           <p v-else class="text-[11px] text-gray-400 font-medium">数据源：/api/papers</p>
@@ -291,6 +291,7 @@ createApp({
     const loading = ref(false);
     const loadError = ref('');
     const isSearching = ref(false);
+    let activeSearchController = null;
     
     const filteredPapers = computed(() => {
       let base = papers.value[currentCategory.value] || [];
@@ -390,22 +391,43 @@ const searchPapers = async () => {
   const q = searchQuery.value.trim();
 
   if (!q) {
+    // 清空搜索时，取消正在进行的搜索，并恢复默认数据
+    if (activeSearchController) {
+      activeSearchController.abort();
+      activeSearchController = null;
+    }
     await fetchData();
     return;
   }
+
+  // 先取消上一次还没完成的搜索
+  if (activeSearchController) {
+    activeSearchController.abort();
+  }
+
+  const controller = new AbortController();
+  activeSearchController = controller;
 
   isSearching.value = true;
   loading.value = true;
   loadError.value = '';
 
   try {
-    const response = await fetch(`${SEARCH_URL}?q=${encodeURIComponent(q)}`);
+    const response = await fetch(`${SEARCH_URL}?q=${encodeURIComponent(q)}`, {
+      signal: controller.signal
+    });
+
     if (!response.ok) {
       throw new Error(`搜索失败: ${response.status}`);
     }
 
     const data = await response.json();
     const results = data.results || [];
+
+    // 只有当前这次请求仍然是“最新请求”时，才更新页面
+    if (activeSearchController !== controller) {
+      return;
+    }
 
     papers.value = {
       ai: results,
@@ -423,14 +445,29 @@ const searchPapers = async () => {
     }
 
   } catch (err) {
+    // 如果是主动取消，不报错、不提示失败
+    if (err.name === 'AbortError') {
+      return;
+    }
+
     loadError.value = err.message || '搜索失败';
   } finally {
-    isSearching.value = false;
-    loading.value = false;
+    // 只有当前请求仍然是最新请求，才结束搜索态
+    if (activeSearchController === controller) {
+      activeSearchController = null;
+      isSearching.value = false;
+      loading.value = false;
+    }
   }
 };
 
 const refreshData = async () => {
+  if (activeSearchController) {
+    activeSearchController.abort();
+    activeSearchController = null;
+  }
+
+  isSearching.value = false;
   loading.value = true;
   loadError.value = '正在更新论文数据，请稍候...';
 
@@ -449,6 +486,9 @@ const refreshData = async () => {
     await fetchData();
 
   } catch (err) {
+    if (err.name === 'AbortError') {
+      return;
+    }
     loadError.value = err.message || '刷新失败';
   } finally {
     loading.value = false;
