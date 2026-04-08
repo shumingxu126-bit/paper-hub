@@ -217,7 +217,7 @@ def search_papers(q: str = Query(..., min_length=1)):
         brief = summary[:180] + ("..." if len(summary) > 180 else "")
 
         return {
-            "id": f"search-{idx+1}",
+            "id": paper.get("arxiv_id") or paper.get("entry_id") or f"search-{idx+1}",
             "title": paper.get("title", "Untitled Paper"),
             "score": max(60, min(score, 95)),  # 保证在60-95区间
             "tags": paper.get("categories", [])[:3] or ["arXiv"],

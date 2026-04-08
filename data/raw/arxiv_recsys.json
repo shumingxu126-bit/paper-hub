@@ -1,7 +1,135 @@
 {
-  "generated_at": "2026-04-07T20:58:37.442591",
+  "generated_at": "2026-04-08T14:33:45.542907",
   "count": 30,
   "papers": [
+    {
+      "arxiv_id": "2604.05379v1",
+      "title": "Retrieve-then-Adapt: Retrieval-Augmented Test-Time Adaptation for Sequential Recommendation",
+      "summary": "The sequential recommendation (SR) task aims to predict the next item based on users' historical interaction sequences. Typically trained on historical data, SR models often struggle to adapt to real-time preference shifts during inference due to challenges posed by distributional divergence and parameterized constraints. Existing approaches to address this issue include test-time training, test-time augmentation, and retrieval-augmented fine-tuning. However, these methods either introduce significant computational overhead, rely on random augmentation strategies, or require a carefully designed two-stage training paradigm. In this paper, we argue that the key to effective test-time adaptation lies in achieving both effective augmentation and efficient adaptation. To this end, we propose Retrieve-then-Adapt (ReAd), a novel framework that dynamically adapts a deployed SR model to the test distribution through retrieved user preference signals. Specifically, given a trained SR model, ReAd first retrieves collaboratively similar items for a test user from a constructed collaborative memory database. A lightweight retrieval learning module then integrates these items into an informative augmentation embedding that captures both collaborative signals and prediction-refinement cues. Finally, the initial SR prediction is refined via a fusion mechanism that incorporates this embedding. Extensive experiments across five benchmark datasets demonstrate that ReAd consistently outperforms existing SR methods.",
+      "authors": [
+        "Xing Tang",
+        "Jingyang Bin",
+        "Ziqiang Cui",
+        "Xiaokun Zhang",
+        "Fuyuan Lyu",
+        "Jingyan Jiang",
+        "Dugang Liu",
+        "Chen Ma",
+        "Xiuqiang He"
+      ],
+      "published": "2026-04-07T03:24:56+00:00",
+      "updated": "2026-04-07T03:24:56+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.05379v1",
+      "entry_id": "http://arxiv.org/abs/2604.05379v1"
+    },
+    {
+      "arxiv_id": "2604.05365v1",
+      "title": "From Clues to Generation: Language-Guided Conditional Diffusion for Cross-Domain Recommendation",
+      "summary": "Cross-domain Recommendation (CDR) exploits multi-domain correlations to alleviate data sparsity. As a core task within this field, inter-domain recommendation focuses on predicting preferences for users who interact in a source domain but lack behavioral records in a target domain. Existing approaches predominantly rely on overlapping users as anchors for knowledge transfer. In real-world scenarios, overlapping users are often scarce, leaving the vast majority of users with only single-domain interactions. For these users, the absence of explicit alignment signals makes fine-grained preference transfer intrinsically difficult. To address this challenge, this paper proposes Language-Guided Conditional Diffusion for CDR (LGCD), a novel framework that integrates Large Language Models (LLMs) and diffusion models for inter-domain sequential recommendation. Specifically, we leverage LLM reasoning to bridge the domain gap by inferring potential target preferences for single-domain users and mapping them to real items, thereby constructing pseudo-overlapping data. We distinguish between real and pseudo-interaction pathways and introduce additional supervision constraints to mitigate the semantic noise brought by pseudo-interaction. Furthermore, we design a conditional diffusion architecture to precisely guide the generation of target user representations based on source-domain patterns. Extensive experiments demonstrate that LGCD significantly outperforms state-of-the-art methods in inter-domain recommendation tasks.",
+      "authors": [
+        "Ziang Lu",
+        "Lei Sang",
+        "Lin Mu",
+        "Yiwen Zhang"
+      ],
+      "published": "2026-04-07T03:05:22+00:00",
+      "updated": "2026-04-07T03:05:22+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.05365v1",
+      "entry_id": "http://arxiv.org/abs/2604.05365v1"
+    },
+    {
+      "arxiv_id": "2604.05341v1",
+      "title": "Curr-RLCER:Curriculum Reinforcement Learning For Coherence Explainable Recommendation",
+      "summary": "Explainable recommendation systems (RSs) are designed to explicitly uncover the rationale of each recommendation, thereby enhancing the transparency and credibility of RSs. Previous methods often jointly predicted ratings and generated explanations, but overlooked the incoherence of such two objectives. To address this issue, we propose Curr-RLCER, a reinforcement learning framework for explanation coherent recommendation with dynamic rating alignment. It employs curriculum learning, transitioning from basic predictions (i.e., click through rating-CTR, selection-based rating) to open-ended recommendation explanation generation. In particular, the rewards of each stage are designed for progressively enhancing the stability of RSs. Furthermore, a coherence-driven reward mechanism is also proposed to enforce the coherence between generated explanations and predicted ratings, supported by a specifically designed evaluation scheme. The extensive experimental results on three explainable recommendation datasets indicate that the proposed framework is effective. Codes and datasets are available at https://github.com/pxcstart/Curr-RLCER.",
+      "authors": [
+        "Xiangchen Pan",
+        "Wei Wei"
+      ],
+      "published": "2026-04-07T02:25:36+00:00",
+      "updated": "2026-04-07T02:25:36+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.05341v1",
+      "entry_id": "http://arxiv.org/abs/2604.05341v1"
+    },
+    {
+      "arxiv_id": "2604.05329v1",
+      "title": "Semantic Trimming and Auxiliary Multi-step Prediction for Generative Recommendation",
+      "summary": "Generative Recommendation (GR) has recently transitioned from atomic item-indexing to Semantic ID (SID)-based frameworks to capture intrinsic item relationships and enhance generalization. However, the adoption of high-granularity SIDs leads to two critical challenges: prohibitive training overhead due to sequence expansion and unstable performance reliability characterized by non-monotonic accuracy fluctuations. We identify that these disparate issues are fundamentally rooted in the Semantic Dilution Effect, where redundant tokens waste massive computation and dilute the already sparse learning signals in recommendation. To counteract this, we propose STAMP (Semantic Trimming and Auxiliary Multi-step Prediction), a framework utilizing a dual-end optimization strategy. We argue that effective SID learning requires simultaneously addressing low input information density and sparse output supervision. On the input side, Semantic Adaptive Pruning (SAP) dynamically filters redundancy during the forward pass, converting noise-laden sequences into compact, information-rich representations. On the output side, Multi-step Auxiliary Prediction (MAP) employs a multi-token objective to densify feedback, strengthening long-range dependency capture and ensuring robust learning signals despite compressed inputs. Unifying input purification and signal amplification, STAMP enhances both training efficiency and representation capability. Experiments on public Amazon and large-scale industrial datasets show STAMP achieves 1.23--1.38$\\times$ speedup and 17.2\\%--54.7\\% VRAM reduction while maintaining or improving performance across multiple architectures.",
+      "authors": [
+        "Tianyu Zhan",
+        "Kairui Fu",
+        "Chengfei Lv",
+        "Zheqi Lv",
+        "Shengyu Zhang"
+      ],
+      "published": "2026-04-07T02:00:23+00:00",
+      "updated": "2026-04-07T02:00:23+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.05329v1",
+      "entry_id": "http://arxiv.org/abs/2604.05329v1"
+    },
+    {
+      "arxiv_id": "2604.05309v1",
+      "title": "Pay Attention to Sequence Split: Uncovering the Impacts of Sub-Sequence Splitting on Sequential Recommendation Models",
+      "summary": "Sub-sequence splitting (SSS) has been demonstrated as an effective approach to mitigate data sparsity in sequential recommendation (SR) by splitting a raw user interaction sequence into multiple sub-sequences. Previous studies have demonstrated its ability to enhance the performance of SR models significantly. However, in this work, we discover that \\textbf{(i). SSS may interfere with the evaluation of the model's actual performance.} We observed that many recent state-of-the-art SR models employ SSS during the data reading stage (not mentioned in the papers). When we removed this operation, performance significantly declined, even falling below that of earlier classical SR models. The varying improvements achieved by SSS and different splitting methods across different models prompt us to analyze further when SSS proves effective. We find that \\textbf{(ii). SSS demonstrates strong capabilities only when specific splitting methods, target strategies, and loss functions are used together.} Inappropriate combinations may even harm performance. Furthermore, we analyze why sub-sequence splitting yields such remarkable performance gains and find that \\textbf{(iii). it evens out the distribution of training data while increasing the likelihood that different items are targeted.} Finally, we provide suggestions for overcoming SSS interference, along with a discussion on data augmentation methods and future directions. We hope this work will prompt the broader community to re-examine the impact of data splitting on SR and promote fairer, more rigorous model evaluation. All analysis code and data will be made available upon acceptance. We provide a simple, anonymous implementation at https://github.com/KingGugu/SSS4SR.",
+      "authors": [
+        "Yizhou Dang",
+        "Yifan Wu",
+        "Minhan Huang",
+        "Chuang Zhao",
+        "Lianbo Ma",
+        "Guibing Guo",
+        "Xingwei Wang",
+        "Zhu Sun"
+      ],
+      "published": "2026-04-07T01:28:14+00:00",
+      "updated": "2026-04-07T01:28:14+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.05309v1",
+      "entry_id": "http://arxiv.org/abs/2604.05309v1"
+    },
+    {
+      "arxiv_id": "2604.05113v1",
+      "title": "CRAB: Codebook Rebalancing for Bias Mitigation in Generative Recommendation",
+      "summary": "Generative recommendation (GeneRec) has introduced a new paradigm that represents items as discrete semantic tokens and predicts items in a generative manner. Despite its strong performance across multiple recommendation tasks, existing GeneRec approaches still suffer from severe popularity bias and may even exacerbate it. In this work, we conduct a comprehensive empirical analysis to uncover the root causes of this phenomenon, yielding two core insights: 1) imbalanced tokenization inherits and can further amplify popularity bias from historical item interactions; 2) current training procedures disproportionately favor popular tokens while neglecting semantic relationships among tokens, thereby intensifying popularity bias. Building on these insights, we propose CRAB, a post-hoc debiasing strategy for GeneRec that alleviates popularity bias by mitigating frequency imbalance among semantic tokens. Specifically, given a well-trained model, we first rebalance the codebook by splitting over-popular tokens while preserving their hierarchical semantic structure. Based on the adjusted codebook, we further introduce a tree-structured regularizer to enhance semantic consistency, encouraging more informative representations for unpopular tokens during training. Experiments on real-world datasets demonstrate that CRAB significantly improves recommendation performance by effectively alleviating popularity bias.",
+      "authors": [
+        "Zezhong Fan",
+        "Ziheng Chen",
+        "Luyi Ma",
+        "Jin Huang",
+        "Lalitesh Morishetti",
+        "Kaushiki Nag",
+        "Sushant Kumar",
+        "Kannan Achan"
+      ],
+      "published": "2026-04-06T19:18:24+00:00",
+      "updated": "2026-04-06T19:18:24+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.05113v1",
+      "entry_id": "http://arxiv.org/abs/2604.05113v1"
+    },
     {
       "arxiv_id": "2604.04457v1",
       "title": "Retrieval Augmented Conversational Recommendation with Reinforcement Learning",
@@ -119,6 +247,69 @@
       "primary_category": "cs.IR",
       "pdf_url": "https://arxiv.org/pdf/2604.03949v1",
       "entry_id": "http://arxiv.org/abs/2604.03949v1"
+    },
+    {
+      "arxiv_id": "2604.04982v1",
+      "title": "CURE:Circuit-Aware Unlearning for LLM-based Recommendation",
+      "summary": "Recent advances in large language models (LLMs) have opened new opportunities for recommender systems by enabling rich semantic understanding and reasoning about user interests and item attributes. However, as privacy regulations tighten, incorporating user data into LLM-based recommendation (LLMRec) introduces significant privacy risks, making unlearning algorithms increasingly crucial for practical deployment. Despite growing interest in LLMRec unlearning, most existing approaches formulate unlearning as a weighted combination of forgetting and retaining objectives while updating model parameters in a uniform manner. Such formulations inevitably induce gradient conflicts between the two objectives, leading to unstable optimization and resulting in either ineffective unlearning or severe degradation of model utility. Moreover, the unlearning procedure remains largely black-box, undermining its transparency and trustworthiness. To tackle these challenges, we propose CURE, a circuit-aware unlearning framework that disentangles model components into functionally distinct subsets and selectively updates them. Here, a circuit refers to a computational subgraph that is causally responsible for task-specific behaviors. Specifically, we extract the core circuits underlying item recommendation and analyze how individual modules within these circuits contribute to the forget and retain objectives. Based on this analysis, these modules are categorized into forget-specific, retain-specific, and task-shared groups, each subject to function-specific update rules to mitigate gradient conflicts during unlearning. Experiments on real-world datasets show that our approach achieves more effective unlearning than existing baselines.",
+      "authors": [
+        "Ziheng Chen",
+        "Jiali Cheng",
+        "Zezhong Fan",
+        "Hadi Amiri",
+        "Yunzhi Yao",
+        "Xiangguo Sun",
+        "Yang Zhang"
+      ],
+      "published": "2026-04-04T23:13:55+00:00",
+      "updated": "2026-04-04T23:13:55+00:00",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.04982v1",
+      "entry_id": "http://arxiv.org/abs/2604.04982v1"
+    },
+    {
+      "arxiv_id": "2604.04976v1",
+      "title": "Tencent Advertising Algorithm Challenge 2025: All-Modality Generative Recommendation",
+      "summary": "Generative recommender systems are rapidly emerging as a new paradigm for recommendation, where collaborative identifiers and/or multi-modal content are mapped into discrete token spaces and user behavior is modelled with autoregressive sequence models. Despite progress on multi-modal recommendation datasets, there is still a lack of public benchmarks that jointly offer large-scale, realistic and fully all-modality data designed specifically for generative recommendation (GR) in industrial advertising. To foster research in this direction, we organised the Tencent Advertising Algorithm Challenge 2025, a global competition built on top of two all-modality datasets for GR: TencentGR-1M and TencentGR-10M. Both datasets are constructed from real de-identified Tencent Ads logs and contain rich collaborative IDs and multi-modal representations extracted with state-of-the-art embedding models. The preliminary track (TencentGR-1M) provides 1 million user sequences with up to 100 interacted items each, where each interaction is labeled with exposure and click signals, while the final track (TencentGR-10M) scales this to 10 million users and explicitly distinguishes between click and conversion events at both the sequence and target level. This paper presents the task definition, data construction process, feature schema, baseline GR model, evaluation protocol, and key findings from top-ranked and award-winning solutions. Our datasets focus on multi-modal sequence generation in an advertising setting and introduce weighted evaluation for high-value conversion events. We release our datasets at https://huggingface.co/datasets/TAAC2025 and baseline implementations at https://github.com/TencentAdvertisingAlgorithmCompetition/baseline_2025 to enable future research on all-modality generative recommendation at an industrial scale. The official website is https://algo.qq.com/2025.",
+      "authors": [
+        "Junwei Pan",
+        "Wei Xue",
+        "Chao Zhou",
+        "Xing Zhou",
+        "Lunan Fan",
+        "Yanbo Wang",
+        "Haoran Xin",
+        "Zhiyu Hu",
+        "Yaozheng Wang",
+        "Fengye Xu",
+        "Yurong Yang",
+        "Xiaotian Li",
+        "Junbang Huo",
+        "Wentao Ning",
+        "Yuliang Sun",
+        "Chengguo Yin",
+        "Jun Zhang",
+        "Shudong Huang",
+        "Lei Xiao",
+        "Huan Yu",
+        "Irwin King",
+        "Haijie Gu",
+        "Jie Jiang"
+      ],
+      "published": "2026-04-04T17:05:15+00:00",
+      "updated": "2026-04-04T17:05:15+00:00",
+      "categories": [
+        "cs.IR"
+      ],
+      "primary_category": "cs.IR",
+      "pdf_url": "https://arxiv.org/pdf/2604.04976v1",
+      "entry_id": "http://arxiv.org/abs/2604.04976v1"
     },
     {
       "arxiv_id": "2604.03724v1",
@@ -480,172 +671,6 @@
       "primary_category": "cs.IR",
       "pdf_url": "https://arxiv.org/pdf/2603.29259v1",
       "entry_id": "http://arxiv.org/abs/2603.29259v1"
-    },
-    {
-      "arxiv_id": "2603.28476v1",
-      "title": "With a Little Help From My Friends: Collective Manipulation in Risk-Controlling Recommender Systems",
-      "summary": "Recommendation systems have become central gatekeepers of online information, shaping user behaviour across a wide range of activities. In response, users increasingly organize and coordinate to steer algorithmic outcomes toward diverse goals, such as promoting relevant content or limiting harmful material, relying on platform affordances -- such as likes, reviews, or ratings. While these mechanisms can serve beneficial purposes, they can also be leveraged for adversarial manipulation, particularly in systems where such feedback directly informs safety guarantees. In this paper, we study this vulnerability in recently proposed risk-controlling recommender systems, which use binary user feedback (e.g., \"Not Interested\") to provably limit exposure to unwanted content via conformal risk control. We empirically demonstrate that their reliance on aggregate feedback signals makes them inherently susceptible to coordinated adversarial user behaviour. Using data from a large-scale online video-sharing platform, we show that a small coordinated group (comprising only 1% of the user population) can induce up to a 20% degradation in nDCG for non-adversarial users by exploiting the affordances provided by risk-controlling recommender systems. We evaluate simple, realistic attack strategies that require little to no knowledge of the underlying recommendation algorithm and find that, while coordinated users can significantly harm overall recommendation quality, they cannot selectively suppress specific content groups through reporting alone. Finally, we propose a mitigation strategy that shifts guarantees from the group level to the user level, showing empirically how it can reduce the impact of adversarial coordinated behaviour while ensuring personalized safety for individuals.",
-      "authors": [
-        "Giovanni De Toni",
-        "Cristian Consonni",
-        "Erasmo Purificato",
-        "Emilia Gomez",
-        "Bruno Lepri"
-      ],
-      "published": "2026-03-30T14:14:48+00:00",
-      "updated": "2026-03-30T14:14:48+00:00",
-      "categories": [
-        "cs.IR",
-        "cs.LG",
-        "cs.SI"
-      ],
-      "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.28476v1",
-      "entry_id": "http://arxiv.org/abs/2603.28476v1"
-    },
-    {
-      "arxiv_id": "2603.28124v1",
-      "title": "RCLRec: Reverse Curriculum Learning for Modeling Sparse Conversions in Generative Recommendation",
-      "summary": "Conversion objectives in large-scale recommender systems are sparse, making them difficult to optimize. Generative recommendation (GR) partially alleviates data sparsity by organizing multi-type behaviors into a unified token sequence with shared representations, but conversion signals remain insufficiently modeled. While recent behavior-aware GR models encode behavior types and employ behavior-aware attention to highlight decision-related intermediate behaviors, they still rely on standard attention over the full history and provide no additional supervision for conversions, leaving conversion sparsity largely unresolved. To address these challenges, we propose RCLRec, a reverse curriculum learning-based GR framework for sparse conversion supervision. For each conversion target, RCLRec constructs a short curriculum by selecting a subsequence of conversion-related items from the history in reverse. Their semantic tokens are fed to the decoder as a prefix, together with the target conversion tokens, under a joint generation objective. This design provides additional instance-specific intermediate supervision, alleviating conversion sparsity and focusing the model on the user's critical decision process. We further introduce a curriculum quality-aware loss to ensure that the selected curricula are informative for conversion prediction. Experiments on offline datasets and an online A/B test show that RCLRec achieves superior performance, with +2.09% advertising revenue and +1.86% orders in online deployment.",
-      "authors": [
-        "Yulei Huang",
-        "Hao Deng",
-        "Haibo Xing",
-        "Jinxin Hu",
-        "Chuanfei Xu",
-        "Zulong Chen",
-        "Yu Zhang",
-        "Xiaoyi Zeng"
-      ],
-      "published": "2026-03-30T07:41:33+00:00",
-      "updated": "2026-03-30T07:41:33+00:00",
-      "categories": [
-        "cs.IR"
-      ],
-      "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.28124v1",
-      "entry_id": "http://arxiv.org/abs/2603.28124v1"
-    },
-    {
-      "arxiv_id": "2603.27952v1",
-      "title": "On the Accuracy Limits of Sequential Recommender Systems: An Entropy-Based Approach",
-      "summary": "Sequential recommender systems have achieved steady gains in offline accuracy, yet it remains unclear how close current models are to the intrinsic accuracy limit imposed by the data. A reliable, model-agnostic estimate of this ceiling would enable principled difficulty assessment and headroom estimation before costly model development. Existing predictability analyses typically combine entropy estimation with Fano's inequality inversion; however, in recommendation they are hindered by sensitivity to candidate-space specification and distortion from Fano-based scaling in low-predictability regimes. We develop an entropy-induced, training-free approach for quantifying accuracy limits in sequential recommendation, yielding a candidate-size-agnostic estimate. Experiments on controlled synthetic generators and diverse real-world benchmarks show that the estimator tracks oracle-controlled difficulty more faithfully than baselines, remains insensitive to candidate-set size, and achieves high rank consistency with best-achieved offline accuracy across state-of-the-art sequential recommenders (Spearman rho up to 0.914). It also supports user-group diagnostics by stratifying users by novelty preference, long-tail exposure, and activity, revealing systematic predictability differences. Furthermore, predictability can guide training data selection: training sets constructed from high-predictability users yield strong downstream performance under reduced data budgets. Overall, the proposed estimator provides a practical reference for assessing attainable accuracy limits, supporting user-group diagnostics, and informing data-centric decisions in sequential recommendation.",
-      "authors": [
-        "En Xu",
-        "Jingtao Ding",
-        "Yong Li"
-      ],
-      "published": "2026-03-30T01:57:30+00:00",
-      "updated": "2026-03-30T01:57:30+00:00",
-      "categories": [
-        "cs.IR"
-      ],
-      "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.27952v1",
-      "entry_id": "http://arxiv.org/abs/2603.27952v1"
-    },
-    {
-      "arxiv_id": "2603.27264v1",
-      "title": "TrendGen: An Outfit Recommendation and Display System",
-      "summary": "Recent advances in Computer Vision have significantly improved image understanding and generation, revolutionizing the fashion industry. However, challenges such as inconsistent lighting, non-ideal garment angles, complex backgrounds, and occlusions in raw images hinder their full potential. Overcoming these obstacles is crucial for developing robust fashion AI systems capable of real-world applications.   In this paper, we introduce TrendGen, a Fashion AI system designed to enhance online shopping with intelligent outfit recommendations. Deployed on a major e-commerce platform, TrendGen leverages cloth images and product attributes to generate trend-aligned, cohesive outfit suggestions. Additionally, it employs Generative AI to transform raw images into high-quality lay-down views, offering a clear and structured presentation of garments.   Our evaluation on production data demonstrates TrendGen's consistent high-quality outfits and lay-down images, marking a significant advancement in AI-driven solutions for fashion retail.",
-      "authors": [
-        "Theodoros Koukopoulos",
-        "Dimos Klimenof",
-        "Ioannis Xarchakos"
-      ],
-      "published": "2026-03-28T13:11:29+00:00",
-      "updated": "2026-03-28T13:11:29+00:00",
-      "categories": [
-        "cs.CV"
-      ],
-      "primary_category": "cs.CV",
-      "pdf_url": "https://arxiv.org/pdf/2603.27264v1",
-      "entry_id": "http://arxiv.org/abs/2603.27264v1"
-    },
-    {
-      "arxiv_id": "2603.26100v1",
-      "title": "Rethinking Recommendation Paradigms: From Pipelines to Agentic Recommender Systems",
-      "summary": "Large-scale industrial recommenders typically use a fixed multi-stage pipeline (recall, ranking, re-ranking) and have progressed from collaborative filtering to deep and large pre-trained models. However, both multi-stage and so-called One Model designs remain essentially static: models are black boxes, and system improvement relies on manual hypotheses and engineering, which is hard to scale under heterogeneous data and multi-objective business constraints. We propose an Agentic Recommender System (AgenticRS) that reorganizes key modules as agents. Modules are promoted to agents only when they form a functionally closed loop, can be independently evaluated, and possess an evolvable decision space. For model agents, we outline two self-evolution mechanisms: reinforcement learning style optimization in well-defined action spaces, and large language model based generation and selection of new architectures and training schemes in open-ended design spaces. We further distinguish individual evolution of single agents from compositional evolution over how multiple agents are selected and connected, and use a layered inner and outer reward design to couple local optimization with global objectives. This provides a concise blueprint for turning static pipelines into self-evolving agentic recommender systems.",
-      "authors": [
-        "Jinxin Hu",
-        "Hao Deng",
-        "Lingyu Mu",
-        "Hao Zhang",
-        "Shizhun Wang",
-        "Yu Zhang",
-        "Xiaoyi Zeng"
-      ],
-      "published": "2026-03-27T06:14:18+00:00",
-      "updated": "2026-03-27T06:14:18+00:00",
-      "categories": [
-        "cs.IR"
-      ],
-      "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.26100v1",
-      "entry_id": "http://arxiv.org/abs/2603.26100v1"
-    },
-    {
-      "arxiv_id": "2603.26085v1",
-      "title": "AgenticRS-Architecture: System Design for Agentic Recommender Systems",
-      "summary": "AutoModel is an agent based architecture for the full lifecycle of industrial recommender systems. Instead of a fixed recall and ranking pipeline, AutoModel organizes recommendation as a set of interacting evolution agents with long term memory and self improvement capability. We instantiate three core agents along the axes of models, features, and resources: AutoTrain for model design and training, AutoFeature for data analysis and feature evolution, and AutoPerf for performance, deployment, and online experimentation. A shared coordination and knowledge layer connects these agents and records decisions, configurations, and outcomes. Through a case study of a module called paper autotrain, we show how AutoTrain automates paper driven model reproduction by closing the loop from method parsing to code generation, large scale training, and offline comparison, reducing manual effort for method transfer. AutoModel enables locally automated yet globally aligned evolution of large scale recommender systems and can be generalized to other AI systems such as search and advertising.",
-      "authors": [
-        "Hao Zhang",
-        "Jinxin Hu",
-        "Hao Deng",
-        "Lingyu Mu",
-        "Shizhun Wang",
-        "Yu Zhang",
-        "Xiaoyi Zeng"
-      ],
-      "published": "2026-03-27T05:26:31+00:00",
-      "updated": "2026-03-27T05:26:31+00:00",
-      "categories": [
-        "cs.IR"
-      ],
-      "primary_category": "cs.IR",
-      "pdf_url": "https://arxiv.org/pdf/2603.26085v1",
-      "entry_id": "http://arxiv.org/abs/2603.26085v1"
-    },
-    {
-      "arxiv_id": "2603.25624v1",
-      "title": "Visual or Textual: Effects of Explanation Format and Personal Characteristics on the Perception of Explanations in an Educational Recommender System",
-      "summary": "Explanations are central to improving transparency, trust, and user satisfaction in recommender systems (RS), yet it remains unclear how different explanation formats (visual vs. textual) are suited to users with different personal characteristics (PCs). To this end, we report a within-subject user study (n=54) comparing visual and textual explanations and examine how explanation format and PCs jointly influence perceived control, transparency, trust, and satisfaction in an educational recommender system (ERS). Using robust mixed-effects models, we analyze the moderating effects of a wide range of PCs, including Big Five traits, need for cognition, decision making style, visualization familiarity, and technical expertise. Our results show that a well-designed visual, simple, interactive, selective, easy to understand visualization that clearly and intuitively communicates how user preferences are linked to recommendations, fosters perceived control, transparency, appropriate trust, and satisfaction in the ERS for most users, independent of their PCs. Moreover, we derive a set of guidelines to support the effective design of explanations in ERSs.",
-      "authors": [
-        "Qurat Ul Ain",
-        "Mohamed Amine Chatti",
-        "Nasim Yazdian Varjani",
-        "Farah Kamal",
-        "Astrid Rosenthal-von der Pütten"
-      ],
-      "published": "2026-03-26T16:37:13+00:00",
-      "updated": "2026-03-26T16:37:13+00:00",
-      "categories": [
-        "cs.HC",
-        "cs.AI",
-        "cs.CY"
-      ],
-      "primary_category": "cs.HC",
-      "pdf_url": "https://arxiv.org/pdf/2603.25624v1",
-      "entry_id": "http://arxiv.org/abs/2603.25624v1"
-    },
-    {
-      "arxiv_id": "2603.25302v1",
-      "title": "Auditing the Impact of Cross-Site Web Tracking on YouTube Political and Misinformation Recommendations",
-      "summary": "YouTube has today become the primary news source for many users, which raises concerns about the role its recommendation algorithm can play in the spread of misinformation and political polarization. Prior work in this area has mainly analyzed how recommendations evolve based on users' watch history within the platform. Nevertheless, recommendations can also depend on off-platform browsing activity that Google collects via trackers on news websites, a factor that has not been considered so far. To fill this gap, we propose a sock-puppet-based experimental framework that automatically interacts with news media articles and then collects YouTube recommendations to measure how cross-site tracking affects the political and misinformation content users see. Moreover, by running our audits in both tracking-permissive and tracking-restrictive browser environments, we assess whether common privacy-focused browsers can protect users from tracking-driven political and misinformation bubbles on YouTube.",
-      "authors": [
-        "Salim Chouaki",
-        "Savaiz Nazir",
-        "Sandra Siby"
-      ],
-      "published": "2026-03-26T10:45:24+00:00",
-      "updated": "2026-03-26T10:45:24+00:00",
-      "categories": [
-        "cs.CY",
-        "cs.SI"
-      ],
-      "primary_category": "cs.CY",
-      "pdf_url": "https://arxiv.org/pdf/2603.25302v1",
-      "entry_id": "http://arxiv.org/abs/2603.25302v1"
     }
   ]
 }
